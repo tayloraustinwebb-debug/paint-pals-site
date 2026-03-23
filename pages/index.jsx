@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
+import Head from "next/head";
+import Script from "next/script";
 
 function SliderCard({ item, stagger = false }) {
   const [position, setPosition] = useState(50);
@@ -553,18 +555,16 @@ export default function PaintPalsWebsite() {
                 ))}
               </div>
             </div>
+<div className="bg-white rounded-xl p-4">
+  <div id="0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401"></div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_18px_55px_rgba(0,0,0,0.24)] md:p-8">
-              <div className="flex min-h-[420px] items-center justify-center rounded-[1.5rem] border-2 border-dashed border-[#98BEDC]/55 bg-[#274a78]/70 p-10 text-center shadow-inner">
-                <div>
-                  <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">
-                    Jobber Form Embed Area
-                  </p>
-                  <p className="mt-3 text-base leading-8 text-[#E6F0F8]">
-                    Replace this box with your embedded Jobber request form or quote form widget.
-                  </p>
-                </div>
-              </div>
+  <Script
+    src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js"
+    strategy="afterInteractive"
+    clienthub_id="0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401"
+    form_url="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/public/work_request/embedded_work_request_form?form_id=2068401"
+  />
+</div>
             </div>
           </div>
         </section>
