@@ -255,7 +255,7 @@ export default function PaintPalsWebsite() {
                 Cabinet Refinishing • Interior • Exterior • Commercial
               </div>
 
-              <div className="mt-6 rounded-[2rem] border border-white/10 bg-white/10 p-5 shadow-[0_26px_70px_rgba(0,0,0,0.26)] backdrop-blur-sm md:p-6">
+              <div className="mt-6 rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-5 shadow-[0_26px_70px_rgba(0,0,0,0.26)] backdrop-blur-sm md:p-6">
                 <img
                   src="/logo.png"
                   alt="Paint Pals logo large"
@@ -338,7 +338,7 @@ export default function PaintPalsWebsite() {
 </div>
             
 
-              <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_22px_60px_rgba(0,0,0,0.28)] backdrop-blur-sm">
+              <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_22px_60px_rgba(0,0,0,0.28)] backdrop-blur-sm">
                 <div className="rounded-[1.7rem] bg-gradient-to-br from-[#274a78] via-[#325B94] to-[#98BEDC] p-8 text-white">
                   <p className="text-sm font-black uppercase tracking-[0.22em] text-[#DFF5FF]">
                     Why Homeowners Choose Paint Pals
@@ -368,7 +368,7 @@ export default function PaintPalsWebsite() {
               </div>
 
               <div className="grid gap-5 md:grid-cols-2">
-                <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
+                <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
                   <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]">Built to Pop</p>
                   <p className="mt-3 text-2xl font-black tracking-tight text-white">
                     Dark blue background, logo colors, brighter contrast
@@ -377,7 +377,7 @@ export default function PaintPalsWebsite() {
                     This version leans into your darker logo palette so the page feels more branded and more eye-catching.
                   </p>
                 </div>
-                <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
+                <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
                   <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]">Real Project Photos</p>
                   <p className="mt-3 text-2xl font-black tracking-tight text-white">
                     Before &amp; after sliders built for visual selling
@@ -442,7 +442,7 @@ export default function PaintPalsWebsite() {
               {services.map((service) => (
                 <div
                   key={service}
-                  className="rounded-[2rem] border border-white/10 bg-white/10 p-7 shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:-translate-y-1"
+                  className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-7 shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:-translate-y-1"
                 >
                   <div className="mb-5 h-12 w-12 rounded-2xl bg-[linear-gradient(135deg,#98BEDC,#325B94)] shadow-[0_10px_22px_rgba(0,0,0,0.22)]" />
                   <h3 className="text-xl font-black tracking-tight text-white">{service}</h3>
@@ -484,7 +484,7 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_18px_55px_rgba(0,0,0,0.24)] md:p-10">
+            <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-8 shadow-[0_18px_55px_rgba(0,0,0,0.24)] md:p-10">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">FAQ Highlights</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
                 Answering the questions that stop people from booking
@@ -505,7 +505,7 @@ export default function PaintPalsWebsite() {
         </section>
 
         <section id="areas" className="bg-[#274a78] px-4 py-16 md:px-6 lg:py-24">
-          <div className="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-[0_18px_55px_rgba(0,0,0,0.24)] md:p-10">
+          <div className="mx-auto max-w-7xl rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-8 shadow-[0_18px_55px_rgba(0,0,0,0.24)] md:p-10">
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">Service Areas</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
@@ -531,7 +531,7 @@ export default function PaintPalsWebsite() {
 
         <section id="quote" className="px-4 py-16 md:px-6 lg:py-24">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.9fr]">
-            <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#274a78] via-[#325B94] to-[#98BEDC] p-8 text-white shadow-[0_24px_70px_rgba(0,0,0,0.28)] md:p-10">
+            <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] bg-gradient-to-br from-[#274a78] via-[#325B94] to-[#98BEDC] p-8 text-white shadow-[0_24px_70px_rgba(0,0,0,0.28)] md:p-10">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-[#E6FAFF]">Free Estimate</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight md:text-5xl">
                 Get your free cabinet refinishing or painting quote
