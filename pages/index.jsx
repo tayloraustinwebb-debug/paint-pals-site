@@ -555,7 +555,7 @@ export default function PaintPalsWebsite() {
                 ))}
               </div>
             </div>
-<div className="bg-white rounded-xl p-4">
+<div className="jobber-wrap bg-white rounded-xl overflow-hidden p-0">
   <div id="0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401"></div>
 
   <Script
@@ -585,6 +585,23 @@ export default function PaintPalsWebsite() {
           </div>
         </div>
       </footer>
+      <style jsx global>{`
+  .jobber-wrap {
+    min-height: 780px;
+  }
+
+  .jobber-wrap #0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401 {
+    width: 100% !important;
+    min-height: 780px;
+  }
+
+  .jobber-wrap iframe {
+    width: 100% !important;
+    min-height: 780px !important;
+    border: 0 !important;
+    display: block !important;
+  }
+`}</style>
     </div>
   );
 }
