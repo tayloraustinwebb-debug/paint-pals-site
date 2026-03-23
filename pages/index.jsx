@@ -397,7 +397,7 @@ export default function PaintPalsWebsite() {
               Get My Free Quote →
             </a>
           </div>
-        </section>
+     
 
         <section id="before-after" className="mx-auto max-w-7xl px-4 py-16 md:px-6 lg:py-24">
           <div className="mx-auto max-w-3xl text-center">
