@@ -1,21 +1,38 @@
 import React, { useEffect, useMemo, useState } from "react";
 
-function SliderCard({ item, stagger = false }) {
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+    dataLayer?: any[];
+    __paintPalsGtagLoaded?: boolean;
+  }
+}
+
+type BeforeAfterItem = {
+  title: string;
+  before: string;
+  after: string;
+};
+
+function SliderCard({ item, stagger = false }: { item: BeforeAfterItem; stagger?: boolean }) {
   const [position, setPosition] = useState(50);
   const [dragging, setDragging] = useState(false);
+  
 
-  const updatePosition = (clientX, rect) => {
+  
+
+  const updatePosition = (clientX: number, rect: DOMRect) => {
     const x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
     setPosition((x / rect.width) * 100);
   };
 
-  const handlePointerDown = (e) => {
-    const rect = e.currentTarget.getBoundingClientRect();
+  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+        const rect = e.currentTarget.getBoundingClientRect();
     setDragging(true);
     updatePosition(e.clientX, rect);
   };
 
-  const handlePointerMove = (e) => {
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
     if (!dragging) return;
     const rect = e.currentTarget.getBoundingClientRect();
     updatePosition(e.clientX, rect);
@@ -85,7 +102,7 @@ function SliderCard({ item, stagger = false }) {
 
 export default function PaintPalsWebsite() {
   const phone = "(840) 217-5750";
-  const adsId = "AW-18032245507";
+  const adsId = "AW-XXXXXXXXX";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -110,37 +127,37 @@ export default function PaintPalsWebsite() {
 
   const trackQuote = () => {
     if (window.gtag) {
-      window.gtag("event", "conversion", { send_to: `${AW-18032245507}/quote` });
+      window.gtag("event", "conversion", { send_to: `${adsId}/quote` });
     }
   };
 
   const trackCall = () => {
     if (window.gtag) {
-      window.gtag("event", "conversion", { send_to: `${AW-18032245507}/call` });
+      window.gtag("event", "conversion", { send_to: `${adsId}/call` });
     }
   };
 
-  const beforeAfterPairs = useMemo(
+  const beforeAfterPairs = useMemo<BeforeAfterItem[]>(
     () => [
       {
-        title: "Rancho Cucaumonga Cabinet Refinishing - Warm Wood to Soft Gray Blue",
-        before: "/Before 1.jpg",
-        after: "/After 1.jpeg",
+        title: "Warm Wood to Soft Gray Blue",
+        before: "https://via.placeholder.com/1200x900?text=Before+1",
+        after: "https://via.placeholder.com/1200x900?text=After+1",
       },
       {
-        title: "Riverside County Kitchen Update - Old Stain to a Unique Yellow ",
-        before: "/Before 2.jpg",
-        after: "/After 2.jpeg",
+        title: "Cream Cabinets to Rich Black Finish",
+        before: "https://via.placeholder.com/1200x900?text=Before+2",
+        after: "https://via.placeholder.com/1200x900?text=After+2",
       },
       {
-        title: "San Bernadino County Cabinet Refresh - Light to Dark",
-        before: "/Before 3.jpeg",
-        after: "/After 3.jpeg",
+        title: "Brown Stain to Crisp Bright White",
+        before: "https://via.placeholder.com/1200x900?text=Before+3",
+        after: "https://via.placeholder.com/1200x900?text=After+3",
       },
       {
-        title: "Fontana Refinishing - Old and Dated to a Bright Modern White ",
-        before: "/Before 4.JPG",
-        after: "/After 7.jpg",
+        title: "Two-Tone Blue Kitchen Transformation",
+        before: "https://via.placeholder.com/1200x900?text=Before+4",
+        after: "https://via.placeholder.com/1200x900?text=After+4",
       },
     ],
     []
@@ -191,36 +208,36 @@ export default function PaintPalsWebsite() {
 
   return (
     <div className="min-h-screen bg-[#325B94] text-white">
-<header className="sticky top-0 z-40 border-b border-white/10 bg-[#103985]/90 backdrop-blur">
-  <div className="relative mx-auto flex max-w-7xl min-h-[72px] items-center justify-end px-4 py-3 md:px-6 md:py-4">
-    <a href="#top" className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center">
-      <img
-        src="/logo.png"
-        alt="Paint Pals logo"
-        className="h-12 w-auto drop-shadow-[0_0_35px_rgba(152,190,220,0.9)] md:h-16"
-      />
-    </a>
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#103985]/90 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
+          <a href="#top" className="flex items-center gap-4">
+            <img
+              src="https://via.placeholder.com/260x90?text=Paint+Pals+Logo"
+              alt="Paint Pals logo"
+              className="h-10 w-auto drop-shadow-[0_0_35px_rgba(152,190,220,0.9)] md:h-14"
+            />
+          </a>
 
-    <nav className="hidden items-center gap-6 md:flex">
-      <a href="#before-after" className="text-sm font-black text-[#E6F0F8] hover:text-white">
-        Before &amp; After
-      </a>
-      <a href="#services" className="text-sm font-black text-[#E6F0F8] hover:text-white">
-        Services
-      </a>
-      <a href="#areas" className="text-sm font-black text-[#E6F0F8] hover:text-white">
-        Areas
-      </a>
-      <a
-        href="#quote"
-        onClick={trackQuote}
-        className="rounded-2xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_0_0_4px_rgba(189,238,255,0.15),0_16px_40px_rgba(0,0,0,0.25)] transition hover:-translate-y-0.5"
-      >
-        Get Free Quote
-      </a>
-    </nav>
-  </div>
-</header>
+          <nav className="hidden items-center gap-6 md:flex">
+            <a href="#before-after" className="text-sm font-black text-[#E6F0F8] hover:text-white">
+              Before &amp; After
+            </a>
+            <a href="#services" className="text-sm font-black text-[#E6F0F8] hover:text-white">
+              Services
+            </a>
+            <a href="#areas" className="text-sm font-black text-[#E6F0F8] hover:text-white">
+              Areas
+            </a>
+            <a
+              href="#quote"
+              onClick={trackQuote}
+              className="rounded-2xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_0_0_4px_rgba(189,238,255,0.15),0_16px_40px_rgba(0,0,0,0.25)] transition hover:-translate-y-0.5"
+            >
+              Get Free Quote
+            </a>
+          </nav>
+        </div>
+      </header>
 
       <main id="top">
         <a
@@ -255,9 +272,9 @@ export default function PaintPalsWebsite() {
 
               <div className="mt-6 rounded-[2rem] border border-white/10 bg-white/10 p-5 shadow-[0_26px_70px_rgba(0,0,0,0.26)] backdrop-blur-sm md:p-6">
                 <img
-                  src="/logo.png"
+                  src="https://via.placeholder.com/420x150?text=Paint+Pals+Logo"
                   alt="Paint Pals logo large"
-                  className="mx-auto mb-6 w-full max-w-[420px] drop-shadow-[0_0_35px_rgba(152,190,220,0.9)]"
+                  className="mb-6 w-full max-w-[420px] drop-shadow-[0_0_35px_rgba(152,190,220,0.9)]"
                 />
 
                 <h1 className="text-4xl font-black leading-tight tracking-tight text-white md:text-6xl">
@@ -303,35 +320,15 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-6">
-
-  {/* Google placeholder (we'll upgrade later) */}
-  <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#325B94] shadow">
-    ⭐ 5.0 on Google
-  </div>
-
-  {/* Thumbtack Widget */}
-  <div
-    dangerouslySetInnerHTML={{
-      __html: `
-      <div class="widget" id="tt-review-widget-star">
-        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg" alt="Thumbtack" style="height:20px;margin-bottom:4px;" />
-        <a target="_blank" href="https://www.thumbtack.com/ca/fontana/kitchen-cabinet-painters/paint-pals/service/558939376023232529" style="font-weight:bold;color:#325B94;text-decoration:none;">
-          <div>Paint Pals</div>
-        </a>
-        <div id="tt-dynamic" style="display:flex;align-items:center;gap:4px;">
-          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
-          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
-          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
-          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
-          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
-          <span style="margin-left:6px;font-weight:bold;color:#325B94;">40 reviews</span>
-        </div>
-      </div>
-      `,
-    }}
-  />
-</div>
+            <div className="grid gap-5">
+              <div className="flex flex-wrap gap-3">
+                <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#325B94] shadow">
+                  ⭐ 5.0 Google
+                </div>
+                <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#325B94] shadow">
+                  Top Rated on Thumbtack
+                </div>
+              </div>
 
               <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_22px_60px_rgba(0,0,0,0.28)] backdrop-blur-sm">
                 <div className="rounded-[1.7rem] bg-gradient-to-br from-[#274a78] via-[#325B94] to-[#98BEDC] p-8 text-white">
@@ -384,7 +381,7 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
           </div>
-     
+        </section>
 
         <section className="relative -mt-10 mb-6 px-4 md:px-6">
           <div className="mx-auto max-w-5xl rounded-[2rem] border border-[#98BEDC]/40 bg-white px-6 py-5 text-center text-[#325B94] shadow-[0_18px_50px_rgba(0,0,0,0.28)]">
@@ -397,7 +394,7 @@ export default function PaintPalsWebsite() {
               Get My Free Quote →
             </a>
           </div>
-     
+        </section>
 
         <section id="before-after" className="mx-auto max-w-7xl px-4 py-16 md:px-6 lg:py-24">
           <div className="mx-auto max-w-3xl text-center">
@@ -585,3 +582,4 @@ export default function PaintPalsWebsite() {
     </div>
   );
 }
+
