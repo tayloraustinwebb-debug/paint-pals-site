@@ -439,7 +439,7 @@ export default function PaintPalsWebsite() {
           <div className="mx-auto max-w-7xl">
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">
-                Painting &amp; Refinishing Services
+               Cabinet Painting &amp; Refinishing Services
               </p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
                Paint Pals offers the following services to achieve your dream Kitchen or Bathroom Upgrade
@@ -487,7 +487,7 @@ export default function PaintPalsWebsite() {
                 Bigger visual payoff. Less cost. Less disruption.
               </h2>
               <p className="mt-5 text-lg leading-8 text-[#F4FDFF]">
-                Cabinet refinishing is one of the strongest value-driven services you can market because homeowners instantly understand the savings and the visual transformation.
+                Cabinet refinishing is one of the best value upgrades you can make in your home, giving your kitchen a brand-new look without the high cost of replacement, typical savings up to 10x.
               </p>
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
@@ -509,7 +509,7 @@ export default function PaintPalsWebsite() {
             <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-8 shadow-[0_18px_55px_rgba(0,0,0,0.24)] md:p-10">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">FAQ Highlights</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
-                Answering the questions that stop people from booking
+               Common Cabinet Refinishing Questions?
               </h2>
               <div className="mt-8 space-y-4">
                 {faqs.map((item) => (
@@ -531,10 +531,10 @@ export default function PaintPalsWebsite() {
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">Service Areas</p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
-                Built to rank better for local cabinet refinishing and painting searches
+                We Service the following areas
               </h2>
               <p className="mt-5 text-lg leading-8 text-[#E6F0F8]">
-                This section helps target local intent searches like cabinet refinishing in Fontana, cabinet painting in Rancho Cucamonga, interior painters in Riverside, and more.
+               Riverside, Orange, and San Bernadino Counties
               </p>
             </div>
 
@@ -559,7 +559,7 @@ export default function PaintPalsWebsite() {
                 Get your free cabinet refinishing or painting quote
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-[#F3FDFF]">
-                Put your Jobber request form here so leads go straight into your workflow. This should stay the main conversion point on the page.
+                Fill out the form below for a free estimate, and we’ll contact you shortly to go over your project, pricing, and timeline.
               </p>
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
