@@ -303,15 +303,35 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
 
-            <div className="grid gap-5">
-              <div className="flex flex-wrap gap-3">
-                <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#325B94] shadow">
-                  ⭐ 5.0 Google
-                </div>
-                <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#325B94] shadow">
-                  Top Rated on Thumbtack
-                </div>
-              </div>
+            <div className="flex flex-wrap items-center gap-6">
+
+  {/* Google placeholder (we'll upgrade later) */}
+  <div className="rounded-full bg-white px-4 py-2 text-xs font-black text-[#325B94] shadow">
+    ⭐ 5.0 on Google
+  </div>
+
+  {/* Thumbtack Widget */}
+  <div
+    dangerouslySetInnerHTML={{
+      __html: `
+      <div class="widget" id="tt-review-widget-star">
+        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg" alt="Thumbtack" style="height:20px;margin-bottom:4px;" />
+        <a target="_blank" href="https://www.thumbtack.com/ca/fontana/kitchen-cabinet-painters/paint-pals/service/558939376023232529" style="font-weight:bold;color:#325B94;text-decoration:none;">
+          <div>Paint Pals</div>
+        </a>
+        <div id="tt-dynamic" style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
+          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
+          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
+          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
+          <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg">
+          <span style="margin-left:6px;font-weight:bold;color:#325B94;">40 reviews</span>
+        </div>
+      </div>
+      `,
+    }}
+  />
+</div>
 
               <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-[0_22px_60px_rgba(0,0,0,0.28)] backdrop-blur-sm">
                 <div className="rounded-[1.7rem] bg-gradient-to-br from-[#274a78] via-[#325B94] to-[#98BEDC] p-8 text-white">
