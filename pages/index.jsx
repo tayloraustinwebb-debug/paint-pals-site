@@ -417,10 +417,10 @@ export default function PaintPalsWebsite() {
             <p className="text-sm font-black uppercase tracking-[0.22em] text-[#98BEDC]">
               Before &amp; After Cabinet Refinishing
             </p>
-           <h2 className="mt-3 text-3xl font-black tracking-tight text-[#103985] md:text-5xl">
+           <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
               Real Paint Pals cabinet transformations
             </h2>
-            <p className="mt-5 text-lg leading-8 text-gray-600">
+            <p className="mt-5 text-lg leading-8 text-white/80">
               These project sliders show the value of cabinet refinishing fast, from dated wood tones to bright whites, bold dark finishes, and custom color makeovers.
             </p>
           </div>
