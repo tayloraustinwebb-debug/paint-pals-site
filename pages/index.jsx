@@ -494,7 +494,7 @@ export default function PaintPalsWebsite() {
                   "Refinishing costs less than replacing cabinets",
                   "Custom finishes make kitchens feel brand new",
                   "Ideal for dated oak, dark stain, and worn finishes",
-                  "Strong anchor offer for Google Ads and SEO",
+                  "Your Dream kitchen for less",
                 ].map((item) => (
                   <div
                     key={item}
@@ -563,10 +563,7 @@ export default function PaintPalsWebsite() {
               </p>
               <div className="mt-8 grid gap-4 md:grid-cols-2">
                 {[
-                  "Best fields: name, phone, email, city, service, project details",
-                  "Strong CTA: Get My Free Quote",
-                  "One form near top for ads, one here for long-scroll visitors",
-                  "Connect GA4 tracking on the site side for stronger reporting",
+                  
                 ].map((item) => (
                   <div
                     key={item}
