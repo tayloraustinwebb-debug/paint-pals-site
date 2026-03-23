@@ -85,7 +85,7 @@ function SliderCard({ item, stagger = false }) {
 
 export default function PaintPalsWebsite() {
   const phone = "(840) 217-5750";
-  const adsId = "AW-XXXXXXXXX";
+  const adsId = "AW-18032245507";
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -110,13 +110,13 @@ export default function PaintPalsWebsite() {
 
   const trackQuote = () => {
     if (window.gtag) {
-      window.gtag("event", "conversion", { send_to: `${adsId}/quote` });
+      window.gtag("event", "conversion", { send_to: `${AW-18032245507}/quote` });
     }
   };
 
   const trackCall = () => {
     if (window.gtag) {
-      window.gtag("event", "conversion", { send_to: `${adsId}/call` });
+      window.gtag("event", "conversion", { send_to: `${AW-18032245507}/call` });
     }
   };
 
@@ -140,7 +140,7 @@ export default function PaintPalsWebsite() {
       {
         title: "Fontana Refinishing - Old and Dated to a Bright Modern White ",
         before: "/Before 4.JPG",
-        after: "/After 4.JPEG",
+        after: "/After 7.jpg",
       },
     ],
     []
