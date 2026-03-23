@@ -566,7 +566,7 @@ export default function PaintPalsWebsite() {
   />
 </div>
             </div>
-          </div>
+          
         </section>
       </main>
 
