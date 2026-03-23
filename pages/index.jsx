@@ -192,7 +192,7 @@ export default function PaintPalsWebsite() {
   ];
 
   return (
-<div className="min-h-screen bg-gradient-to-b from-white to-[#f4f8fc] text-[#103985]">
+<div className="min-h-screen bg-[#0b1426] text-white">
 <header className="sticky top-0 z-40 border-b border-white/10 bg-[#103985]/90 backdrop-blur">
   <div className="relative mx-auto flex max-w-7xl min-h-[72px] items-center justify-end px-4 py-3 md:px-6 md:py-4">
     <a href="#top" className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center">
