@@ -275,7 +275,7 @@ export default function PaintPalsWebsite() {
                 </h1>
 
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-[#E6F0F8]">
-                  Paint Pals specializes in cabinet refinishing, cabinet painting, interior painting, exterior painting, and commercial painting across Southern California with a cleaner process, premium finishes, and eye-catching transformations.
+                  Paint Pals specializes in cabinet refinishing, cabinet refacing, and cabinet upgrades across Southern California with a cleaner process, premium finishes, and eye-catching transformations.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -377,12 +377,12 @@ export default function PaintPalsWebsite() {
 
               <div className="grid gap-5 md:grid-cols-2">
                 <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
-                  <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]">Built to Pop</p>
+                  <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]"PREMIUM FINISHES</p>
                   <p className="mt-3 text-2xl font-black tracking-tight text-white">
-                    Dark blue background, logo colors, brighter contrast
+                   We ONLY use professional 2K coatings.
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#E6F0F8]">
-                    This version leans into your darker logo palette so the page feels more branded and more eye-catching.
+                    Our 2K coatings create a factory-style finish that is more durable, more resistant, and built to last longer than traditional cabinet paint.
                   </p>
                 </div>
                 <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
