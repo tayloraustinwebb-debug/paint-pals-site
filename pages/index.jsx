@@ -384,7 +384,7 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
           </div>
-        </section>
+     
 
         <section className="relative -mt-10 mb-6 px-4 md:px-6">
           <div className="mx-auto max-w-5xl rounded-[2rem] border border-[#98BEDC]/40 bg-white px-6 py-5 text-center text-[#325B94] shadow-[0_18px_50px_rgba(0,0,0,0.28)]">
