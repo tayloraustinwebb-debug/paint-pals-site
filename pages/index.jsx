@@ -124,23 +124,23 @@ export default function PaintPalsWebsite() {
     () => [
       {
         title: "Warm Wood to Soft Gray Blue",
-        before: "/before1.jpg",
-        after: "/after1.jpg",
+        before: "/before 1.jpg",
+        after: "/after 1.jpg",
       },
       {
         title: "Cream Cabinets to Rich Black Finish",
-        before: "/before2.jpg",
-        after: "/after2.jpg",
+        before: "/before 2.jpg",
+        after: "/after 2.jpg",
       },
       {
         title: "Brown Stain to Crisp Bright White",
-        before: "/before3.jpg",
-        after: "/after3.jpg",
+        before: "/before 3.jpg",
+        after: "/after 3.jpg",
       },
       {
         title: "Two-Tone Blue Kitchen Transformation",
-        before: "/before4.jpg",
-        after: "/after4.jpg",
+        before: "/before 4.jpg",
+        after: "/after 4.jpg",
       },
     ],
     []
@@ -191,36 +191,36 @@ export default function PaintPalsWebsite() {
 
   return (
     <div className="min-h-screen bg-[#325B94] text-white">
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#103985]/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
-          <a href="#top" className="flex items-center gap-4">
-            <img
-              src="https://via.placeholder.com/260x90?text=Paint+Pals+Logo"
-              alt="Paint Pals logo"
-              className="h-10 w-auto drop-shadow-[0_0_35px_rgba(152,190,220,0.9)] md:h-14"
-            />
-          </a>
+<header className="sticky top-0 z-40 border-b border-white/10 bg-[#103985]/90 backdrop-blur">
+  <div className="relative mx-auto flex max-w-7xl min-h-[72px] items-center justify-end px-4 py-3 md:px-6 md:py-4">
+    <a href="#top" className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center">
+      <img
+        src="/logo.png"
+        alt="Paint Pals logo"
+        className="h-12 w-auto drop-shadow-[0_0_35px_rgba(152,190,220,0.9)] md:h-16"
+      />
+    </a>
 
-          <nav className="hidden items-center gap-6 md:flex">
-            <a href="#before-after" className="text-sm font-black text-[#E6F0F8] hover:text-white">
-              Before &amp; After
-            </a>
-            <a href="#services" className="text-sm font-black text-[#E6F0F8] hover:text-white">
-              Services
-            </a>
-            <a href="#areas" className="text-sm font-black text-[#E6F0F8] hover:text-white">
-              Areas
-            </a>
-            <a
-              href="#quote"
-              onClick={trackQuote}
-              className="rounded-2xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_0_0_4px_rgba(189,238,255,0.15),0_16px_40px_rgba(0,0,0,0.25)] transition hover:-translate-y-0.5"
-            >
-              Get Free Quote
-            </a>
-          </nav>
-        </div>
-      </header>
+    <nav className="hidden items-center gap-6 md:flex">
+      <a href="#before-after" className="text-sm font-black text-[#E6F0F8] hover:text-white">
+        Before &amp; After
+      </a>
+      <a href="#services" className="text-sm font-black text-[#E6F0F8] hover:text-white">
+        Services
+      </a>
+      <a href="#areas" className="text-sm font-black text-[#E6F0F8] hover:text-white">
+        Areas
+      </a>
+      <a
+        href="#quote"
+        onClick={trackQuote}
+        className="rounded-2xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_0_0_4px_rgba(189,238,255,0.15),0_16px_40px_rgba(0,0,0,0.25)] transition hover:-translate-y-0.5"
+      >
+        Get Free Quote
+      </a>
+    </nav>
+  </div>
+</header>
 
       <main id="top">
         <a
