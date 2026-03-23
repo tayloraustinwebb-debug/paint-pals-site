@@ -149,12 +149,12 @@ export default function PaintPalsWebsite() {
   );
 
   const services = [
-    "Cabinet Refinishing",
-    "Cabinet Painting",
-    "Interior Painting",
-    "Exterior Painting",
-    "Residential Painting",
-    "Commercial Painting",
+  "Cabinet Refinishing",
+  "Cabinet Refacing",
+  "Cabinet Upgrades",
+  "Custom Cabinet Colors",
+  "Kitchen & Bathroom Transformations",
+  "Factory-Style Cabinet Finishes",
   ];
 
   const areas = [
@@ -170,6 +170,9 @@ export default function PaintPalsWebsite() {
     "San Bernardino",
     "Jurupa Valley",
     "Norco",
+    "Murrieta",
+    "Temecula",
+    "Orange County",
   ];
 
   const faqs = [
@@ -377,7 +380,7 @@ export default function PaintPalsWebsite() {
 
               <div className="grid gap-5 md:grid-cols-2">
                 <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
-                  <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]"PREMIUM FINISHES</p>
+                  <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]">PREMIUM WOOD COATINGS</p>
                   <p className="mt-3 text-2xl font-black tracking-tight text-white">
                    We ONLY use professional 2K coatings.
                   </p>
@@ -386,12 +389,12 @@ export default function PaintPalsWebsite() {
                   </p>
                 </div>
                 <div className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-6 shadow-[0_18px_40px_rgba(0,0,0,0.24)]">
-                  <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]">Real Project Photos</p>
+                  <p className="text-sm font-black uppercase tracking-[0.2em] text-[#98BEDC]">REAL CABINET TRANSFORMATIONS</p>
                   <p className="mt-3 text-2xl font-black tracking-tight text-white">
-                    Before &amp; after sliders built for visual selling
+                    See real before and after cabinet refinishing projects that show the dramatic difference our process can make in your home.
                   </p>
                   <p className="mt-3 text-sm leading-7 text-[#E6F0F8]">
-                    The project cards below are designed to show transformation fast and hold attention from Google Ads visitors.
+                   These before and after cabinet refinishing projects show how we turn outdated kitchens into modern spaces without the cost of full replacement.
                   </p>
                 </div>
               </div>
@@ -439,10 +442,10 @@ export default function PaintPalsWebsite() {
                 Painting &amp; Refinishing Services
               </p>
               <h2 className="mt-3 text-3xl font-black tracking-tight text-white md:text-5xl">
-                SEO-ready service sections built around what customers search for
+               Paint Pals offers the following services to achieve your dream Kitchen or Bathroom Upgrade
               </h2>
               <p className="mt-5 text-lg leading-8 text-[#E6F0F8]">
-                This page is written around cabinet refinishing, cabinet painting, interior painting, exterior painting, residential painting, and commercial painting so it is stronger for both SEO and Google Ads relevance.
+                Paint Pals is the #1 Service provider in Southern California for the following services:
               </p>
             </div>
 
