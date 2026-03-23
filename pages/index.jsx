@@ -124,23 +124,23 @@ export default function PaintPalsWebsite() {
     () => [
       {
         title: "Warm Wood to Soft Gray Blue",
-        before: "https://via.placeholder.com/1200x900?text=Before+1",
-        after: "https://via.placeholder.com/1200x900?text=After+1",
+        before: "/images/before1.jpg",
+        after: "/images/after1.jpg",
       },
       {
         title: "Cream Cabinets to Rich Black Finish",
-        before: "https://via.placeholder.com/1200x900?text=Before+2",
-        after: "https://via.placeholder.com/1200x900?text=After+2",
+        before: "/images/before2.jpg",
+        after: "/images/after2.jpg",
       },
       {
         title: "Brown Stain to Crisp Bright White",
-        before: "https://via.placeholder.com/1200x900?text=Before+3",
-        after: "https://via.placeholder.com/1200x900?text=After+3",
+        before: "/images/before3.jpg",
+        after: "/images/after3.jpg",
       },
       {
         title: "Two-Tone Blue Kitchen Transformation",
-        before: "https://via.placeholder.com/1200x900?text=Before+4",
-        after: "https://via.placeholder.com/1200x900?text=After+4",
+        before: "/images/before4.jpg",
+        after: "/images/after4.jpg",
       },
     ],
     []
@@ -255,7 +255,7 @@ export default function PaintPalsWebsite() {
 
               <div className="mt-6 rounded-[2rem] border border-white/10 bg-white/10 p-5 shadow-[0_26px_70px_rgba(0,0,0,0.26)] backdrop-blur-sm md:p-6">
                 <img
-                  src="https://via.placeholder.com/420x150?text=Paint+Pals+Logo"
+                  src="/logo.png"
                   alt="Paint Pals logo large"
                   className="mb-6 w-full max-w-[420px] drop-shadow-[0_0_35px_rgba(152,190,220,0.9)]"
                 />
