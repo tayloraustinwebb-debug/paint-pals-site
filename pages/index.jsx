@@ -123,22 +123,22 @@ export default function PaintPalsWebsite() {
   const beforeAfterPairs = useMemo(
     () => [
       {
-        title: "Warm Wood to Soft Gray Blue",
+        title: "Rancho Cucaumonga Cabinet Refinishing - Warm Wood to Soft Gray Blue",
         before: "/Before 1.jpg",
         after: "/After 1.jpeg",
       },
       {
-        title: "Cream Cabinets to Rich Black Finish",
+        title: "Riverside County Kitchen Update - Old Stain to a Unique Yellow ",
         before: "/Before 2.jpg",
         after: "/After 2.jpeg",
       },
       {
-        title: "Brown Stain to Crisp Bright White",
+        title: "San Bernadino County Cabinet Refresh - Light to Dark",
         before: "/Before 3.jpeg",
         after: "/After 3.jpeg",
       },
       {
-        title: "Two-Tone Blue Kitchen Transformation",
+        title: "Fontana Refinishing - Old and Dated to a Bright Modern White ",
         before: "/Before 4.JPG",
         after: "/After 4.JPEG",
       },
