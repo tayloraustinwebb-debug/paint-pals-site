@@ -247,13 +247,13 @@ export default function PaintPalsWebsite() {
 
           <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12">
             <div>
-              <div className="inline-flex items-center rounded-full border border-[#98BEDC]/45 bg-white/10 px-4 py-2 text-[11px] font-black uppercase tracking-[0.26em] text-[#CFE3F1] shadow-[0_0_0_4px_rgba(189,238,255,0.08)]">
-                ⚠️ Limited Availability This Month • Cabinet Refinishing Specialists
-              </div>
+             <div className="inline-flex items-center rounded-full border border-gray-300 bg-white px-4 py-2 text-[11px] font-black uppercase tracking-[0.26em] text-[#103985] shadow">
+  ⚠️ Limited Availability This Month • Cabinet Refinishing Specialists
+</div>
 
-              <div className="mt-4 inline-flex items-center rounded-full border border-[#98BEDC]/45 bg-white/10 px-4 py-2 text-[11px] font-black uppercase tracking-[0.22em] text-[#CFE3F1] shadow-[0_0_0_4px_rgba(189,238,255,0.08)]">
-                Cabinet Refinishing • Interior • Exterior • Commercial
-              </div>
+              <div className="mt-4 inline-flex items-center rounded-full border border-gray-300 bg-white px-4 py-2 text-[11px] font-black uppercase tracking-[0.22em] text-[#103985] shadow">
+  Cabinet Refinishing • Interior • Exterior • Commercial
+</div>
 
               <div className="mt-6 rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-5 shadow-[0_26px_70px_rgba(0,0,0,0.26)] backdrop-blur-sm md:p-6">
                 <img
@@ -520,7 +520,7 @@ export default function PaintPalsWebsite() {
               {areas.map((area) => (
                 <div
                   key={area}
-                  className="rounded-full border border-[#98BEDC]/45 bg-[#325B94] px-4 py-3 text-sm font-black text-[#E6F8FF] shadow-[0_0_0_4px_rgba(189,238,255,0.08)]"
+                  className="rounded-full border limited availability bg-[#325B94] px-4 py-3 text-sm font-black text-[#E6F8FF] shadow-[0_0_0_4px_rgba(189,238,255,0.08)]"
                 >
                   {area}
                 </div>
