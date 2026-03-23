@@ -561,19 +561,7 @@ export default function PaintPalsWebsite() {
               <p className="mt-5 max-w-2xl text-lg leading-8 text-[#F3FDFF]">
                 Fill out the form below for a free estimate, and we’ll contact you shortly to go over your project, pricing, and timeline.
               </p>
-              <div className="mt-8 grid gap-4 md:grid-cols-2">
-                {[
-                  
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-white/15 bg-white/10 p-4 text-sm font-black backdrop-blur-sm"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
+            
 <div className="jobber-wrap bg-white rounded-xl overflow-hidden p-0">
   <div id="0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401"></div>
 
