@@ -275,7 +275,7 @@ export default function PaintPalsWebsite() {
                 </h1>
 
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-[#E6F0F8]">
-                  Paint Pals specializes in cabinet refinishing, cabinet refacing, and cabinet upgrades across Southern California with a cleaner process, premium finishes, and eye-catching transformations.
+                 Paint Pals specializes in cabinet refinishing, cabinet upgrades, and cabinet refacing across Southern California, helping homeowners transform their kitchens without the cost of full cabinet replacement.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
