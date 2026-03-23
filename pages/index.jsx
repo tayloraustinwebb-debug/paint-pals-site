@@ -124,23 +124,23 @@ export default function PaintPalsWebsite() {
     () => [
       {
         title: "Warm Wood to Soft Gray Blue",
-        before: "/images/before1.jpg",
-        after: "/images/after1.jpg",
+        before: "/before1.jpg",
+        after: "/after1.jpg",
       },
       {
         title: "Cream Cabinets to Rich Black Finish",
-        before: "/images/before2.jpg",
-        after: "/images/after2.jpg",
+        before: "/before2.jpg",
+        after: "/after2.jpg",
       },
       {
         title: "Brown Stain to Crisp Bright White",
-        before: "/images/before3.jpg",
-        after: "/images/after3.jpg",
+        before: "/before3.jpg",
+        after: "/after3.jpg",
       },
       {
         title: "Two-Tone Blue Kitchen Transformation",
-        before: "/images/before4.jpg",
-        after: "/images/after4.jpg",
+        before: "/before4.jpg",
+        after: "/after4.jpg",
       },
     ],
     []
