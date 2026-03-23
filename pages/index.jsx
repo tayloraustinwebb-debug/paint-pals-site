@@ -214,6 +214,14 @@ export default function PaintPalsWebsite() {
         Areas
       </a>
       <a
+  href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-xl border border-[#98BEDC] px-4 py-2 text-sm font-black text-[#325B94] bg-white hover:bg-[#E6F0F8] transition"
+>
+  Client Login
+</a>
+      <a
         href="#quote"
         onClick={trackQuote}
         className="rounded-2xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_0_0_4px_rgba(189,238,255,0.15),0_16px_40px_rgba(0,0,0,0.25)] transition hover:-translate-y-0.5"
