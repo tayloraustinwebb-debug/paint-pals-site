@@ -27,8 +27,8 @@ function SliderCard({ item, stagger = false }) {
 
   return (
     <div className={stagger ? "lg:-mt-6" : ""}>
-      <div className="overflow-hidden rounded-[1.75rem] border border-white/15 bg-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.28)] backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(0,0,0,0.34)]">
-        <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-4 py-3">
+    <div className="overflow-hidden rounded-[1.75rem] border border-[#325B94]/30 bg-gradient-to-br from-[#274a78] to-[#325B94] shadow-[0_20px_60px_rgba(0,0,0,0.28)]">
+       <div className="flex items-center justify-between border-b border-[#325B94]/40 bg-[#274a78]/80 px-4 py-3">
           <div>
             <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#CFE3F1]">Before &amp; After</p>
             <h3 className="mt-1 text-base font-black text-white">{item.title}</h3>
