@@ -468,7 +468,7 @@ export default function PaintPalsWebsite() {
   </svg>
 </div>
                   <h3 className="text-xl font-black tracking-tight text-white">{service}</h3>
-                  <p className="mt-3 text-sm leading-7 text-[#E6F0F8]">
+                  <p className="hidden">
                     Professional {service.toLowerCase()} built around cleaner prep, better communication, and high-impact finished results.
                   </p>
                 </div>
