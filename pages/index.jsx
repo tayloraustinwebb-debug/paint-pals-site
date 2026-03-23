@@ -452,7 +452,18 @@ export default function PaintPalsWebsite() {
                   key={service}
                   className="rounded-[2rem] border border-[#325B94]/30 bg-[#274a78] p-7 shadow-[0_18px_45px_rgba(0,0,0,0.24)] transition hover:-translate-y-1"
                 >
-                  <div className="mb-5 h-12 w-12 rounded-2xl bg-[linear-gradient(135deg,#98BEDC,#325B94)] shadow-[0_10px_22px_rgba(0,0,0,0.22)]" />
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#98BEDC,#325B94)] shadow-[0_0_15px_rgba(152,190,220,0.6)] hover:shadow-[0_0_25px_rgba(152,190,220,0.9)] transition">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6 text-white"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={3}
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+  </svg>
+</div>
                   <h3 className="text-xl font-black tracking-tight text-white">{service}</h3>
                   <p className="mt-3 text-sm leading-7 text-[#E6F0F8]">
                     Professional {service.toLowerCase()} built around cleaner prep, better communication, and high-impact finished results.
