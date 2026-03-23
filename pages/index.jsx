@@ -124,23 +124,23 @@ export default function PaintPalsWebsite() {
     () => [
       {
         title: "Warm Wood to Soft Gray Blue",
-        before: "/before 1.jpg",
-        after: "/after 1.jpg",
+        before: "/Before 1.jpg",
+        after: "/After 1.jpg",
       },
       {
         title: "Cream Cabinets to Rich Black Finish",
-        before: "/before 2.jpg",
-        after: "/after 2.jpg",
+        before: "/Before 2.jpg",
+        after: "/After 2.jpg",
       },
       {
         title: "Brown Stain to Crisp Bright White",
-        before: "/before 3.jpg",
-        after: "/after 3.jpg",
+        before: "/Before 3.jpg",
+        after: "/After 3.jpg",
       },
       {
         title: "Two-Tone Blue Kitchen Transformation",
-        before: "/before 4.jpg",
-        after: "/after 4.jpg",
+        before: "/Before 4.jpg",
+        after: "/After 4.jpg",
       },
     ],
     []
@@ -257,7 +257,7 @@ export default function PaintPalsWebsite() {
                 <img
                   src="/logo.png"
                   alt="Paint Pals logo large"
-                  className="mb-6 w-full max-w-[420px] drop-shadow-[0_0_35px_rgba(152,190,220,0.9)]"
+                  className="mx-auto mb-6 w-full max-w-[420px] drop-shadow-[0_0_35px_rgba(152,190,220,0.9)]"
                 />
 
                 <h1 className="text-4xl font-black leading-tight tracking-tight text-white md:text-6xl">
