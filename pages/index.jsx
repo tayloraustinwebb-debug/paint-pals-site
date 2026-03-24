@@ -326,10 +326,11 @@ export default function PaintPalsWebsite() {
     "Fontana",
     "Rancho Cucamonga",
     "Riverside",
-    "Corona",
+    "Jurupa Valley",
     "Ontario",
     "Upland",
     "Corona",
+    "Chino Hills",
     "Norco",
     "Murrieta",
     "Temecula",
@@ -337,6 +338,7 @@ export default function PaintPalsWebsite() {
     "Lake Elsinore",
     "Irvine",
     "Tustin",
+    "Lake Forest",
     "and more...",
   ];
 
