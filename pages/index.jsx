@@ -381,7 +381,7 @@ export default function PaintPalsWebsite() {
       </section>
 
       <section id="quote" className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid items-start gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+        <div className="grid items-start gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
           <div className="rounded-[2rem] bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-8 text-white shadow-[0_24px_60px_rgba(15,34,64,0.20)]">
             <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Free Estimate</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Get Pricing, Timeline, and Next Steps</h2>
