@@ -639,18 +639,18 @@ export default function PaintPalsWebsite() {
       <section id="quote" className="relative mx-auto max-w-6xl px-4 py-14">
   <div className="grid items-start gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
 
-{/* Premium directional paint stroke */}
-<div className="pointer-events-none hidden lg:block absolute left-[43%] top-[42%] z-10">
+{/* Elite connector (clean + premium) */}
+<div className="pointer-events-none absolute left-[41.5%] top-[35%] z-10 hidden lg:block">
   <div className="relative flex items-center">
 
-    {/* Soft paint stroke line */}
-    <div className="h-[14px] w-56 rounded-full bg-gradient-to-r from-[#98BEDC]/70 via-[#6f96c5]/80 to-[#325B94] blur-[0.2px] shadow-[0_0_25px_rgba(50,91,148,0.35)]"></div>
+    {/* Main subtle line */}
+    <div className="h-[10px] w-52 rounded-full bg-gradient-to-r from-[#98BEDC]/20 via-[#6f96c5]/70 to-[#325B94] shadow-[0_0_16px_rgba(50,91,148,0.25)]"></div>
 
-    {/* Subtle taper fade */}
-    <div className="absolute right-8 h-[14px] w-24 bg-gradient-to-r from-transparent to-[#325B94] blur-sm"></div>
+    {/* Soft fade */}
+    <div className="absolute left-0 h-[10px] w-16 rounded-full bg-gradient-to-r from-transparent to-[#7ea6d3]/40 blur-md"></div>
 
-    {/* Clean arrow head */}
-    <div className="ml-[-10px] w-0 h-0 border-t-[12px] border-b-[12px] border-l-[22px] border-t-transparent border-b-transparent border-l-[#325B94] opacity-90"></div>
+    {/* Arrow tip (clean) */}
+    <div className="ml-[-6px] h-0 w-0 border-b-[10px] border-l-[18px] border-t-[10px] border-b-transparent border-l-[#325B94] border-t-transparent opacity-90"></div>
 
   </div>
 </div>
