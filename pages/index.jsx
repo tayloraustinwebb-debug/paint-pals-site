@@ -412,30 +412,22 @@ export default function PaintPalsWebsite() {
       </section>
 
       <style jsx global>{`
-        #${jobberContainerId} {
-          width: 100% !important;
-          max-width: none !important;
-        }
-        #${jobberContainerId} > * {
-          width: 100% !important;
-          max-width: none !important;
-        }
-        #${jobberContainerId} iframe {
-          width: 100% !important;
-          max-width: none !important;
-          border: 0 !important;
-          display: block !important;
-        }
-        .jobber-shell {
-          align-self: start;
-        }
-        #${jobberContainerId} iframe {
-          width: 100% !important;
-          min-height: 1080px !important;
-          border: 0 !important;
-          display: block !important;
-        }
-      `}</style>
+  .jobber-shell,
+  .jobber-shell > div,
+  #${jobberContainerId},
+  #${jobberContainerId} > div,
+  #${jobberContainerId} iframe {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #${jobberContainerId} iframe {
+    border: 0 !important;
+    display: block !important;
+  }
+`}</style>
     </div>
   );
 }
