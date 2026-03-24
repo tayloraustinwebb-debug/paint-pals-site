@@ -337,6 +337,7 @@ export default function PaintPalsWebsite() {
     "Lake Elsinore",
     "Irvine",
     "Tustin",
+    "and more...",
   ];
 
   return (
@@ -547,7 +548,7 @@ export default function PaintPalsWebsite() {
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Refinish vs Replace</p>
           <h2 className="mt-3 text-3xl font-black text-[#103985] md:text-4xl">The Smarter Cabinet Upgrade</h2>
           <div className="mt-6 space-y-3">
-            <CompareRow left="Save thousands compared to replacement" right="Full replacement usually costs much more" />
+            <CompareRow left="Save thousands compared to replacement" right="Full replacement usually costs 5 to 10 times more" />
             <CompareRow left="Custom colors and factory-style finishes" right="Stock replacement options are often limited" />
             <CompareRow left="Faster turnaround" right="Full remodels can drag on for weeks" />
             <CompareRow left="Less mess and disruption" right="Replacement often means more demo and downtime" />
@@ -594,7 +595,7 @@ export default function PaintPalsWebsite() {
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-[#496487]">
-              Serving homeowners in Riverside County, San Bernadino County, & Orange County 
+              Serving homeowners in Riverside County, San Bernadino County, & Orange County.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
