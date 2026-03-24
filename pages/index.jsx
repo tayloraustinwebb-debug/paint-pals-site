@@ -410,7 +410,7 @@ export default function PaintPalsWebsite() {
               <div className="rounded-[1.5rem] border border-white/10 bg-white/10 p-4 md:p-5 backdrop-blur-sm overflow-visible">
            <div className="flex justify-center mt-4 md:mt-6 mb-4">
   <img
-    src="/logo.png"
+    src="/Logo2.png"
     className="w-[125%] md:w-[140%] max-w-[480px] md:max-w-[560px] h-auto object-contain"
     style={{ filter: "drop-shadow(0 15px 40px rgba(152,190,220,0.45))" }}
     alt="Paint Pals Logo"
