@@ -755,14 +755,14 @@ export default function PaintPalsWebsite() {
 <img
   src="/chip_fixed.png"
   alt="Chip thumbs up"
-  className="pointer-events-none fixed left-6 top-1/2 -translate-y-1/2 z-30 hidden xl:block w-[140px] drop-shadow-[0_10px_25px_rgba(0,0,0,0.15)] floaty"
+  className="pointer-events-none fixed left-6 top-1/2 -translate-y-1/2 z-30 hidden xl:block w-[220px] drop-shadow-[0_10px_25px_rgba(0,0,0,0.15)] floaty"
   draggable={false}
 />
 
 <img
   src="/dill_fixed.png"
   alt="Dill thumbs up"
-  className="pointer-events-none fixed right-6 top-1/2 -translate-y-1/2 z-30 hidden xl:block w-[140px] drop-shadow-[0_10px_25px_rgba(0,0,0,0.15)] floaty"
+  className="pointer-events-none fixed right-6 top-1/2 -translate-y-1/2 z-30 hidden xl:block w-[220px] drop-shadow-[0_10px_25px_rgba(0,0,0,0.15)] floaty"
   draggable={false}
 />
       
