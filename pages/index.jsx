@@ -114,9 +114,9 @@ function CostCalculator() {
   const [upgrade, setUpgrade] = useState("standard");
 
   const ranges = {
-    small: { standard: [3000, 4200], premium: [3800, 5200] },
-    medium: { standard: [4200, 6200], premium: [5200, 7600] },
-    large: { standard: [6200, 8000], premium: [7600, 9500] },
+    small: { standard: [1500, 3200],  with grain fill: [2100, 4200] },
+    medium: { standard: [3200, 4700], with grain fill: [4200, 6300] },
+    large: { standard: [4700, 8200], with grain fill: [6300, 11550] },
   };
 
   const [low, high] = ranges[size][upgrade];
@@ -132,9 +132,9 @@ function CostCalculator() {
             onChange={(e) => setSize(e.target.value)}
             className="mt-2 w-full rounded-xl border border-[#98BEDC]/30 bg-white px-4 py-3 text-sm font-medium text-[#103985] outline-none"
           >
-            <option value="small">Small Kitchen</option>
-            <option value="medium">Medium Kitchen</option>
-            <option value="large">Large Kitchen</option>
+            <option value="small">Small Kitchen (10–20 doors)</option>
+<option value="medium">Medium Kitchen (20–30 doors)</option>
+<option value="large">Large Kitchen (30+ doors)</option>
           </select>
         </label>
 
