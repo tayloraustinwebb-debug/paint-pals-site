@@ -658,11 +658,11 @@ export default function PaintPalsWebsite() {
             </div>
           </div>
 
-          <div className="jobber-shell w-full overflow-hidden rounded-[2rem] border border-[#98BEDC]/25 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
+          <div className="jobber-shell w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/25 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
             <div className="border-b border-[#98BEDC]/20 px-5 py-4 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
-            <div id={jobberContainerId}></div>
+           <div id={jobberContainerId} className="w-full"></div>
           </div>
         </div>
       </section>
