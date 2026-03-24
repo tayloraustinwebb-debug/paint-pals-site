@@ -387,7 +387,7 @@ export default function PaintPalsWebsite() {
                 Refinish Your Cabinets. Save Thousands.
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#496487]">
-                Cabinet refinishing, cabinet painting, and cabinet refacing in Southern California that give your kitchen a brand-new look without the high cost of cabinet replacement.
+                Cabinet refinishing, cabinet painting, and cabinet refacing in Southern California that gives your kitchen a brand-new look without the high cost of cabinet replacement.
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
