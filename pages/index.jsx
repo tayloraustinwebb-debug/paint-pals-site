@@ -381,7 +381,7 @@ export default function PaintPalsWebsite() {
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
             <div>
               <div className="inline-flex rounded-full border border-[#98BEDC]/40 bg-white px-4 py-2 text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94] shadow-sm">
-                Premium 2K Factory-Style Cabinet Finishes
+                Premium 2K Imported Wood Coatings
               </div>
               <h1 className="mt-5 text-4xl font-black leading-[1.02] tracking-tight text-[#103985] md:text-6xl">
                 Refinish Your Cabinets. Save Thousands.
@@ -411,7 +411,7 @@ export default function PaintPalsWebsite() {
                   {[
                     "Save thousands vs replacement",
                     "Custom cabinet colors",
-                    "Factory-style 2K finishes",
+                    "Highest quality materials and finishes",
                     "Fast, clean transformations",
                   ].map((item) => (
                     <div
