@@ -577,15 +577,7 @@ export default function PaintPalsWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-10">
-        <div className="flex flex-wrap items-center justify-center gap-4 rounded-[2rem] border border-[#98BEDC]/25 bg-white px-6 py-6 text-sm font-black text-[#103985] shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
-          <div>⭐ 5-Star Rated</div>
-          <div>✔ Licensed &amp; Insured</div>
-          <div>✔ Hundreds of Cabinets Completed</div>
-          <div>✔ Free Estimates</div>
-          <div>✔ Local SoCal Specialists</div>
-        </div>
-      </section>
+    
 
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
