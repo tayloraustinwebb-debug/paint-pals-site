@@ -412,18 +412,20 @@ export default function PaintPalsWebsite() {
       </section>
 
       <style jsx global>{`
-  .jobber-shell,
-  .jobber-shell > div,
-  #${jobberContainerId},
-  #${jobberContainerId} > div,
-  #${jobberContainerId} iframe {
+  #${jobberContainerId} {
     width: 100% !important;
-    max-width: none !important;
-    min-width: 100% !important;
-    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  #${jobberContainerId} > div {
+    width: 100% !important;
+    max-width: 720px !important; /* controls centered width */
   }
 
   #${jobberContainerId} iframe {
+    width: 100% !important;
+    max-width: 720px !important;
     border: 0 !important;
     display: block !important;
   }
