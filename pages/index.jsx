@@ -114,7 +114,7 @@ function CostCalculator() {
   const [upgrade, setUpgrade] = useState("standard");
 
   const ranges = {
-    small: { standard: [1500, 3200],  with grain fill: [2100, 4200] },
+    small: { standard: [1500, 3200], with grain fill: [2100, 4200] },
     medium: { standard: [3200, 4700], with grain fill: [4200, 6300] },
     large: { standard: [4700, 8200], with grain fill: [6300, 11550] },
   };
