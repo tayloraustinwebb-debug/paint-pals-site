@@ -433,6 +433,32 @@ export default function PaintPalsWebsite() {
         </div>
       </section>
 
+      {/* 🔥 PREMIUM FLOATING BUTTONS */}
+
+<a
+  href="tel:+18402175750"
+  onClick={() =>
+    window.gtag &&
+    window.gtag("event", "phone_call_click", {
+      event_category: "lead",
+      event_label: "floating_call",
+    })
+  }
+  className="fixed bottom-5 left-5 z-50 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#103985] to-[#325B94] px-6 py-3 text-sm font-black text-white shadow-[0_18px_40px_rgba(10,20,40,0.35)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(10,20,40,0.45)]"
+>
+  <span className="text-lg">📞</span>
+  Call Now
+</a>
+
+<a
+  href="#quote"
+  onClick={trackQuoteClick}
+  className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-md px-6 py-3 text-sm font-black text-[#103985] border border-[#98BEDC]/40 shadow-[0_18px_40px_rgba(10,20,40,0.25)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(10,20,40,0.35)]"
+>
+  Get Quote
+  <span className="text-lg">→</span>
+</a>
+
       <style jsx global>{`
   #${jobberContainerId} {
     width: 100% !important;
