@@ -146,7 +146,7 @@ function CostCalculator() {
             className="mt-2 w-full rounded-xl border border-[#98BEDC]/30 bg-white px-4 py-3 text-sm font-medium text-[#103985] outline-none"
           >
             <option value="standard">Standard Refinishing</option>
-            <option value="premium">Premium 2K Finish</option>
+            <option value="withGrainFill"> Open Grain filling for Oak</option>
           </select>
         </label>
       </div>
