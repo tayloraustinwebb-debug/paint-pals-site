@@ -162,6 +162,8 @@ export default function PaintPalsWebsite() {
     () => [
       { title: "Modern White Upgrade", before: "/Before 1.jpg", after: "/After 1.jpeg" },
       { title: "Dark to Light Transformation", before: "/Before 2.jpg", after: "/After 2.jpeg" },
+      { title: "Warm Wood to Bright White", before: "/Before 3.jpeg", after: "/After 3.jpeg" },
+    { title: "Outdated Oak to Modern Finish", before: "/Before 4.JPG", after: "/After 7.jpg" },
     ],
     []
   );
