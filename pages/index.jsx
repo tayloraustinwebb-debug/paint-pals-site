@@ -639,20 +639,95 @@ export default function PaintPalsWebsite() {
       <section id="quote" className="relative mx-auto max-w-6xl px-4 py-14">
   <div className="grid items-start gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
 
-{/* Elite connector (clean + premium) */}
-<div className="pointer-events-none absolute left-[41.5%] top-[35%] z-10 hidden lg:block">
-  <div className="relative flex items-center">
+{/* Brush stroke SVG connector */}
+<div className="pointer-events-none absolute left-[40.5%] top-[34%] z-10 hidden lg:block">
+  <svg
+    width="320"
+    height="120"
+    viewBox="0 0 320 120"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="overflow-visible"
+  >
+    <defs>
+      <linearGradient id="paintStrokeBlue" x1="8" y1="60" x2="300" y2="60" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#7C5CFF" />
+        <stop offset="0.38" stopColor="#6A2BFF" />
+        <stop offset="1" stopColor="#325B94" />
+      </linearGradient>
 
-    {/* Main subtle line */}
-    <div className="h-[10px] w-52 rounded-full bg-gradient-to-r from-[#98BEDC]/20 via-[#6f96c5]/70 to-[#325B94] shadow-[0_0_16px_rgba(50,91,148,0.25)]"></div>
+      <filter id="paintSoftGlow" x="-20%" y="-30%" width="140%" height="160%">
+        <feGaussianBlur stdDeviation="2.2" result="blur" />
+        <feColorMatrix
+          in="blur"
+          type="matrix"
+          values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 0.28 0"
+        />
+      </filter>
+    </defs>
 
-    {/* Soft fade */}
-    <div className="absolute left-0 h-[10px] w-16 rounded-full bg-gradient-to-r from-transparent to-[#7ea6d3]/40 blur-md"></div>
+    {/* soft glow */}
+    <path
+      d="M12 58
+         C 40 48, 68 48, 98 56
+         C 126 64, 156 66, 194 64
+         C 226 62, 254 56, 282 56
+         L 282 46
+         L 312 60
+         L 282 74
+         L 282 64
+         C 252 64, 224 70, 192 72
+         C 154 74, 124 72, 96 64
+         C 68 56, 40 56, 12 66 Z"
+      fill="url(#paintStrokeBlue)"
+      filter="url(#paintSoftGlow)"
+    />
 
-    {/* Arrow tip (clean) */}
-    <div className="ml-[-6px] h-0 w-0 border-b-[10px] border-l-[18px] border-t-[10px] border-b-transparent border-l-[#325B94] border-t-transparent opacity-90"></div>
+    {/* main brush stroke */}
+    <path
+      d="M12 58
+         C 40 48, 68 48, 98 56
+         C 126 64, 156 66, 194 64
+         C 226 62, 254 56, 282 56
+         L 282 46
+         L 312 60
+         L 282 74
+         L 282 64
+         C 252 64, 224 70, 192 72
+         C 154 74, 124 72, 96 64
+         C 68 56, 40 56, 12 66 Z"
+      fill="url(#paintStrokeBlue)"
+    />
 
-  </div>
+    {/* texture highlight */}
+    <path
+      d="M30 55
+         C 54 50, 78 50, 106 57
+         C 132 63, 160 65, 194 63
+         C 222 61, 248 57, 274 57"
+      stroke="#9D8BFF"
+      strokeOpacity="0.45"
+      strokeWidth="4"
+      strokeLinecap="round"
+    />
+
+    {/* little paint splatters near left box */}
+    <circle cx="22" cy="77" r="5.5" fill="#6A2BFF" fillOpacity="0.9" />
+    <circle cx="38" cy="83" r="3.5" fill="#7C5CFF" fillOpacity="0.75" />
+    <circle cx="48" cy="48" r="3" fill="#8E7BFF" fillOpacity="0.65" />
+
+    {/* one subtle drip */}
+    <path
+      d="M128 70
+         C 125 82, 127 92, 134 101
+         C 140 93, 141 82, 137 70 Z"
+      fill="#6A2BFF"
+      fillOpacity="0.72"
+    />
+  </svg>
 </div>
           <div className="rounded-[2rem] bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-8 text-white shadow-[0_24px_60px_rgba(15,34,64,0.20)]">
             <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Free Estimate</p>
