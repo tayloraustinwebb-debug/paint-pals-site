@@ -639,18 +639,76 @@ export default function PaintPalsWebsite() {
       <section id="quote" className="relative mx-auto max-w-6xl px-4 py-14">
   <div className="grid items-start gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
 
-    {/* Paint Stroke Arrow */}
-    <div className="hidden lg:block absolute left-[46%] top-[38%] z-10">
-      <div className="flex items-center">
+  {/* Paint stroke connector */}
+<div className="pointer-events-none hidden lg:block absolute left-[41.5%] top-[38%] z-10">
+  <svg
+    width="300"
+    height="120"
+    viewBox="0 0 300 120"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="overflow-visible drop-shadow-[0_0_18px_rgba(50,91,148,0.35)]"
+  >
+    <defs>
+      <linearGradient id="paintStrokeGradient" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#7A5CFF" />
+        <stop offset="0.4" stopColor="#6A2BFF" />
+        <stop offset="1" stopColor="#325B94" />
+      </linearGradient>
+      <filter id="paintBlur">
+        <feGaussianBlur stdDeviation="0.6" />
+      </filter>
+    </defs>
 
-        {/* Brush stroke line */}
-        <div className="h-[10px] w-44 bg-gradient-to-r from-[#98BEDC] via-[#6f96c5] to-[#325B94] rounded-full blur-[0.3px] shadow-[0_0_20px_rgba(50,91,148,0.7)]"></div>
+    {/* Main paint body */}
+    <path
+      d="M8 58
+         C 38 40, 76 40, 108 54
+         C 132 64, 156 66, 186 64
+         C 216 62, 240 56, 258 58
+         C 272 60, 282 60, 292 60"
+      stroke="url(#paintStrokeGradient)"
+      strokeWidth="28"
+      strokeLinecap="round"
+      filter="url(#paintBlur)"
+    />
 
-        {/* Arrow head */}
-        <div className="ml-[-6px] w-0 h-0 border-t-[14px] border-b-[14px] border-l-[26px] border-t-transparent border-b-transparent border-l-[#325B94] drop-shadow-[0_0_12px_rgba(50,91,148,0.8)]"></div>
+    {/* Texture layer */}
+    <path
+      d="M16 54
+         C 46 46, 82 46, 112 58
+         C 138 68, 160 70, 190 68
+         C 220 66, 242 60, 262 60"
+      stroke="#5C2BFF"
+      strokeOpacity="0.65"
+      strokeWidth="12"
+      strokeLinecap="round"
+    />
 
-      </div>
-    </div>
+    {/* Tail splatter near left box */}
+    <circle cx="18" cy="72" r="7" fill="#6A2BFF" fillOpacity="0.95" />
+    <circle cx="28" cy="44" r="5" fill="#7A5CFF" fillOpacity="0.9" />
+    <circle cx="40" cy="76" r="4" fill="#5C2BFF" fillOpacity="0.8" />
+
+    {/* Arrow head */}
+    <path
+      d="M246 36
+         L 294 60
+         L 246 84
+         C 254 74, 254 46, 246 36Z"
+      fill="#325B94"
+    />
+
+    {/* Small drip under stroke */}
+    <path
+      d="M118 70
+         C 116 82, 118 94, 126 104
+         C 132 95, 132 82, 128 70Z"
+      fill="#6A2BFF"
+      fillOpacity="0.75"
+    />
+  </svg>
+</div>
           <div className="rounded-[2rem] bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-8 text-white shadow-[0_24px_60px_rgba(15,34,64,0.20)]">
             <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Free Estimate</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Get Pricing, Timeline, and Next Steps</h2>
