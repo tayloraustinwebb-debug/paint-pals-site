@@ -556,7 +556,8 @@ export default function PaintPalsWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-14">
+      <section className="relative mx-auto max-w-6xl px-4 py-14">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_30%,rgba(152,190,220,0.12),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(50,91,148,0.10),transparent_40%)]" />
         <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Pricing</p>
           <h2 className="mt-2 text-3xl font-black text-[#103985] md:text-4xl">How Much Does Cabinet Refinishing Cost?</h2>
