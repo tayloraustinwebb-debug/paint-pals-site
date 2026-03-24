@@ -406,7 +406,7 @@ export default function PaintPalsWebsite() {
 
             <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-6 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)]">
               <div className="rounded-[1.5rem] border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
-                <img src="/logo.png" className="mx-auto h-40 w-auto" alt="Paint Pals Logo" />
+                <img src="/logo.png" className="mx-auto h-40 md:h-56 w-auto" alt="Paint Pals Logo" />
                 <div className="mt-5 grid gap-3">
                   {[
                     "Save thousands vs replacement",
