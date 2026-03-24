@@ -221,19 +221,38 @@ export default function PaintPalsWebsite() {
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
             <img src="/logo.png" className="h-16 md:h-20" alt="Paint Pals" />
             <div className="flex items-center gap-3">
-              <a href="#quote" onClick={trackQuoteClick} className="hidden md:inline-flex rounded-xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_12px_28px_rgba(50,91,148,0.18)]">
-                Get Free Quote
-              </a>
-              <a
-                href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
-                target="_blank"
-                onClick={trackPortalClick}
-                rel="noreferrer"
-                className="text-sm font-black text-[#325B94]"
-              >
-                Client Portal
-              </a>
-            </div>
+  <a
+    href="tel:+19095551234"
+    onClick={() =>
+      window.gtag &&
+      window.gtag("event", "phone_call_click", {
+        event_category: "lead",
+        event_label: "header_call",
+      })
+    }
+    className="hidden md:inline-flex items-center rounded-xl bg-[#103985] px-5 py-3 text-sm font-black text-white shadow-[0_12px_28px_rgba(10,20,40,0.18)]"
+  >
+    Call Now
+  </a>
+
+  <a
+    href="#quote"
+    onClick={trackQuoteClick}
+    className="hidden md:inline-flex rounded-xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_12px_28px_rgba(50,91,148,0.18)]"
+  >
+    Get Free Quote
+  </a>
+
+  <a
+    href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+    target="_blank"
+    onClick={trackPortalClick}
+    rel="noreferrer"
+    className="text-sm font-black text-[#325B94]"
+  >
+    Client Portal
+  </a>
+</div>
           </div>
         </header>
 
