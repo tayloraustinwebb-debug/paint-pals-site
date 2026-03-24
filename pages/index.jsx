@@ -222,7 +222,7 @@ export default function PaintPalsWebsite() {
             <img src="/logo.png" className="h-16 md:h-20" alt="Paint Pals" />
             <div className="flex items-center gap-3">
   <a
-    href="tel:+19095551234"
+    href="tel:+18402175750"
     onClick={() =>
       window.gtag &&
       window.gtag("event", "phone_call_click", {
