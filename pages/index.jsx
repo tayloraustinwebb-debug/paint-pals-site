@@ -329,9 +329,14 @@ export default function PaintPalsWebsite() {
     "Corona",
     "Ontario",
     "Upland",
+    "Corona",
+    "Norco",
+    "Murrieta",
+    "Temecula",
     "San Bernardino",
     "Lake Elsinore",
-    "Orange County",
+    "Irvine",
+    "Tustin",
   ];
 
   return (
@@ -555,7 +560,7 @@ export default function PaintPalsWebsite() {
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Pricing</p>
           <h2 className="mt-2 text-3xl font-black text-[#103985] md:text-4xl">How Much Does Cabinet Refinishing Cost?</h2>
           <p className="mt-4 max-w-2xl leading-8 text-[#496487]">
-            Most cabinet refinishing projects range between <span className="font-black text-[#103985]">$3,000 – $8,000</span> depending on kitchen size, layout, and finish level. Refinishing typically saves homeowners <span className="font-black text-[#103985]">60–70% compared to full cabinet replacement</span>.
+            Most cabinet refinishing projects range between <span className="font-black text-[#103985]">$2,000 – $8,000</span> depending on kitchen size, layout, and finish level. Refinishing typically saves homeowners <span className="font-black text-[#103985]">60–70% compared to full cabinet replacement</span>.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
@@ -589,7 +594,7 @@ export default function PaintPalsWebsite() {
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-[#496487]">
-              Serving homeowners in Riverside, Corona, Fontana, Rancho Cucamonga, Ontario, Upland, San Bernardino, Lake Elsinore, and Orange County.
+              Serving homeowners in Riverside County, San Bernadino County, & Orange County 
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
