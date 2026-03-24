@@ -406,17 +406,17 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] pt-2 pb-4 px-4 md:pt-3 md:pb-5 md:px-5 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)]">
+            <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] pt-1 pb-4 px-4 md:pt-2 md:pb-5 md:px-5 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)]">
               <div className="rounded-[1.5rem] border border-white/10 bg-white/10 p-4 md:p-5 backdrop-blur-sm overflow-visible">
-               <div className="relative flex justify-center">
+            <div className="relative flex justify-center -mt-16 md:-mt-20 mb-2">
   <img
     src="/Logo2.png"
-    className="w-[140%] md:w-[160%] h-auto object-contain -mt-10 md:-mt-12"
-    style={{ filter: "drop-shadow(0 15px 40px rgba(152,190,220,0.45))" }}
+    className="w-[150%] md:w-[170%] h-auto object-contain"
+    style={{ filter: "drop-shadow(0 20px 50px rgba(152,190,220,0.5))" }}
     alt="Paint Pals Logo"
   />
 </div>
-                <div className="mt-2 md:mt-3 grid gap-3">
+                <div className="mt-4 md:mt-6 grid gap-3">
                   {[
                     "Save thousands vs replacement",
                     "Custom cabinet colors",
