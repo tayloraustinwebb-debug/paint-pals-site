@@ -408,11 +408,11 @@ export default function PaintPalsWebsite() {
 
             <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] pt-1 pb-4 px-4 md:pt-2 md:pb-5 md:px-5 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)]">
               <div className="rounded-[1.5rem] border border-white/10 bg-white/10 p-4 md:p-5 backdrop-blur-sm overflow-visible">
-            <div className="relative flex justify-center items-center mt-2 md:mt-4 mb-6 md:mb-8">
+           <div className="flex justify-center mt-4 md:mt-6 mb-4">
   <img
     src="/logo.png"
-    className="w-[240%] md:w-[280%] max-w-none h-auto object-contain"
-    style={{ filter: "drop-shadow(0 30px 70px rgba(152,190,220,0.6))" }}
+    className="w-[125%] md:w-[140%] max-w-[480px] md:max-w-[560px] h-auto object-contain"
+    style={{ filter: "drop-shadow(0 15px 40px rgba(152,190,220,0.45))" }}
     alt="Paint Pals Logo"
   />
 </div>
