@@ -406,8 +406,8 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] pt-1 pb-4 px-4 md:pt-2 md:pb-5 md:px-5 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)]">
-              <div className="rounded-[1.5rem] border border-white/10 bg-white/10 p-4 md:p-5 backdrop-blur-sm overflow-visible">
+            <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-4 md:p-5 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)] max-w-[420px] md:max-w-[460px] mx-auto">
+              <div className="rounded-[1.5rem] border border-white/10 bg-white/10 pt-2 pb-3 px-4 md:pt-3 md:pb-4 md:px-5 backdrop-blur-sm overflow-visible">
            <div className="flex justify-center mt-4 md:mt-6 mb-4">
   <img
     src="/Logo2.png"
@@ -416,7 +416,7 @@ export default function PaintPalsWebsite() {
     alt="Paint Pals Logo"
   />
 </div>
-                <div className="mt-4 md:mt-6 grid gap-3">
+                <div className="mt-3 md:mt-4 grid gap-2">
                   {[
                     "Save thousands vs replacement",
                     "Custom cabinet colors",
