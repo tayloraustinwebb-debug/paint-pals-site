@@ -248,7 +248,7 @@ export default function PaintPalsWebsite() {
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-[#496487]">
                 Cabinet refinishing, cabinet painting, and cabinet refacing services that transform your kitchen with a brand-new look—without the high cost of full cabinet replacement.
-                #1 Rated in Southern California.
+            
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -256,7 +256,7 @@ export default function PaintPalsWebsite() {
                   Get Free Quote
                 </a>
                 <div className="inline-flex items-center justify-center rounded-2xl border border-[#98BEDC]/40 bg-white px-6 py-4 text-sm font-black text-[#103985] shadow-sm">
-                  ✔ Factory-style, ultra-durable finish
+                  #1 Rated in Southern California
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@ export default function PaintPalsWebsite() {
                   {[
                     "Save thousands vs replacement",
                     "Custom cabinet colors",
-                    "Factory-style 2K finishes",
+                    "Ultra Durable Premium 2K finishes",
                     "Fast, clean transformations",
                   ].map((item) => (
                     <div key={item} className="rounded-xl border border-white/10 bg-white/10 px-4 py-3 text-sm font-black text-white">
