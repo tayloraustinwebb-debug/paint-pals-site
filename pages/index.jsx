@@ -53,7 +53,14 @@ function ServiceCard({ service }) {
           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
         </svg>
       </div>
-      <h3 className="text-lg font-black tracking-tight text-[#103985] md:text-xl">{service}</h3>
+
+      <h3 className="text-lg font-black tracking-tight text-[#103985] md:text-xl">
+        {service.title}
+      </h3>
+
+      <p className="mt-2 text-sm leading-6 text-[#496487]">
+        {service.desc}
+      </p>
     </div>
   );
 }
@@ -168,7 +175,20 @@ export default function PaintPalsWebsite() {
     []
   );
 
-  const services = ["Cabinet Refinishing", "Cabinet Refacing", "Cabinet Upgrades"];
+  const services = [
+  {
+    title: "Cabinet Refinishing",
+    desc: "Transform your existing cabinets with a factory-style finish that saves thousands vs replacing.",
+  },
+  {
+    title: "Cabinet Refacing",
+    desc: "Upgrade doors and drawer fronts while keeping your existing layout for a modern look.",
+  },
+  {
+    title: "Cabinet Upgrades",
+    desc: "Add hardware, soft-close hinges, and custom touches to elevate your kitchen.",
+  },
+];
 
   const reviews = [
     "Paint Pals completely transformed our kitchen. Looks brand new for a fraction of the cost.",
@@ -363,7 +383,7 @@ export default function PaintPalsWebsite() {
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {services.map((s) => (
-              <ServiceCard key={s} service={s} />
+              <ServiceCard key={s.title} service={s} />
             ))}
           </div>
         </div>
