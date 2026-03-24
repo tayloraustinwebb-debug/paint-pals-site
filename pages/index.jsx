@@ -217,7 +217,7 @@ export default function PaintPalsWebsite() {
       <div className="bg-[radial-gradient(circle_at_top_left,rgba(152,190,220,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(50,91,148,0.12),transparent_24%)]">
         <header className="border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl sticky top-0 z-40">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-            <img src="/logo.png" className="h-12 md:h-14" alt="Paint Pals" />
+            <img src="/logo.png" className="h-16 md:h-20" alt="Paint Pals" />
             <div className="flex items-center gap-3">
               <a href="#quote" onClick={trackQuoteClick} className="hidden md:inline-flex rounded-xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_12px_28px_rgba(50,91,148,0.18)]">
                 Get Free Quote
@@ -402,7 +402,7 @@ export default function PaintPalsWebsite() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] border border-[#98BEDC]/25 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
+          <div className="min-h-[1080px] overflow-hidden rounded-[2rem] border border-[#98BEDC]/25 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
             <div className="border-b border-[#98BEDC]/20 px-5 py-4 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
@@ -414,11 +414,11 @@ export default function PaintPalsWebsite() {
       <style jsx global>{`
         #${jobberContainerId} {
           width: 100% !important;
-          min-height: 780px;
+          min-height: 1080px;
         }
         #${jobberContainerId} iframe {
           width: 100% !important;
-          min-height: 780px !important;
+          min-height: 1080px !important;
           border: 0 !important;
           display: block !important;
         }
