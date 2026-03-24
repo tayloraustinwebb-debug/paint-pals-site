@@ -636,8 +636,14 @@ export default function PaintPalsWebsite() {
         </div>
       </section>
 
-      <section id="quote" className="mx-auto max-w-6xl px-4 py-14">
+      <section id="quote" className="relative mx-auto max-w-6xl px-4 py-14">
        <div className="grid items-start gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+         <div className="hidden lg:block absolute left-[48%] top-1/2 -translate-y-1/2 z-10">
+  <div className="flex items-center">
+    <div className="h-[6px] w-20 bg-gradient-to-r from-[#98BEDC] to-[#325B94] rounded-full"></div>
+    <div className="w-0 h-0 border-t-[12px] border-b-[12px] border-l-[20px] border-t-transparent border-b-transparent border-l-[#325B94]"></div>
+  </div>
+</div>
           <div className="rounded-[2rem] bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-8 text-white shadow-[0_24px_60px_rgba(15,34,64,0.20)]">
             <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Free Estimate</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Get Pricing, Timeline, and Next Steps</h2>
