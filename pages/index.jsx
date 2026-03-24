@@ -637,7 +637,7 @@ export default function PaintPalsWebsite() {
       </section>
 
       <section id="quote" className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid items-start gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+       <div className="grid items-start gap-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
           <div className="rounded-[2rem] bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-8 text-white shadow-[0_24px_60px_rgba(15,34,64,0.20)]">
             <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Free Estimate</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Get Pricing, Timeline, and Next Steps</h2>
@@ -659,7 +659,7 @@ export default function PaintPalsWebsite() {
           </div>
 
           <div className="jobber-shell w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/25 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
-            <div className="border-b border-[#98BEDC]/20 px-5 py-4 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
+           <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
            <div id={jobberContainerId} className="w-full"></div>
