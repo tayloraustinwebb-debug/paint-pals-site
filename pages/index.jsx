@@ -295,7 +295,7 @@ export default function PaintPalsWebsite() {
     () => [
       { title: "Boring Stain to Daring Blue", before: "/Before 1.jpg", after: "/After 1.jpeg" },
       { title: "Old and Outdated to Bright and Airy", before: "/Before 2.jpg", after: "/After 2.jpeg" },
-      { title: "From Light to the Dark Side", before: "/Before 3.jpeg", after: "/After 3.jpeg" },
+      { title: "From Light to the Dark Side", before: "/Before 3.jpeg", after: "/After 3.png" },
       { title: "Damaged and Worn to Factory New", before: "/Before 4.jpg", after: "/After 7.png" },
     ],
     []
