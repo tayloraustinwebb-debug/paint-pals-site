@@ -406,9 +406,9 @@ export default function PaintPalsWebsite() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-4 md:p-5 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)] max-w-[420px] md:max-w-[460px] mx-auto">
+            <div className="rounded-[2rem] border border-[#98BEDC]/30 bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-3 md:p-4 text-white shadow-[0_26px_60px_rgba(15,34,64,0.24)] max-w-[420px] md:max-w-[460px] mx-auto">
               <div className="rounded-[1.5rem] border border-white/10 bg-white/10 pt-1 pb-3 px-4 md:pt-1 md:pb-4 md:px-5 backdrop-blur-sm overflow-visible">
-           <div className="flex justify-center mt-2 md:mt-3 mb-3">
+          <div className="flex justify-center mt-2 md:mt-3 mb-1">
   <img
     src="/Logo2.png"
     className="w-[125%] md:w-[140%] max-w-[480px] md:max-w-[560px] h-auto object-contain"
