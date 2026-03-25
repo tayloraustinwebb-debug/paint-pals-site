@@ -360,7 +360,7 @@ export default function PaintPalsWebsite() {
   href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
   target="_blank"
   onClick={trackPortalClick}
-  rel="noreferrer"
+  rel="noopener noreferrer"
   className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.12)] transition hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.18)]"
 >
   Client Portal
