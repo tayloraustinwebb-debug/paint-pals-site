@@ -60,7 +60,7 @@ function SliderCard({ item }) {
 
 function ServiceCard({ service }) {
   return (
-    <div className="group rounded-[1.5rem] border border-[#98BEDC]/25 bg-white p-6 shadow-[0_18px_50px_rgba(10,20,40,0.08)] transition hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(10,20,40,0.12)]">
+    <div className="group rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-6 shadow-[0_18px_50px_rgba(10,20,40,0.08)] transition hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(10,20,40,0.12)]">
       <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#98BEDC,#325B94)] shadow-[0_0_18px_rgba(152,190,220,0.55)] transition group-hover:shadow-[0_0_28px_rgba(152,190,220,0.85)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ function ServiceCard({ service }) {
 
 function ReviewCard({ children }) {
   return (
-    <div className="rounded-[1.25rem] border border-[#98BEDC]/25 bg-white p-5 shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
+    <div className="rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
       <div className="text-sm text-[#fbbc04]">★★★★★</div>
       <p className="mt-3 text-sm leading-7 text-[#2b4267]">{children}</p>
     </div>
@@ -90,7 +90,7 @@ function ReviewCard({ children }) {
 
 function ProcessCard({ step, title, desc }) {
   return (
-    <div className="rounded-[1.25rem] border border-[#98BEDC]/25 bg-white p-5 shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
+    <div className="rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
       <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#103985] text-sm font-black text-white">
         {step}
       </div>
@@ -370,7 +370,7 @@ export default function PaintPalsWebsite() {
         </header>
 
         <section className="mx-auto max-w-6xl px-4 py-6 md:py-8">
-          <div className="flex flex-wrap items-center justify-center gap-4 rounded-[2rem] border border-[#98BEDC]/25 bg-white px-6 py-6 text-sm font-black text-[#103985] shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
+          <div className="flex flex-wrap items-center justify-center gap-4 rounded-[2rem] border border-[#98BEDC]/40 bg-white px-6 py-6 text-sm font-black text-[#103985] shadow-[0_14px_40px_rgba(10,20,40,0.08)]">
             <div>⭐ 5-Star Rated</div>
             <div>✔ Licensed &amp; Insured</div>
             <div>✔ Hundreds of Cabinets Completed</div>
@@ -445,9 +445,9 @@ export default function PaintPalsWebsite() {
             ))}
           </div>
 
-          <div className="rounded-[1.5rem] border border-[#98BEDC]/25 bg-white p-5 shadow-[0_16px_40px_rgba(10,20,40,0.08)]">
+          <div className="rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(10,20,40,0.08)]">
             <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">Thumbtack Reviews</div>
-            <div className="mt-3 rounded-xl border border-[#98BEDC]/25 bg-[#f7fbff] p-4">
+            <div className="mt-3 rounded-xl border border-[#98BEDC]/40 bg-[#f7fbff] p-4">
               <div
                 dangerouslySetInnerHTML={{
                   __html: `
@@ -545,7 +545,7 @@ export default function PaintPalsWebsite() {
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-6 px-4 py-14 lg:grid-cols-[1fr_1fr]">
-        <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-gradient-to-br from-[#274a78] to-[#325B94] p-8 text-white shadow-[0_20px_55px_rgba(15,34,64,0.20)]">
+        <div className="rounded-[2rem] border border-[#98BEDC]/40 bg-gradient-to-br from-[#274a78] to-[#325B94] p-8 text-white shadow-[0_20px_55px_rgba(15,34,64,0.20)]">
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#CFE3F1]">Why It Works</p>
           <h2 className="mt-3 text-3xl font-black md:text-4xl">One of the Best Value Upgrades You Can Make</h2>
           <p className="mt-4 max-w-2xl leading-8 text-white/85">
@@ -553,7 +553,7 @@ export default function PaintPalsWebsite() {
           </p>
         </div>
 
-        <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
+        <div className="rounded-[2rem] border border-[#98BEDC]/40 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Refinish vs Replace</p>
           <h2 className="mt-3 text-3xl font-black text-[#103985] md:text-4xl">The Smarter Cabinet Upgrade</h2>
           <div className="mt-6 space-y-3">
@@ -567,7 +567,7 @@ export default function PaintPalsWebsite() {
 
       <section className="relative mx-auto max-w-6xl px-4 py-14">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_30%,rgba(152,190,220,0.12),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(50,91,148,0.10),transparent_40%)]" />
-        <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
+        <div className="rounded-[2rem] border border-[#98BEDC]/40 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Pricing</p>
           <h2 className="mt-2 text-3xl font-black text-[#103985] md:text-4xl">How Much Does Cabinet Refinishing Cost?</h2>
           <p className="mt-4 max-w-2xl leading-8 text-[#496487]">
@@ -596,7 +596,7 @@ export default function PaintPalsWebsite() {
     
 
       <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
+        <div className="rounded-[2rem] border border-[#98BEDC]/40 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Areas We Serve</p>
@@ -612,7 +612,7 @@ export default function PaintPalsWebsite() {
             {areas.map((area) => (
               <div
                 key={area}
-                className="rounded-full border border-[#98BEDC]/25 bg-[#f8fbff] px-4 py-3 text-sm font-black text-[#103985]"
+                className="rounded-full border border-[#98BEDC]/40 bg-[#f8fbff] px-4 py-3 text-sm font-black text-[#103985]"
               >
                 {area}
               </div>
@@ -622,7 +622,7 @@ export default function PaintPalsWebsite() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="rounded-[2rem] border border-[#98BEDC]/25 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
+        <div className="rounded-[2rem] border border-[#98BEDC]/40 bg-white p-8 shadow-[0_18px_50px_rgba(10,20,40,0.08)]">
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Common Questions</p>
           <h2 className="mt-3 text-3xl font-black text-[#103985] md:text-4xl">FAQ</h2>
           <div className="mt-6 grid gap-4 text-sm text-[#496487] md:grid-cols-2">
@@ -670,7 +670,7 @@ export default function PaintPalsWebsite() {
             </div>
           </div>
 
-          <div className="jobber-shell w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/25 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
+          <div className="jobber-shell w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(10,20,40,0.10)]">
            <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
