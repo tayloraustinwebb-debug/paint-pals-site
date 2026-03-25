@@ -352,7 +352,7 @@ export default function PaintPalsWebsite() {
               <a
                 href="#quote"
                 onClick={trackQuoteClick}
-                className="hidden rounded-xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_12px_28px_rgba(50,91,148,0.18)] md:inline-flex"
+                className="hover-lift hidden rounded-xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_12px_28px_rgba(50,91,148,0.18)] transition-all duration-200 hover:scale-[1.04] md:inline-flex"
               >
                 Get Free Quote
               </a>
