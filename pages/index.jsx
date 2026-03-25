@@ -394,12 +394,12 @@ export default function PaintPalsWebsite() {
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="#quote"
-                  onClick={trackQuoteClick}
-                  className="inline-flex items-center justify-center rounded-2xl bg-[#98BEDC] px-6 py-4 text-base font-black text-[#325B94] shadow-[0_18px_38px_rgba(50,91,148,0.18)] transition hover:-translate-y-0.5"
-                >
-                  Get Free Quote
-                </a>
+  href="#quote"
+  onClick={trackQuoteClick}
+  className="hover-lift inline-flex items-center justify-center rounded-2xl bg-[#325B94] px-7 py-4 text-base font-bold text-white shadow-[0_20px_50px_rgba(50,91,148,0.22)] transition-all duration-200 hover:scale-[1.02]"
+>
+  Get Free Quote
+</a>
                 <div className="inline-flex items-center justify-center rounded-2xl border border-[#98BEDC]/40 bg-white px-6 py-4 text-sm font-black text-[#103985] shadow-sm">
                   ✔ Factory-style, ultra-durable finish
                 </div>
