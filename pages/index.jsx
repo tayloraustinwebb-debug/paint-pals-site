@@ -721,6 +721,76 @@ export default function PaintPalsWebsite() {
         </div>
       </section>
 
+      <footer className="border-t border-[#98BEDC]/25 bg-[#0f2747] text-white">
+  <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[1.2fr_0.8fr_0.9fr]">
+    <div>
+      <img src="/logo.png" className="h-16 w-auto md:h-20" alt="Paint Pals" />
+      <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
+        Premium cabinet refinishing, cabinet painting, and cabinet refacing in Southern California with factory-style finishes and fast, clean transformations.
+      </p>
+    </div>
+
+    <div>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">
+        Services
+      </p>
+      <div className="mt-4 grid gap-3 text-sm text-white/80">
+        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+          Cabinet Refinishing
+        </a>
+        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+          Cabinet Painting
+        </a>
+        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+          Cabinet Refacing
+        </a>
+        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+          Cabinet Upgrades
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">
+        Contact
+      </p>
+      <div className="mt-4 grid gap-3 text-sm text-white/80">
+        <a href="tel:+18402175750" className="transition hover:text-white">
+          (840) 217-5750
+        </a>
+        <a
+          href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={trackPortalClick}
+          className="transition hover:text-white"
+        >
+          Client Portal
+        </a>
+        <p>Serving Riverside, San Bernardino, and Orange County</p>
+        <a
+          href="#quote"
+          onClick={trackQuoteClick}
+          className="inline-flex w-fit rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] transition hover:bg-white/15"
+        >
+          Get Free Quote
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div className="border-t border-white/10">
+    <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-5 text-xs text-white/60 md:flex-row md:items-center md:justify-between">
+      <p>© {new Date().getFullYear()} Paint Pals. All rights reserved.</p>
+      <div className="flex flex-wrap gap-3">
+        <span>Licensed &amp; Insured</span>
+        <span>•</span>
+        <span>Serving Southern California</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
 {activeSlide && (
   <div
     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4 py-6 backdrop-blur-sm"
