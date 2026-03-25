@@ -388,7 +388,7 @@ export default function PaintPalsWebsite() {
               <h1 className="mt-5 text-4xl font-black leading-[1.02] tracking-tight text-[#103985] md:text-6xl">
                 Refinish Your Cabinets. Save Thousands.
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#496487]">
+              <p className="mt-5 max-w-3xl text-lg leading-8 text-[#496487]">
                 Cabinet refinishing, cabinet painting, and cabinet refacing in Southern California that gives your kitchen a brand-new look without the high cost of cabinet replacement.
               </p>
 
