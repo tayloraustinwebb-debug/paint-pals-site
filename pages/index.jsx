@@ -32,7 +32,7 @@ function SliderCard({ item, onOpen }) {
     <div className="overflow-hidden rounded-[1.75rem] border border-[#98BEDC]/35 bg-gradient-to-br from-[#274a78] to-[#325B94] shadow-[0_20px_50px_rgba(50,91,148,0.14)] transition hover:-translate-y-1">
       <div className="flex items-center justify-between border-b border-white/10 bg-[#183963] px-4 py-3">
         <div>
-          <p className="text-[10px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">
             Before &amp; After
           </p>
           <h3 className="mt-1 text-sm font-black text-white md:text-base">{item.title}</h3>
@@ -497,7 +497,7 @@ export default function PaintPalsWebsite() {
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#325B94]">Visual Proof</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#325B94]">Visual Proof</p>
             <h2 className="mt-2 text-3xl font-black text-[#103985] md:text-4xl">
               Before &amp; After Cabinet Transformations
             </h2>
@@ -514,7 +514,7 @@ export default function PaintPalsWebsite() {
         <div className="rounded-[2rem] bg-[#103985] px-6 py-8 text-white shadow-[0_24px_60px_rgba(50,91,148,0.22)]">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">
-              <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Services</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">Services</p>
               <h2 className="mt-2 text-3xl font-black md:text-4xl">
                 Cabinet Services That Actually Move the Needle
               </h2>
@@ -535,7 +535,7 @@ export default function PaintPalsWebsite() {
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#325B94]">Our Process</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#325B94]">Our Process</p>
             <h2 className="mt-2 text-3xl font-black text-[#103985] md:text-4xl">
               How Paint Pals Refinishes Cabinets
             </h2>
@@ -672,7 +672,7 @@ export default function PaintPalsWebsite() {
 
 
           <div className="rounded-[2rem] bg-gradient-to-br from-[#17345f] via-[#274a78] to-[#325B94] p-8 text-white shadow-[0_24px_60px_rgba(50,91,148,0.20)]">
-            <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">Free Estimate</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">Free Estimate</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">Get Pricing, Timeline, and Next Steps</h2>
             <p className="mt-5 leading-8 text-white/85">
               Fill out the form and we’ll contact you with pricing and details.
@@ -740,7 +740,7 @@ export default function PaintPalsWebsite() {
       </button>
 
       <div className="border-b border-white/10 bg-[#183963] px-6 py-4 text-white">
-        <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">
           Before &amp; After
         </p>
         <h3 className="mt-1 text-lg font-bold tracking-tight md:text-xl">
