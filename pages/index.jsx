@@ -29,7 +29,7 @@ function SliderCard({ item, onOpen }) {
   };
 
   return (
-    <div className="overflow-hidden rounded-[1.75rem] border border-[#98BEDC]/35 bg-gradient-to-br from-[#274a78] to-[#325B94] shadow-[0_24px_60px_rgba(50,91,148,0.18)] transition hover:-translate-y-1">
+    <div className="overflow-hidden rounded-[1.75rem] border border-[#98BEDC]/35 bg-gradient-to-br from-[#274a78] to-[#325B94] shadow-[0_20px_50px_rgba(50,91,148,0.14)] transition hover:-translate-y-1">
       <div className="flex items-center justify-between border-b border-white/10 bg-[#183963] px-4 py-3">
         <div>
           <p className="text-[10px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">
