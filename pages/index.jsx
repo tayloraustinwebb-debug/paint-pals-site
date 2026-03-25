@@ -392,7 +392,7 @@ export default function PaintPalsWebsite() {
                 Cabinet refinishing, cabinet painting, and cabinet refacing in Southern California that gives your kitchen a brand-new look without the high cost of cabinet replacement.
               </p>
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
                 <a
   href="#quote"
   onClick={trackQuoteClick}
