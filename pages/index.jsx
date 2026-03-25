@@ -352,7 +352,7 @@ export default function PaintPalsWebsite() {
               <a
                 href="#quote"
                 onClick={trackQuoteClick}
-                className="hover-lift hidden rounded-xl bg-[#98BEDC] px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_12px_28px_rgba(50,91,148,0.18)] transition-all duration-200 hover:scale-[1.04] md:inline-flex"
+                className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
               >
                 Get Free Quote
               </a>
@@ -361,7 +361,7 @@ export default function PaintPalsWebsite() {
   target="_blank"
   onClick={trackPortalClick}
   rel="noreferrer"
-  className="inline-flex items-center rounded-xl border border-[#98BEDC] bg-white px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.12)] transition hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.18)]"
+  className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-black text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.12)] transition hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.18)]"
 >
   Client Portal
 </a>
