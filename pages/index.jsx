@@ -60,7 +60,7 @@ function SliderCard({ item }) {
 
 function ServiceCard({ service }) {
   return (
-    <div className="group rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-6 shadow-[0_12px_30px_rgba(50,91,148,0.10)] transition hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(50,91,148,0.12)]">
+    <div className="group hover-lift rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-6 shadow-[0_12px_30px_rgba(50,91,148,0.10)] transition hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(50,91,148,0.12)]">
       <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#98BEDC,#325B94)] shadow-[0_0_18px_rgba(152,190,220,0.55)] transition group-hover:shadow-[0_0_28px_rgba(152,190,220,0.85)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ function ServiceCard({ service }) {
 
 function ReviewCard({ children }) {
   return (
-    <div className="rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
+    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
       <div className="text-sm text-[#fbbc04]">★★★★★</div>
       <p className="mt-3 text-sm leading-7 text-[#2b4267]">{children}</p>
     </div>
@@ -90,7 +90,7 @@ function ReviewCard({ children }) {
 
 function ProcessCard({ step, title, desc }) {
   return (
-    <div className="rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
+    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
       <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#103985] text-sm font-black text-white">
         {step}
       </div>
@@ -445,7 +445,7 @@ export default function PaintPalsWebsite() {
             ))}
           </div>
 
-          <div className="rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
+          <div className="hover-lift-sm rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
             <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">Thumbtack Reviews</div>
             <div className="mt-3 rounded-xl border border-[#98BEDC]/40 bg-[#f7fbff] p-4">
               <div
@@ -567,7 +567,7 @@ export default function PaintPalsWebsite() {
 
       <section className="relative mx-auto max-w-6xl px-4 py-14">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_30%,rgba(152,190,220,0.12),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(50,91,148,0.10),transparent_40%)]" />
-        <div className="rounded-[2rem] border border-[#98BEDC]/40 bg-white p-8 shadow-[0_20px_50px_rgba(50,91,148,0.14)]">
+        <div className="hover-lift rounded-[2rem] border border-[#98BEDC]/40 bg-white p-8 shadow-[0_20px_50px_rgba(50,91,148,0.14)]">
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Pricing</p>
           <h2 className="mt-2 text-3xl font-black text-[#103985] md:text-4xl">How Much Does Cabinet Refinishing Cost?</h2>
           <p className="mt-4 max-w-2xl leading-8 text-[#496487]">
@@ -670,7 +670,7 @@ export default function PaintPalsWebsite() {
             </div>
           </div>
 
-          <div className="jobber-shell w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)]">
+          <div className="jobber-shell hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)]">
            <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
@@ -756,6 +756,26 @@ export default function PaintPalsWebsite() {
 
 .floaty {
   animation: floaty 4s ease-in-out infinite;
+}
+
+/* Hover Lift System */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(50, 91, 148, 0.18);
+}
+
+/* Subtle version (for smaller cards) */
+.hover-lift-sm {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift-sm:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(50, 91, 148, 0.14);
 }
   
 `}</style>
