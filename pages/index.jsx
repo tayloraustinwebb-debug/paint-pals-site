@@ -1,12 +1,31 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-function SliderCard({ item }) {
+function SliderCard({ item, onOpen }) {
   const [position, setPosition] = useState(50);
+  const [isDragging, setIsDragging] = useState(false);
 
   const update = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = Math.min(Math.max(e.clientX - rect.left, 0), rect.width);
     setPosition((x / rect.width) * 100);
+  };
+
+  const handlePointerDown = (e) => {
+    setIsDragging(false);
+    update(e);
+  };
+
+  const handlePointerMove = (e) => {
+    if (e.buttons === 1) {
+      setIsDragging(true);
+      update(e);
+    }
+  };
+
+  const handlePointerUp = () => {
+    if (!isDragging) {
+      onOpen(item);
+    }
   };
 
   return (
@@ -24,10 +43,11 @@ function SliderCard({ item }) {
       </div>
 
       <div
-        className="relative aspect-[4/3] cursor-ew-resize"
-        onPointerDown={update}
-        onPointerMove={(e) => e.buttons === 1 && update(e)}
-      >
+  className="relative aspect-[4/3] cursor-ew-resize transition-transform duration-300 hover:scale-[1.01]"
+  onPointerDown={handlePointerDown}
+  onPointerMove={handlePointerMove}
+  onPointerUp={handlePointerUp}
+>
         <img
           src={item.after}
           alt={`${item.title} after`}
@@ -169,6 +189,7 @@ export default function PaintPalsWebsite() {
   const jobberScriptRef = useRef(null);
   const adsId = "AW-18032245507";
   const [hasTrackedFormSubmit, setHasTrackedFormSubmit] = useState(false);
+  const [activeSlide, setActiveSlide] = useState(null);
 
   useEffect(() => {
     document.title = "Paint Pals | Cabinet Refinishing";
@@ -483,10 +504,10 @@ export default function PaintPalsWebsite() {
           </div>
         </div>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {beforeAfterPairs.map((item) => (
-            <SliderCard key={item.title} item={item} />
-          ))}
-        </div>
+  {beforeAfterPairs.map((item) => (
+    <SliderCard key={item.title} item={item} onOpen={setActiveSlide} />
+  ))}
+</div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14">
@@ -700,6 +721,60 @@ export default function PaintPalsWebsite() {
         </div>
       </section>
 
+{activeSlide && (
+  <div
+    className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4 py-6 backdrop-blur-sm"
+    onClick={() => setActiveSlide(null)}
+  >
+    <div
+      className="relative w-full max-w-6xl overflow-hidden rounded-[2rem] border border-white/15 bg-[#0f2747] shadow-[0_25px_80px_rgba(0,0,0,0.45)]"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        type="button"
+        onClick={() => setActiveSlide(null)}
+        className="absolute right-4 top-4 z-20 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-xl font-bold text-[#103985] shadow-[0_10px_25px_rgba(0,0,0,0.18)] transition hover:scale-[1.05]"
+        aria-label="Close full screen image"
+      >
+        ×
+      </button>
+
+      <div className="border-b border-white/10 bg-[#183963] px-6 py-4 text-white">
+        <p className="text-[11px] font-black uppercase tracking-[0.24em] text-[#CFE3F1]">
+          Before &amp; After
+        </p>
+        <h3 className="mt-1 text-lg font-bold tracking-tight md:text-xl">
+          {activeSlide.title}
+        </h3>
+      </div>
+
+      <div className="grid gap-0 md:grid-cols-2">
+        <div className="relative bg-black">
+          <img
+            src={activeSlide.before}
+            alt={`${activeSlide.title} before`}
+            className="h-full w-full object-contain max-h-[75vh]"
+          />
+          <div className="absolute left-4 top-4 rounded-full bg-white px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[#325B94] shadow-lg">
+            Before
+          </div>
+        </div>
+
+        <div className="relative bg-black">
+          <img
+            src={activeSlide.after}
+            alt={`${activeSlide.title} after`}
+            className="h-full w-full object-contain max-h-[75vh]"
+          />
+          <div className="absolute right-4 top-4 rounded-full bg-[#98BEDC] px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[#325B94] shadow-lg">
+            After
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+      
       <a
         href="tel:+18402175750"
         onClick={() =>
