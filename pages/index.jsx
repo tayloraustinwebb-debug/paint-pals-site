@@ -626,19 +626,19 @@ export default function PaintPalsWebsite() {
           <p className="text-[11px] font-black uppercase tracking-[0.22em] text-[#325B94]">Common Questions</p>
           <h2 className="mt-3 text-3xl font-black text-[#103985] md:text-4xl">FAQ</h2>
           <div className="mt-6 grid gap-4 text-sm text-[#496487] md:grid-cols-2">
-            <div className="rounded-xl border border-[#98BEDC]/20 bg-[#f8fbff] p-4">
+            <div className="hover-lift-sm rounded-xl border border-[#98BEDC]/30 bg-[#f8fbff] p-4">
               <p className="font-black text-[#103985]">Is cabinet refinishing cheaper than replacing?</p>
               <p className="mt-2">Yes — most homeowners save thousands compared to full cabinet replacement while still getting a completely updated look.</p>
             </div>
-            <div className="rounded-xl border border-[#98BEDC]/20 bg-[#f8fbff] p-4">
+            <div className="hover-lift-sm rounded-xl border border-[#98BEDC]/30 bg-[#f8fbff] p-4">
               <p className="font-black text-[#103985]">How long does cabinet refinishing take?</p>
               <p className="mt-2">Most projects are completed in just a few days, much faster than a full remodel.</p>
             </div>
-            <div className="rounded-xl border border-[#98BEDC]/20 bg-[#f8fbff] p-4">
+            <div className="hover-lift-sm rounded-xl border border-[#98BEDC]/30 bg-[#f8fbff] p-4">
               <p className="font-black text-[#103985]">Can I choose any color?</p>
               <p className="mt-2">Yes — refinishing allows for custom colors and modern finishes not available with most stock cabinets.</p>
             </div>
-            <div className="rounded-xl border border-[#98BEDC]/20 bg-[#f8fbff] p-4">
+            <div className="hover-lift-sm rounded-xl border border-[#98BEDC]/30 bg-[#f8fbff] p-4">
               <p className="font-black text-[#103985]">Are the finishes durable?</p>
               <p className="mt-2">We use professional-grade coatings designed for cabinets that are built to last and resist wear.</p>
             </div>
