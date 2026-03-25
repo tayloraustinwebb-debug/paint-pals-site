@@ -400,7 +400,7 @@ export default function PaintPalsWebsite() {
 >
   Get Free Quote
 </a>
-                <div className="inline-flex items-center justify-center rounded-2xl border border-[#98BEDC]/40 bg-white px-6 py-4 text-sm font-black text-[#103985] shadow-sm">
+                <div className="inline-flex items-center justify-center rounded-2xl border border-[#98BEDC]/30 bg-white px-5 py-3 text-sm font-semibold text-[#103985] shadow-[0_6px_14px_rgba(50,91,148,0.08)]">
                   ✔ Factory-style, ultra-durable finish
                 </div>
               </div>
