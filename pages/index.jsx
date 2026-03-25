@@ -784,7 +784,7 @@ export default function PaintPalsWebsite() {
             event_label: "floating_call",
           })
         }
-        className="fixed bottom-5 left-5 z-50 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#103985] to-[#325B94] px-6 py-3 text-sm font-black text-white shadow-[0_18px_40px_rgba(50,91,148,0.35)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(50,91,148,0.45)]"
+        className="fixed bottom-5 left-5 z-50 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#103985] to-[#325B94] px-6 py-3 text-sm font-bold text-white shadow-[0_14px_32px_rgba(50,91,148,0.28)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(50,91,148,0.34)]"
       >
         <span className="text-lg">📞</span>
         Call Now
@@ -793,7 +793,7 @@ export default function PaintPalsWebsite() {
       <a
         href="#quote"
         onClick={trackQuoteClick}
-        className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full border border-[#98BEDC]/40 bg-white/90 px-6 py-3 text-sm font-black text-[#103985] shadow-[0_18px_40px_rgba(50,91,148,0.25)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(50,91,148,0.35)]"
+        className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full border border-[#98BEDC]/50 bg-white/92 px-6 py-3 text-sm font-semibold text-[#103985] shadow-[0_14px_32px_rgba(50,91,148,0.18)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(50,91,148,0.24)]"
       >
         Get Quote
         <span className="text-lg">→</span>
