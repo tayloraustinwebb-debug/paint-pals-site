@@ -43,7 +43,7 @@ function SliderCard({ item, onOpen }) {
       </div>
 
       <div
-  className="relative aspect-[4/3] cursor-ew-resize transition-transform duration-300 hover:scale-[1.01]"
+  className="relative aspect-[4/3] cursor-ew-resize overflow-hidden transition-transform duration-300 hover:scale-[1.01]"
   onPointerDown={handlePointerDown}
   onPointerMove={handlePointerMove}
   onPointerUp={handlePointerUp}
