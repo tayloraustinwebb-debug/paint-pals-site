@@ -758,6 +758,14 @@ export default function PaintPalsWebsite() {
         <a href="tel:+18402175750" className="transition hover:text-white">
           (840) 217-5750
         </a>
+
+        <a
+  href="mailto:Taylor@paint-pals.com"
+  className="transition hover:text-white"
+>
+  Taylor@paint-pals.com
+</a>
+        
         <a
           href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
           target="_blank"
