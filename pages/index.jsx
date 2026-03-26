@@ -271,6 +271,9 @@ document.head.appendChild(script2);
     value: 1.0,
     currency: "USD",
   });
+
+      window.gtag("event", "generate_lead");
+      
 }
 
     setHasTrackedFormSubmit(true);
