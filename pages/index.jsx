@@ -296,6 +296,21 @@ export default function PaintPalsWebsite() {
       characterData: true,
     });
 
+    const handleClick = (e) => {
+  const target = e.target;
+
+  if (
+    target.tagName === "BUTTON" ||
+    target.innerText?.toLowerCase().includes("submit")
+  ) {
+    setTimeout(() => {
+      trackFormSubmit();
+    }, 2000);
+  }
+};
+
+container.addEventListener("click", handleClick);
+
     const handleMessage = (event) => {
       try {
         const raw = typeof event.data === "string" ? event.data : JSON.stringify(event.data);
@@ -311,9 +326,10 @@ export default function PaintPalsWebsite() {
     window.addEventListener("message", handleMessage);
 
     return () => {
-      observer.disconnect();
+  observer.disconnect();
+  container.removeEventListener("click", handleClick);
       window.removeEventListener("message", handleMessage);
-    };
+};
   }, [jobberContainerId, hasTrackedFormSubmit]);
 
   const beforeAfterPairs = useMemo(
