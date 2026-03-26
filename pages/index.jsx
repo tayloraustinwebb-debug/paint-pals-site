@@ -220,34 +220,34 @@ document.head.appendChild(script2);
 
   useEffect(() => {
   let lastHeight = 0;
+  let hasFired = false;
 
   const handleMessage = (event) => {
     if (event.origin !== "https://clienthub.getjobber.com") return;
 
     console.log("📩 Jobber event:", event.data);
 
-    // detect big height jump (form → thank you screen)
     if (typeof event.data === "string" && event.data.includes("px")) {
-      const height = parseInt(event.data.replace("px", ""));
+      const height = parseInt(event.data.replace("px", ""), 10);
 
       if (!hasFired && height > 800 && lastHeight < 600) {
-  hasFired = true;
+        hasFired = true;
 
-  // GA4 event
-  window.gtag('event', 'generate_lead', {
-    event_category: 'Jobber Form',
-    event_label: 'Work Request Submitted'
-  });
+        // GA4 event
+        window.gtag('event', 'generate_lead', {
+          event_category: 'Jobber Form',
+          event_label: 'Work Request Submitted'
+        });
 
-  // Google Ads conversion
-  window.gtag('event', 'conversion', {
-    send_to: 'AW-18032245507/ohZbCOz8mJAcEIP2uJZD',
-    value: 60.0,
-    currency: 'USD'
-  });
+        // Google Ads conversion
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-18032245507/ohZbCOz8mJAcEIP2uJZD',
+          value: 60.0,
+          currency: 'USD'
+        });
 
-  console.log("🔥 Lead + Google Ads conversion fired");
-}
+        console.log("🔥 Lead + Google Ads conversion fired");
+      }
 
       lastHeight = height;
     }
