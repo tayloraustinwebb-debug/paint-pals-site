@@ -187,8 +187,9 @@ export default function PaintPalsWebsite() {
   const formSubmitConversionLabel = "JgMwCLKukY0cEIP2uJZD";
   const jobberContainerId = "0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401";
   const jobberScriptRef = useRef(null);
-  const adsId = "AW-18032245507";
-  const [hasTrackedFormSubmit, setHasTrackedFormSubmit] = useState(false);
+const adsId = "AW-18032245507";
+const ga4Id = "G-0WHMKY5P18";
+const [hasTrackedFormSubmit, setHasTrackedFormSubmit] = useState(false);
   const [activeSlide, setActiveSlide] = useState(null);
 
   useEffect(() => {
@@ -196,21 +197,26 @@ export default function PaintPalsWebsite() {
 
     if (!window.gtag) {
       const script1 = document.createElement("script");
-      script1.src = `https://www.googletagmanager.com/gtag/js?id=${adsId}`;
+      script1.src = `https://www.googletagmanager.com/gtag/js?id=${ga4Id}`;
       script1.async = true;
       document.head.appendChild(script1);
 
       const script2 = document.createElement("script");
-      script2.innerHTML = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} 
-        window.gtag = gtag;
-        gtag('js', new Date());
-        gtag('config', '${adsId}');
-      `;
-      document.head.appendChild(script2);
+script2.innerHTML = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  gtag('js', new Date());
+
+  // GA4
+  gtag('config', '${ga4Id}');
+
+  // Google Ads
+  gtag('config', '${adsId}');
+`;
+document.head.appendChild(script2);
     }
-  }, [adsId]);
+  }, [adsId, ga4Id]);
 
   useEffect(() => {
     if (document.querySelector(`[data-jobber]`)) return;
