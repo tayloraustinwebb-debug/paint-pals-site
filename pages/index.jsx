@@ -225,7 +225,7 @@ document.head.appendChild(script2);
   const handleMessage = (event) => {
     if (event.origin !== "https://clienthub.getjobber.com") return;
 
-    console.log("📩 Jobber event:", event.data);
+  
 
     if (typeof event.data === "string" && event.data.includes("px")) {
       const height = parseInt(event.data.replace("px", ""), 10);
@@ -246,7 +246,7 @@ document.head.appendChild(script2);
           currency: 'USD'
         });
 
-        console.log("🔥 Lead + Google Ads conversion fired");
+      
       }
 
       lastHeight = height;
