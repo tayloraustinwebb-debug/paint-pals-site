@@ -222,8 +222,13 @@ document.head.appendChild(script2);
   const handleMessage = (event) => {
     if (event.origin !== "https://clienthub.getjobber.com") return;
 
-    // THIS IS THE IMPORTANT PART
-    if (event.data === "form_submit") {
+    console.log("📩 Jobber event:", event.data);
+
+    if (
+      event.data === "form_submit" ||
+      event.data === "submitted" ||
+      (typeof event.data === "string" && event.data.includes("submit"))
+    ) {
       window.gtag('event', 'generate_lead', {
         event_category: 'Jobber Form',
         event_label: 'Work Request Submitted'
