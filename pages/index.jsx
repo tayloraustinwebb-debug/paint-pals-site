@@ -219,6 +219,28 @@ document.head.appendChild(script2);
   }, [adsId, ga4Id]);
 
   useEffect(() => {
+  const handleMessage = (event) => {
+    if (event.origin !== "https://clienthub.getjobber.com") return;
+
+    // THIS IS THE IMPORTANT PART
+    if (event.data === "form_submit") {
+      window.gtag('event', 'generate_lead', {
+        event_category: 'Jobber Form',
+        event_label: 'Work Request Submitted'
+      });
+
+      console.log("🔥 generate_lead fired");
+    }
+  };
+
+  window.addEventListener("message", handleMessage);
+
+  return () => {
+    window.removeEventListener("message", handleMessage);
+  };
+}, []);
+
+  useEffect(() => {
     if (document.querySelector(`[data-jobber]`)) return;
 
     const script = document.createElement("script");
