@@ -230,14 +230,24 @@ document.head.appendChild(script2);
     if (typeof event.data === "string" && event.data.includes("px")) {
       const height = parseInt(event.data.replace("px", ""));
 
-      if (height > 800 && lastHeight < 600) {
-        window.gtag('event', 'generate_lead', {
-          event_category: 'Jobber Form',
-          event_label: 'Work Request Submitted'
-        });
+      if (!hasFired && height > 800 && lastHeight < 600) {
+  hasFired = true;
 
-        console.log("🔥 generate_lead fired via height change");
-      }
+  // GA4 event
+  window.gtag('event', 'generate_lead', {
+    event_category: 'Jobber Form',
+    event_label: 'Work Request Submitted'
+  });
+
+  // Google Ads conversion
+  window.gtag('event', 'conversion', {
+    send_to: 'AW-18032245507/ohZbCOz8mJAcEIP2uJZD',
+    value: 60.0,
+    currency: 'USD'
+  });
+
+  console.log("🔥 Lead + Google Ads conversion fired");
+}
 
       lastHeight = height;
     }
