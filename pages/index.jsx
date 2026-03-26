@@ -184,7 +184,7 @@ function CostCalculator() {
 
 export default function PaintPalsWebsite() {
   const quoteConversionLabel = "";
-  const formSubmitConversionLabel = "";
+  const formSubmitConversionLabel = "JgMwCLKukY0cEIP2uJZD";
   const jobberContainerId = "0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea-2068401";
   const jobberScriptRef = useRef(null);
   const adsId = "AW-18032245507";
@@ -260,8 +260,12 @@ export default function PaintPalsWebsite() {
     });
 
     if (formSubmitConversionLabel) {
-      sendGtagEvent("conversion", { send_to: `${adsId}/${formSubmitConversionLabel}` });
-    }
+  sendGtagEvent("conversion", {
+    send_to: `${adsId}/${formSubmitConversionLabel}`,
+    value: 1.0,
+    currency: "USD",
+  });
+}
 
     setHasTrackedFormSubmit(true);
   };
