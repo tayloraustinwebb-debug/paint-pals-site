@@ -219,22 +219,27 @@ document.head.appendChild(script2);
   }, [adsId, ga4Id]);
 
   useEffect(() => {
+  let lastHeight = 0;
+
   const handleMessage = (event) => {
     if (event.origin !== "https://clienthub.getjobber.com") return;
 
     console.log("📩 Jobber event:", event.data);
 
-    if (
-      event.data === "form_submit" ||
-      event.data === "submitted" ||
-      (typeof event.data === "string" && event.data.includes("submit"))
-    ) {
-      window.gtag('event', 'generate_lead', {
-        event_category: 'Jobber Form',
-        event_label: 'Work Request Submitted'
-      });
+    // detect big height jump (form → thank you screen)
+    if (typeof event.data === "string" && event.data.includes("px")) {
+      const height = parseInt(event.data.replace("px", ""));
 
-      console.log("🔥 generate_lead fired");
+      if (height > 800 && lastHeight < 600) {
+        window.gtag('event', 'generate_lead', {
+          event_category: 'Jobber Form',
+          event_label: 'Work Request Submitted'
+        });
+
+        console.log("🔥 generate_lead fired via height change");
+      }
+
+      lastHeight = height;
     }
   };
 
