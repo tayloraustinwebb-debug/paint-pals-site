@@ -821,7 +821,9 @@ container.addEventListener("click", handleClick);
     </div>
   </div>
 )}
-  <div id={jobberContainerId} className="relative z-10 w-full"></div>
+  <div className="relative z-10 w-full flex justify-center px-4">
+  <div id={jobberContainerId} className="w-full max-w-[520px]"></div>
+</div>
 </div>
           </div>
         </div>
