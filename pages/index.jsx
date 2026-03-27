@@ -283,19 +283,28 @@ document.head.appendChild(script2);
   const quoteCard = document.getElementById("quote");
   if (!quoteCard) return;
 
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      setQuoteInView(entry.isIntersecting);
-    },
-    {
-      threshold: 0.55,
-    }
-  );
+  const updateQuoteVisibility = () => {
+    const rect = quoteCard.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
 
-  observer.observe(quoteCard);
+    const cardTop = rect.top;
+    const cardBottom = rect.bottom;
+
+    const inView =
+      cardTop < viewportHeight * 0.72 &&
+      cardBottom > viewportHeight * 0.28;
+
+    setQuoteInView(inView);
+  };
+
+  updateQuoteVisibility();
+
+  window.addEventListener("scroll", updateQuoteVisibility, { passive: true });
+  window.addEventListener("resize", updateQuoteVisibility);
 
   return () => {
-    observer.disconnect();
+    window.removeEventListener("scroll", updateQuoteVisibility);
+    window.removeEventListener("resize", updateQuoteVisibility);
   };
 }, []);
 
