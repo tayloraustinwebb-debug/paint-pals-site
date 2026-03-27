@@ -501,7 +501,7 @@ container.addEventListener("click", handleClick);
       <div className="bg-[radial-gradient(circle_at_top_left,rgba(152,190,220,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(50,91,148,0.12),transparent_24%)]">
         <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-            <img src="/logo.png" className="h-16 md:h-20" alt="Paint Pals" />
+            <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
             <div className="flex items-center gap-3">
               <a
                 href="#quote"
