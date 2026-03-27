@@ -291,7 +291,7 @@ document.head.appendChild(script2);
     const cardBottom = rect.bottom;
 
     const inView =
-      cardTop < viewportHeight * 0.52 &&
+      cardTop < viewportHeight * 0.32 &&
       cardBottom > viewportHeight * 0.28;
 
     setQuoteInView(inView);
