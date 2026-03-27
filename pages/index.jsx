@@ -190,10 +190,25 @@ export default function PaintPalsWebsite() {
 const adsId = "AW-18032245507";
 const ga4Id = "G-0WHMKY5P18";
 const [hasTrackedFormSubmit, setHasTrackedFormSubmit] = useState(false);
+  const [jobberLoaded, setJobberLoaded] = useState(false);
   const [activeSlide, setActiveSlide] = useState(null);
 
   useEffect(() => {
     document.title = "Paint Pals | Cabinet Refinishing";
+
+    const addHeadLink = (rel, href, crossOrigin = false) => {
+    if (document.head.querySelector(`link[rel="${rel}"][href="${href}"]`)) return;
+    const link = document.createElement("link");
+    link.rel = rel;
+    link.href = href;
+    if (crossOrigin) link.crossOrigin = "anonymous";
+    document.head.appendChild(link);
+  };
+
+  addHeadLink("preconnect", "https://clienthub.getjobber.com", true);
+  addHeadLink("preconnect", "https://d3ey4dbjkt2f6s.cloudfront.net", true);
+  addHeadLink("dns-prefetch", "https://clienthub.getjobber.com");
+  addHeadLink("dns-prefetch", "https://d3ey4dbjkt2f6s.cloudfront.net");
 
     if (!window.gtag) {
       const script1 = document.createElement("script");
@@ -230,6 +245,8 @@ document.head.appendChild(script2);
     if (typeof event.data === "string" && event.data.includes("px")) {
       const height = parseInt(event.data.replace("px", ""), 10);
 
+      if (!jobberLoaded) setJobberLoaded(true);
+
       if (!hasFired && height > 800 && lastHeight < 600) {
         hasFired = true;
 
@@ -258,7 +275,7 @@ document.head.appendChild(script2);
   return () => {
     window.removeEventListener("message", handleMessage);
   };
-}, []);
+}, [jobberLoaded]);
 
   useEffect(() => {
     if (document.querySelector(`[data-jobber]`)) return;
@@ -766,7 +783,14 @@ container.addEventListener("click", handleClick);
            <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
-           <div id={jobberContainerId} className="w-full"></div>
+           <div className="relative min-h-[720px] w-full">
+  {!jobberLoaded && (
+    <div className="absolute inset-0 flex items-center justify-center rounded-b-[2rem] bg-white text-sm text-[#496487]">
+      Loading quote form...
+    </div>
+  )}
+  <div id={jobberContainerId} className="relative z-10 w-full"></div>
+</div>
           </div>
         </div>
       </section>
