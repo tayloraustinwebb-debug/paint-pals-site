@@ -785,10 +785,23 @@ container.addEventListener("click", handleClick);
             </div>
            <div className="relative min-h-[720px] w-full">
   {!jobberLoaded && (
-    <div className="absolute inset-0 flex items-center justify-center rounded-b-[2rem] bg-white text-sm text-[#496487]">
-      Loading quote form...
+  <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-b-[2rem] bg-white">
+
+    {/* Spinner */}
+    <div className="h-10 w-10 rounded-full border-4 border-[#98BEDC]/30 border-t-[#325B94] animate-spin"></div>
+
+    {/* Text */}
+    <div className="text-center">
+      <p className="text-sm font-semibold text-[#325B94]">
+        Preparing your quote form...
+      </p>
+      <p className="text-xs text-[#496487]/80 mt-1">
+        This usually takes just a second
+      </p>
     </div>
-  )}
+
+  </div>
+)}
   <div id={jobberContainerId} className="relative z-10 w-full"></div>
 </div>
           </div>
