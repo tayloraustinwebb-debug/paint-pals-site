@@ -492,7 +492,7 @@ container.addEventListener("click", handleClick);
   );
 
   if (target) {
-    const yOffset = isMobile ? -90 : -24;
+    const yOffset = isMobile ? -140 : -24;
     const y =
       target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
