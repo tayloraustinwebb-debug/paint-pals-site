@@ -785,21 +785,40 @@ container.addEventListener("click", handleClick);
             </div>
            <div className="relative min-h-[720px] w-full">
   {!jobberLoaded && (
-  <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-b-[2rem] bg-white">
+  <div className="absolute inset-0 flex flex-col items-center justify-center rounded-b-[2rem] bg-white overflow-hidden transition-opacity duration-500">
 
-    {/* Spinner */}
-    <div className="h-10 w-10 rounded-full border-4 border-[#98BEDC]/30 border-t-[#325B94] animate-spin"></div>
+    {/* Soft animated background glow */}
+    <div className="absolute inset-0 bg-gradient-to-br from-[#EAF3FF] via-white to-[#EAF3FF] animate-pulse opacity-70"></div>
 
-    {/* Text */}
-    <div className="text-center">
-      <p className="text-sm font-semibold text-[#325B94]">
-        Preparing your quote form...
-      </p>
-      <p className="text-xs text-[#496487]/80 mt-1">
-        This usually takes just a second
-      </p>
+    {/* Content */}
+    <div className="relative z-10 flex flex-col items-center gap-5">
+
+      {/* Spinner with glow */}
+      <div className="relative">
+        <div className="h-12 w-12 rounded-full border-4 border-[#98BEDC]/30 border-t-[#325B94] animate-spin"></div>
+        <div className="absolute inset-0 rounded-full blur-md bg-[#325B94]/20"></div>
+      </div>
+
+      {/* Text */}
+      <div className="text-center">
+        <p className="text-sm font-semibold text-[#325B94] tracking-wide">
+          Preparing your quote form...
+        </p>
+        <p className="text-xs text-[#496487]/80 mt-1">
+          This usually takes just a second.
+        </p>
+      </div>
+
+      {/* Skeleton form preview */}
+      <div className="w-[85%] max-w-md space-y-3 mt-2">
+        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+        <div className="h-12 rounded-xl bg-[#325B94]/20 animate-pulse mt-2"></div>
+      </div>
+
     </div>
-
   </div>
 )}
   <div id={jobberContainerId} className="relative z-10 w-full"></div>
