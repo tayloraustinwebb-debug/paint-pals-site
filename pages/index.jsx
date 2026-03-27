@@ -862,8 +862,7 @@ container.addEventListener("click", handleClick);
   <div id={jobberContainerId} className="w-full md:max-w-[520px] md:px-0"></div>
 </div>
 </div>
-          </div>
-    </div>
+         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-6">
