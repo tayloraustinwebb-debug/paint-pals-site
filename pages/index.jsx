@@ -1048,22 +1048,22 @@ container.addEventListener("click", handleClick);
       </div>
 
       <div className="grid gap-0 md:grid-cols-2">
-        <div className="relative bg-black">
+        <div className="relative">
           <img
             src={activeSlide.before}
             alt={`${activeSlide.title} before`}
-            className="h-full w-full object-contain max-h-[75vh]"
+            className="h-full w-full object-cover object-top"
           />
           <div className="absolute left-4 top-4 rounded-full bg-white px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[#325B94] shadow-lg">
             Before
           </div>
         </div>
 
-        <div className="relative bg-black">
+        <div className="relative">
           <img
             src={activeSlide.after}
             alt={`${activeSlide.title} after`}
-            className="h-full w-full object-contain max-h-[75vh]"
+            className="h-full w-full object-cover object-top"
           />
           <div className="absolute right-4 top-4 rounded-full bg-[#98BEDC] px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[#325B94] shadow-lg">
             After
