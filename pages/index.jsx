@@ -280,19 +280,19 @@ document.head.appendChild(script2);
 }, [jobberLoaded]);
 
   useEffect(() => {
-  const quoteSection = document.getElementById("quote");
-  if (!quoteSection) return;
+  const quoteCard = document.getElementById("quote");
+  if (!quoteCard) return;
 
   const observer = new IntersectionObserver(
     ([entry]) => {
       setQuoteInView(entry.isIntersecting);
     },
     {
-      threshold: 0.2,
+      threshold: 0.55,
     }
   );
 
-  observer.observe(quoteSection);
+  observer.observe(quoteCard);
 
   return () => {
     observer.disconnect();
@@ -483,12 +483,28 @@ container.addEventListener("click", handleClick);
               <a
                 href="#quote"
                 onClick={(e) => {
+  e.preventDefault();
   trackQuoteClick(e);
-  setQuoteFocused(true);
+
+  const quoteCard = document.getElementById("quote");
+  if (quoteCard) {
+    const yOffset = window.innerWidth < 768 ? -12 : -24;
+    const y =
+      quoteCard.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  }
+
+  setTimeout(() => {
+    setQuoteFocused(true);
+  }, 350);
 
   setTimeout(() => {
     setQuoteFocused(false);
-  }, 1200);
+  }, 1500);
 }}
                 className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
               >
@@ -811,7 +827,7 @@ container.addEventListener("click", handleClick);
           <div>
   <div
     id="quote"
-    className={`jobber-shell scroll-mt-24 md:scroll-mt-28 hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)] transition-all duration-500 ease-out ${
+    className={`jobber-shell scroll-mt-16 md:scroll-mt-24 hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)] transition-all duration-500 ease-out ${
       quoteFocused
         ? "ring-4 ring-[#98BEDC]/60 shadow-[0_0_40px_rgba(50,91,148,0.25)] scale-[1.01] -translate-y-1"
         : "scale-100 translate-y-0"
