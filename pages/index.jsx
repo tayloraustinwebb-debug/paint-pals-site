@@ -283,18 +283,32 @@ document.head.appendChild(script2);
   const quoteCard = document.getElementById("quote");
   if (!quoteCard) return;
 
+  let lastScrollY = window.scrollY;
+
   const updateQuoteVisibility = () => {
     const rect = quoteCard.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
+    const scrollingDown = window.scrollY > lastScrollY;
 
     const cardTop = rect.top;
     const cardBottom = rect.bottom;
 
-    const inView =
-      cardTop < viewportHeight * 0.32 &&
-      cardBottom > viewportHeight * 0.28;
+    let inView;
+
+    if (scrollingDown) {
+      // Hide later when coming down into the form
+      inView =
+        cardTop < viewportHeight * 0.38 &&
+        cardBottom > viewportHeight * 0.28;
+    } else {
+      // Reappear sooner once you clear the Jobber form going back up
+      inView =
+        cardTop < viewportHeight * 0.85 &&
+        cardBottom > viewportHeight * 0.12;
+    }
 
     setQuoteInView(inView);
+    lastScrollY = window.scrollY;
   };
 
   updateQuoteVisibility();
