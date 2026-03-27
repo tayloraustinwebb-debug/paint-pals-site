@@ -808,11 +808,12 @@ container.addEventListener("click", handleClick);
             </div>
           </div>
 
-          <div
-  className={`jobber-shell hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)] transition-all duration-500 ${
+          <div id="quote" className="scroll-mt-24 md:scroll-mt-28">
+  <div
+  className={`jobber-shell hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)] transition-all duration-500 ease-out ${
     quoteFocused
-      ? "ring-4 ring-[#98BEDC]/60 shadow-[0_0_40px_rgba(50,91,148,0.25)]"
-      : ""
+      ? "ring-4 ring-[#98BEDC]/60 shadow-[0_0_40px_rgba(50,91,148,0.25)] scale-[1.01] -translate-y-1"
+      : "scale-100 translate-y-0"
   }`}
 >
            <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
@@ -862,6 +863,7 @@ container.addEventListener("click", handleClick);
 </div>
           </div>
         </div>
+    </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-6">
@@ -876,19 +878,28 @@ container.addEventListener("click", handleClick);
             <span>✔ Factory-Style Finish</span>
           </div>
           <a
-            href="#quote"
-            onClick={(e) => {
-  trackQuoteClick(e);
-  setQuoteFocused(true);
+  href="#quote"
+  onClick={(e) => {
+    e.preventDefault();
+    trackQuoteClick(e);
 
-  setTimeout(() => {
-    setQuoteFocused(false);
-  }, 1200);
-}}
-            className="hover-lift mt-8 inline-flex rounded-2xl bg-[#325B94] px-7 py-4 text-base font-bold text-white shadow-[0_20px_50px_rgba(50,91,148,0.22)] transition-all duration-200 hover:scale-[1.02]"
-          >
-            Get Free Quote
-          </a>
+    const quoteSection = document.getElementById("quote");
+    if (quoteSection) {
+      quoteSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    setTimeout(() => {
+      setQuoteFocused(true);
+    }, 350);
+
+    setTimeout(() => {
+      setQuoteFocused(false);
+    }, 1500);
+  }}
+  className="hover-lift mt-8 inline-flex rounded-2xl bg-[#325B94] px-7 py-4 text-base font-bold text-white shadow-[0_20px_50px_rgba(50,91,148,0.22)] transition-all duration-200 hover:scale-[1.02]"
+>
+  Get Free Quote
+</a>
         </div>
       </section>
 
