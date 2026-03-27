@@ -486,11 +486,15 @@ container.addEventListener("click", handleClick);
   e.preventDefault();
   trackQuoteClick(e);
 
-  const quoteCard = document.getElementById("quote");
-  if (quoteCard) {
-    const yOffset = window.innerWidth < 768 ? -12 : -24;
+  const isMobile = window.innerWidth < 768;
+  const target = document.getElementById(
+    isMobile ? jobberContainerId : "quote"
+  );
+
+  if (target) {
+    const yOffset = isMobile ? -90 : -24;
     const y =
-      quoteCard.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({
       top: y,
