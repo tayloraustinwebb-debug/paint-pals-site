@@ -304,7 +304,7 @@ document.head.appendChild(script2);
       // Reappear sooner once you clear the Jobber form going back up
       inView =
         cardTop < viewportHeight * 0.85 &&
-        cardBottom > viewportHeight * 0.12;
+        cardBottom > viewportHeight * 0.20;
     }
 
     setQuoteInView(inView);
