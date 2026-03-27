@@ -280,31 +280,31 @@ document.head.appendChild(script2);
 }, [jobberLoaded]);
 
   useEffect(() => {
-  const quoteCard = document.getElementById("quote");
-  if (!quoteCard) return;
+  const formTarget = document.getElementById(jobberContainerId);
+  if (!formTarget) return;
 
   let lastScrollY = window.scrollY;
 
   const updateQuoteVisibility = () => {
-    const rect = quoteCard.getBoundingClientRect();
+    const rect = formTarget.getBoundingClientRect();
     const viewportHeight = window.innerHeight;
     const scrollingDown = window.scrollY > lastScrollY;
 
-    const cardTop = rect.top;
-    const cardBottom = rect.bottom;
+    const formTop = rect.top;
+    const formBottom = rect.bottom;
 
     let inView;
 
     if (scrollingDown) {
-      // Hide later when coming down into the form
+      // Hide later, once user is really entering the Jobber form
       inView =
-        cardTop < viewportHeight * 0.38 &&
-        cardBottom > viewportHeight * 0.28;
+        formTop < viewportHeight * 0.55 &&
+        formBottom > viewportHeight * 0.25;
     } else {
-      // Reappear sooner once you clear the Jobber form going back up
+      // Reappear as soon as the Jobber form is mostly cleared
       inView =
-        cardTop < viewportHeight * 0.85 &&
-        cardBottom > viewportHeight * 0.20;
+        formTop < viewportHeight * 0.85 &&
+        formBottom > viewportHeight * 0.05;
     }
 
     setQuoteInView(inView);
@@ -320,7 +320,7 @@ document.head.appendChild(script2);
     window.removeEventListener("scroll", updateQuoteVisibility);
     window.removeEventListener("resize", updateQuoteVisibility);
   };
-}, []);
+}, [jobberContainerId]);
 
   useEffect(() => {
     if (document.querySelector(`[data-jobber]`)) return;
