@@ -817,52 +817,47 @@ container.addEventListener("click", handleClick);
         : "scale-100 translate-y-0"
     }`}
   >
-           <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
-              Quote Request Form
+    <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
+      Quote Request Form
+    </div>
+
+    <div className="relative min-h-[720px] w-full">
+      {!jobberLoaded && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-b-[2rem] bg-white overflow-hidden transition-opacity duration-500">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#EAF3FF] via-white to-[#EAF3FF] animate-pulse opacity-70"></div>
+
+          <div className="relative z-10 flex flex-col items-center gap-5">
+            <div className="relative">
+              <div className="h-12 w-12 rounded-full border-4 border-[#98BEDC]/30 border-t-[#325B94] animate-spin"></div>
+              <div className="absolute inset-0 rounded-full blur-md bg-[#325B94]/20"></div>
             </div>
-           <div className="relative min-h-[720px] w-full">
-  {!jobberLoaded && (
-  <div className="absolute inset-0 flex flex-col items-center justify-center rounded-b-[2rem] bg-white overflow-hidden transition-opacity duration-500">
 
-    {/* Soft animated background glow */}
-    <div className="absolute inset-0 bg-gradient-to-br from-[#EAF3FF] via-white to-[#EAF3FF] animate-pulse opacity-70"></div>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-[#325B94] tracking-wide">
+                Preparing your quote form...
+              </p>
+              <p className="text-xs text-[#496487]/80 mt-1">
+                This usually takes just a second.
+              </p>
+            </div>
 
-    {/* Content */}
-    <div className="relative z-10 flex flex-col items-center gap-5">
+            <div className="w-[85%] max-w-md space-y-3 mt-2">
+              <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+              <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+              <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+              <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
+              <div className="h-12 rounded-xl bg-[#325B94]/20 animate-pulse mt-2"></div>
+            </div>
+          </div>
+        </div>
+      )}
 
-      {/* Spinner with glow */}
-      <div className="relative">
-        <div className="h-12 w-12 rounded-full border-4 border-[#98BEDC]/30 border-t-[#325B94] animate-spin"></div>
-        <div className="absolute inset-0 rounded-full blur-md bg-[#325B94]/20"></div>
+      <div className="relative z-10 w-full md:flex md:justify-center">
+        <div id={jobberContainerId} className="w-full md:max-w-[520px] md:px-0"></div>
       </div>
-
-      {/* Text */}
-      <div className="text-center">
-        <p className="text-sm font-semibold text-[#325B94] tracking-wide">
-          Preparing your quote form...
-        </p>
-        <p className="text-xs text-[#496487]/80 mt-1">
-          This usually takes just a second.
-        </p>
-      </div>
-
-      {/* Skeleton form preview */}
-      <div className="w-[85%] max-w-md space-y-3 mt-2">
-        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
-        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
-        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
-        <div className="h-10 rounded-lg bg-[#E6EEF8] animate-pulse"></div>
-        <div className="h-12 rounded-xl bg-[#325B94]/20 animate-pulse mt-2"></div>
-      </div>
-
     </div>
   </div>
-)}
-  <div className="relative z-10 w-full md:flex md:justify-center">
-  <div id={jobberContainerId} className="w-full md:max-w-[520px] md:px-0"></div>
 </div>
-</div>
-         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16 pt-6">
