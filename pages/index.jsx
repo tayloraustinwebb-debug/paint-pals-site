@@ -190,8 +190,10 @@ export default function PaintPalsWebsite() {
 const adsId = "AW-18032245507";
 const ga4Id = "G-0WHMKY5P18";
 const [hasTrackedFormSubmit, setHasTrackedFormSubmit] = useState(false);
-  const [jobberLoaded, setJobberLoaded] = useState(false);
-  const [activeSlide, setActiveSlide] = useState(null);
+const [jobberLoaded, setJobberLoaded] = useState(false);
+const [quoteInView, setQuoteInView] = useState(false);
+const [quoteFocused, setQuoteFocused] = useState(false);
+const [activeSlide, setActiveSlide] = useState(null);
 
   useEffect(() => {
     document.title = "Paint Pals | Cabinet Refinishing";
@@ -276,6 +278,26 @@ document.head.appendChild(script2);
     window.removeEventListener("message", handleMessage);
   };
 }, [jobberLoaded]);
+
+  useEffect(() => {
+  const quoteSection = document.getElementById("quote");
+  if (!quoteSection) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setQuoteInView(entry.isIntersecting);
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  observer.observe(quoteSection);
+
+  return () => {
+    observer.disconnect();
+  };
+}, []);
 
   useEffect(() => {
     if (document.querySelector(`[data-jobber]`)) return;
@@ -460,7 +482,14 @@ container.addEventListener("click", handleClick);
             <div className="flex items-center gap-3">
               <a
                 href="#quote"
-                onClick={trackQuoteClick}
+                onClick={(e) => {
+  trackQuoteClick(e);
+  setQuoteFocused(true);
+
+  setTimeout(() => {
+    setQuoteFocused(false);
+  }, 1200);
+}}
                 className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
               >
                 Get Free Quote
@@ -779,7 +808,13 @@ container.addEventListener("click", handleClick);
             </div>
           </div>
 
-          <div className="jobber-shell hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)]">
+          <div
+  className={`jobber-shell hover-lift w-full flex justify-center overflow-hidden rounded-[2rem] border border-[#98BEDC]/40 bg-white shadow-[0_20px_55px_rgba(50,91,148,0.10)] transition-all duration-500 ${
+    quoteFocused
+      ? "ring-4 ring-[#98BEDC]/60 shadow-[0_0_40px_rgba(50,91,148,0.25)]"
+      : ""
+  }`}
+>
            <div className="border-b border-[#98BEDC]/20 px-4 py-3 text-sm font-black uppercase tracking-[0.2em] text-[#325B94]">
               Quote Request Form
             </div>
@@ -842,7 +877,14 @@ container.addEventListener("click", handleClick);
           </div>
           <a
             href="#quote"
-            onClick={trackQuoteClick}
+            onClick={(e) => {
+  trackQuoteClick(e);
+  setQuoteFocused(true);
+
+  setTimeout(() => {
+    setQuoteFocused(false);
+  }, 1200);
+}}
             className="hover-lift mt-8 inline-flex rounded-2xl bg-[#325B94] px-7 py-4 text-base font-bold text-white shadow-[0_20px_50px_rgba(50,91,148,0.22)] transition-all duration-200 hover:scale-[1.02]"
           >
             Get Free Quote
@@ -991,7 +1033,11 @@ container.addEventListener("click", handleClick);
             event_label: "floating_call",
           })
         }
-        className="fixed bottom-5 left-5 z-50 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#103985] to-[#325B94] px-6 py-3 text-sm font-bold text-white shadow-[0_14px_32px_rgba(50,91,148,0.28)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(50,91,148,0.34)]"
+        className={`fixed bottom-5 left-5 z-50 flex items-center gap-2 rounded-full bg-gradient-to-r from-[#103985] to-[#325B94] px-6 py-3 text-sm font-bold text-white shadow-[0_14px_32px_rgba(50,91,148,0.28)] backdrop-blur-md transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(50,91,148,0.34)] ${
+  quoteInView
+    ? "opacity-0 scale-90 translate-y-2 pointer-events-none md:opacity-100 md:scale-100 md:translate-y-0 md:pointer-events-auto"
+    : "opacity-100 scale-100 translate-y-0"
+}`}
       >
         <span className="text-lg">📞</span>
         Call Now
@@ -1000,7 +1046,11 @@ container.addEventListener("click", handleClick);
       <a
         href="#quote"
         onClick={trackQuoteClick}
-        className="fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full border border-[#98BEDC]/50 bg-white/92 px-6 py-3 text-sm font-semibold text-[#103985] shadow-[0_14px_32px_rgba(50,91,148,0.18)] backdrop-blur-md transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(50,91,148,0.24)]"
+        className={`fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full border border-[#98BEDC]/50 bg-white/92 px-6 py-3 text-sm font-semibold text-[#103985] shadow-[0_14px_32px_rgba(50,91,148,0.18)] backdrop-blur-md transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(50,91,148,0.24)] ${
+  quoteInView
+    ? "opacity-0 scale-90 translate-y-2 pointer-events-none md:opacity-100 md:scale-100 md:translate-y-0 md:pointer-events-auto"
+    : "opacity-100 scale-100 translate-y-0"
+}`}
       >
         Get Quote
         <span className="text-lg">→</span>
