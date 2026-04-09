@@ -99,11 +99,23 @@ function ServiceCard({ service }) {
   );
 }
 
-function ReviewCard({ children }) {
+function ReviewCard({ text, name }) {
   return (
-    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
-      <div className="text-sm text-[#fbbc04]">★★★★★</div>
-      <p className="mt-3 text-sm leading-7 text-[#2b4267]">{children}</p>
+    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-6 shadow-[0_10px_25px_rgba(50,91,148,0.10)]">
+      
+      {/* Stars */}
+      <div className="text-[#fbbc04] text-base tracking-wide">★★★★★</div>
+
+      {/* Review Text */}
+      <p className="mt-4 text-[15px] leading-7 text-[#2b4267] italic">
+        “{text}”
+      </p>
+
+      {/* Name + Location */}
+      <p className="mt-4 text-sm font-semibold text-[#103985]">
+        — {name}
+      </p>
+
     </div>
   );
 }
@@ -471,10 +483,19 @@ container.addEventListener("click", handleClick);
   ];
 
   const reviews = [
-    "Paint Pals completely transformed our kitchen. Looks brand new for a fraction of the cost.",
-    "Super clean process and the finish looks factory perfect. Highly recommend.",
-    "Saved us thousands vs replacing cabinets. Amazing results.",
-  ];
+  {
+    text: "Paint Pals refinished our cabinets in just 4 days and saved us about $12,000 compared to replacing. The finish looks completely factory-new — you’d never know they were the same cabinets.",
+    name: "Mike T., Rancho Cucamonga",
+  },
+  {
+    text: "The process was insanely clean and fast. They protected everything and the final finish looks like it came straight from a showroom.",
+    name: "Sarah L., Riverside",
+  },
+  {
+    text: "We were quoted over $20k for new cabinets. Paint Pals gave us the exact look we wanted for a fraction of the cost. Couldn’t be happier.",
+    name: "Daniel R., Ontario",
+  },
+];
 
   const areas = [
     "Fontana",
@@ -618,13 +639,27 @@ container.addEventListener("click", handleClick);
         </section>
       </div>
 
-      <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
-          <div className="grid gap-4 md:grid-cols-3">
-            {reviews.map((r, i) => (
-              <ReviewCard key={i}>{r}</ReviewCard>
-            ))}
-          </div>
+      <div className="flex flex-col gap-4">
+
+  {/* Google Rating Badge */}
+  <div className="inline-flex items-center justify-center gap-3 rounded-xl border border-[#98BEDC]/40 bg-white px-5 py-3 shadow-[0_8px_20px_rgba(50,91,148,0.08)] w-fit">
+    
+    <span className="text-[#fbbc04] text-lg">★★★★★</span>
+    
+    <span className="text-sm font-black text-[#103985]">
+      5★ Rated on Google
+    </span>
+
+  </div>
+
+  {/* Review Cards */}
+  <div className="grid gap-4 md:grid-cols-3">
+    {reviews.map((r, i) => (
+      <ReviewCard key={i} text={r.text} name={r.name} />
+    ))}
+  </div>
+
+</div>
 
           <div className="hover-lift-sm rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
             <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">Thumbtack Reviews</div>
