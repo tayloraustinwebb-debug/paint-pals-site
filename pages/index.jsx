@@ -101,18 +101,18 @@ function ServiceCard({ service }) {
 
 function ReviewCard({ text, name }) {
   return (
-    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-6 md:p-7 shadow-[0_10px_25px_rgba(50,91,148,0.10)]">
+    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_10px_25px_rgba(50,91,148,0.10)]">
       
       {/* Stars */}
       <div className="text-[#fbbc04] text-base tracking-wide">★★★★★</div>
 
       {/* Review Text */}
-      <p className="mt-4 max-w-none text-[15px] leading-8 text-[#2b4267] italic">
+      <p className="mt-3 text-[15px] leading-8 text-[#2b4267] italic">
         “{text}”
       </p>
 
       {/* Name + Location */}
-      <p className="mt-4 text-sm font-semibold text-[#103985]">
+      <p className="mt-4 text-sm font-bold text-[#103985]">
         — {name}
       </p>
 
@@ -640,56 +640,51 @@ container.addEventListener("click", handleClick);
       </div>
 
         <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
-          <div className="flex flex-col gap-4">
+  <div className="flex flex-col gap-5">
+    
+    <div className="inline-flex w-fit items-center justify-center gap-3 rounded-xl border border-[#98BEDC]/40 bg-white px-5 py-3 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
+      <span className="text-[#fbbc04] text-lg">★★★★★</span>
+      <span className="text-sm font-black text-[#103985]">
+        5★ Rated on Google
+      </span>
+    </div>
 
-  {/* Google Rating Badge */}
-  <div className="inline-flex items-center justify-center gap-3 rounded-xl border border-[#98BEDC]/40 bg-white px-5 py-3 shadow-[0_8px_20px_rgba(50,91,148,0.08)] w-fit">
-    
-    <span className="text-[#fbbc04] text-lg">★★★★★</span>
-    
-    <span className="text-sm font-black text-[#103985]">
-      5★ Rated on Google
-    </span>
+    <div className="grid gap-4 md:grid-cols-3">
+      {reviews.map((r, i) => (
+        <ReviewCard key={i} text={r.text} name={r.name} />
+      ))}
+    </div>
+
+    <div className="hover-lift-sm h-fit rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
+      <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">
+        Thumbtack Reviews
+      </div>
+      <div className="mt-3 rounded-xl border border-[#98BEDC]/40 bg-[#f7fbff] p-4">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `
+              <div class="widget" id="tt-review-widget-star">
+                <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg" style="height:20px;margin-bottom:4px;" />
+                <a target="_blank" href="https://www.thumbtack.com/ca/fontana/kitchen-cabinet-painters/paint-pals/service/558939376023232529" style="font-weight:bold;color:#325B94;text-decoration:none;">
+                  <div>Paint Pals</div>
+                </a>
+                <div style="display:flex;align-items:center;gap:4px;">
+                  <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
+                  <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
+                  <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
+                  <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
+                  <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
+                  <span style="margin-left:6px;font-weight:bold;color:#325B94;">40 reviews</span>
+                </div>
+              </div>
+            `,
+          }}
+        />
+      </div>
+    </div>
 
   </div>
-
-  {/* Review Cards */}
-  <div className="grid gap-4">
-    {reviews.map((r, i) => (
-      <ReviewCard key={i} text={r.text} name={r.name} />
-    ))}
-  </div>
-
-</div>
-
-          <div className="hover-lift-sm h-fit rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
-            <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">Thumbtack Reviews</div>
-            <div className="mt-3 rounded-xl border border-[#98BEDC]/40 bg-[#f7fbff] p-4">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    <div class="widget" id="tt-review-widget-star">
-                      <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg" style="height:20px;margin-bottom:4px;" />
-                      <a target="_blank" href="https://www.thumbtack.com/ca/fontana/kitchen-cabinet-painters/paint-pals/service/558939376023232529" style="font-weight:bold;color:#325B94;text-decoration:none;">
-                        <div>Paint Pals</div>
-                      </a>
-                      <div style="display:flex;align-items:center;gap:4px;">
-                        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-                        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-                        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-                        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-                        <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/review-widget/orange_star.svg" />
-                        <span style="margin-left:6px;font-weight:bold;color:#325B94;">40 reviews</span>
-                      </div>
-                    </div>
-                  `,
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+</section>
 
       <section className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex items-end justify-between gap-6">
