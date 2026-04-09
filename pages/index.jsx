@@ -655,11 +655,11 @@ container.addEventListener("click", handleClick);
       ))}
     </div>
 
-    <div className="hover-lift-sm h-fit rounded-[1.5rem] border border-[#98BEDC]/50 bg-gradient-to-br from-[#EAF3FF] to-[#F4F8FC] p-4 shadow-[0_12px_30px_rgba(50,91,148,0.12)]">
+    <div className="hover-lift-sm h-fit rounded-xl border border-[#98BEDC]/40 bg-white p-3 shadow-[0_8px_20px_rgba(50,91,148,0.08)]">
       <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">
         Thumbtack Reviews
       </div>
-      <div className="mt-2 rounded-xl border border-[#98BEDC]/40 bg-[#f7fbff] p-3">
+      <div className="mt-2 rounded-lg border border-[#98BEDC]/40 bg-[#f7fbff] p-3">
         <div
           dangerouslySetInnerHTML={{
             __html: `
