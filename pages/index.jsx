@@ -484,7 +484,7 @@ container.addEventListener("click", handleClick);
 
   const reviews = [
   {
-    text: "Paint Pals refinished our cabinets in just 4 days and saved us about $12,000 compared to replacing. The finish looks completely factory-new — you’d never know they were the same cabinets.",
+    text: "Paint Pals refinished our cabinets in just 4 days and saved us about $12,000 compared to replacing. The finish looks completely factory new, you’d never know they were the same cabinets.",
     name: "Mike T., Rancho Cucamonga",
   },
   {
@@ -492,7 +492,7 @@ container.addEventListener("click", handleClick);
     name: "Sarah L., Riverside",
   },
   {
-    text: "We were quoted over $20k for new cabinets. Paint Pals gave us the exact look we wanted for a fraction of the cost. Couldn’t be happier.",
+    text: "We were quoted over $20k for new cabinets. Paint Pals gave us the exact look and color we wanted for a fraction of the cost. Couldn’t be happier.",
     name: "Daniel R., Ontario",
   },
 ];
