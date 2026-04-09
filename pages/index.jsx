@@ -101,13 +101,13 @@ function ServiceCard({ service }) {
 
 function ReviewCard({ text, name }) {
   return (
-    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-6 shadow-[0_10px_25px_rgba(50,91,148,0.10)]">
+    <div className="hover-lift-sm rounded-[1.25rem] border border-[#98BEDC]/40 bg-white p-6 md:p-7 shadow-[0_10px_25px_rgba(50,91,148,0.10)]">
       
       {/* Stars */}
       <div className="text-[#fbbc04] text-base tracking-wide">★★★★★</div>
 
       {/* Review Text */}
-      <p className="mt-4 text-[15px] leading-7 text-[#2b4267] italic">
+      <p className="mt-4 max-w-none text-[15px] leading-8 text-[#2b4267] italic">
         “{text}”
       </p>
 
@@ -640,7 +640,7 @@ container.addEventListener("click", handleClick);
       </div>
 
         <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
+        <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="flex flex-col gap-4">
 
   {/* Google Rating Badge */}
@@ -655,7 +655,7 @@ container.addEventListener("click", handleClick);
   </div>
 
   {/* Review Cards */}
-  <div className="grid gap-4 md:grid-cols-3">
+  <div className="grid gap-4">
     {reviews.map((r, i) => (
       <ReviewCard key={i} text={r.text} name={r.name} />
     ))}
@@ -663,7 +663,7 @@ container.addEventListener("click", handleClick);
 
 </div>
 
-          <div className="hover-lift-sm rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
+          <div className="hover-lift-sm h-fit rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-5 shadow-[0_16px_40px_rgba(50,91,148,0.08)]">
             <div className="text-[11px] font-black uppercase tracking-[0.2em] text-[#325B94]">Thumbtack Reviews</div>
             <div className="mt-3 rounded-xl border border-[#98BEDC]/40 bg-[#f7fbff] p-4">
               <div
