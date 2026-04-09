@@ -639,7 +639,9 @@ container.addEventListener("click", handleClick);
         </section>
       </div>
 
-      <div className="flex flex-col gap-4">
+        <section className="mx-auto max-w-6xl px-4 py-14">
+        <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
+          <div className="flex flex-col gap-4">
 
   {/* Google Rating Badge */}
   <div className="inline-flex items-center justify-center gap-3 rounded-xl border border-[#98BEDC]/40 bg-white px-5 py-3 shadow-[0_8px_20px_rgba(50,91,148,0.08)] w-fit">
