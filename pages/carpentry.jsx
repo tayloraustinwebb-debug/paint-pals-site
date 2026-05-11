@@ -617,6 +617,26 @@ export default function CarpentryPage() {
             flex-direction: column;
             gap: 10px;
           }
+
+          .service-card svg {
+  width: 58px;
+  height: 58px;
+  fill: none !important;
+  stroke: #0057b8 !important;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.service-card svg path,
+.service-card svg rect,
+.service-card svg line,
+.service-card svg polyline,
+.service-card svg circle {
+  fill: none !important;
+  stroke: #0057b8 !important;
+}
         }
       `}</style>
     </>
@@ -634,7 +654,7 @@ function CalendarIcon() {
 
 function FireplaceIcon() {
   return (
-    <svg className="icon-line" viewBox="0 0 64 64">
+    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
       <path d="M12 50h40M16 50V26h32v24M10 26h44M18 20h28" />
       <path d="M27 45c-3-5 2-8 2-12 5 4 8 7 8 12" />
       <path d="M24 45h16" />
@@ -644,7 +664,7 @@ function FireplaceIcon() {
 
 function WallIcon() {
   return (
-    <svg className="icon-line" viewBox="0 0 64 64">
+    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
       <path d="M14 12h36v40H14zM23 12v40M32 12v40M41 12v40" />
     </svg>
   );
@@ -652,7 +672,7 @@ function WallIcon() {
 
 function ShelfIcon() {
   return (
-    <svg className="icon-line" viewBox="0 0 64 64">
+    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
       <path d="M18 10h28v44H18zM18 23h28M18 36h28M18 49h28" />
     </svg>
   );
@@ -660,7 +680,7 @@ function ShelfIcon() {
 
 function CrownIcon() {
   return (
-    <svg className="icon-line" viewBox="0 0 64 64">
+    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
       <path d="M12 18h40M16 23h32M20 28h24M24 28v22M20 50h24" />
       <path d="M24 34h16" />
     </svg>
@@ -669,7 +689,7 @@ function CrownIcon() {
 
 function DoorIcon() {
   return (
-    <svg className="icon-line" viewBox="0 0 64 64">
+    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
       <path d="M20 10h28v44H20zM27 17h14v30H27zM39 32h2" />
     </svg>
   );
@@ -677,7 +697,7 @@ function DoorIcon() {
 
 function BrushIcon() {
   return (
-    <svg className="icon-line" viewBox="0 0 64 64">
+    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
       <path d="M40 12l12 12-24 24-12-12z" />
       <path d="M16 36l-5 5c-2 2-2 5 0 7s5 2 7 0l5-5" />
       <path d="M36 16l12 12" />
