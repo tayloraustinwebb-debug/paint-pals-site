@@ -44,26 +44,45 @@ export default function CarpentryPage() {
         />
       </Head>
 
-      <main className="carpentry-page">
-        <header className="top-nav">
-          <a href="/" className="brand">
-            <span className="brand-mark">▰</span>
-            <span>
-              <strong>Paint Pals</strong>
-              <small>RENO COMPANY INC.</small>
-            </span>
-          </a>
+  <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
+  <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <a href="/">
+      <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
+    </a>
 
-          <nav>
-            <a href="/">Cabinet Refinishing</a>
-            <a className="active" href="/carpentry">Carpentry</a>
-            <a href="https://clienthub.getjobber.com/" target="_blank" rel="noreferrer">
-              Client Portal
-            </a>
-          </nav>
+    <div className="flex items-center gap-3">
+      <a
+        href="/"
+        className="hidden rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)] md:inline-flex"
+      >
+        Cabinet Refinishing
+      </a>
 
-          <a className="nav-cta" href="/#quote">Get Free Quote</a>
-        </header>
+      <a
+        href="/carpentry"
+        className="hidden rounded-xl bg-[#325B94] px-5 py-3 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
+      >
+        Carpentry
+      </a>
+
+      <a
+        href="/#quote"
+        className="hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
+      >
+        Get Free Quote
+      </a>
+
+      <a
+        href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)]"
+      >
+        Client Portal
+      </a>
+    </div>
+  </div>
+</header>
 
         <section className="hero">
           <div className="hero-overlay" />
@@ -143,47 +162,86 @@ export default function CarpentryPage() {
           </div>
         </section>
 
-        <footer className="footer">
-          <div className="footer-grid">
-            <div>
-              <div className="footer-brand">Paint Pals</div>
-              <p>Cabinet refinishing, painting, and custom carpentry services in Southern California.</p>
-            </div>
+       <footer className="border-t border-[#98BEDC]/25 bg-[#0f2747] text-white">
+  <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[1.2fr_0.8fr_0.9fr]">
+    <div>
+      <img src="/logo.png" className="h-16 w-auto md:h-20" alt="Paint Pals" />
+      <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
+        Premium cabinet refinishing, cabinet painting, cabinet refacing, and custom carpentry services in Southern California.
+      </p>
+    </div>
 
-            <div>
-              <h4>Services</h4>
-              <a href="/">Cabinet Refinishing</a>
-              <a href="/">Cabinet Painting</a>
-              <a href="/">Cabinet Refacing</a>
-              <a href="/carpentry">Carpentry</a>
-              <a href="/carpentry">Shiplap Fireplaces</a>
-              <a href="/carpentry">Accent Walls</a>
-            </div>
+    <div>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">
+        Services
+      </p>
+      <div className="mt-4 grid gap-3 text-sm text-white/80">
+        <a href="/" className="transition hover:text-white">
+          Cabinet Refinishing
+        </a>
+        <a href="/" className="transition hover:text-white">
+          Cabinet Painting
+        </a>
+        <a href="/" className="transition hover:text-white">
+          Cabinet Refacing
+        </a>
+        <a href="/carpentry" className="transition hover:text-white">
+          Carpentry
+        </a>
+        <a href="/carpentry" className="transition hover:text-white">
+          Shiplap Fireplaces
+        </a>
+        <a href="/carpentry" className="transition hover:text-white">
+          Accent Walls
+        </a>
+      </div>
+    </div>
 
-            <div>
-              <h4>Quick Links</h4>
-              <a href="/#quote">Get Free Quote</a>
-              <a href="/#process">Our Process</a>
-              <a href="/#gallery">Before & After</a>
-              <a href="/#reviews">Reviews</a>
-              <a href="/#faq">FAQ</a>
-            </div>
+    <div>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#CFE3F1]">
+        Contact
+      </p>
+      <div className="mt-4 grid gap-3 text-sm text-white/80">
+        <a href="tel:+18402175750" className="transition hover:text-white">
+          (840) 217-5750
+        </a>
 
-            <div>
-              <h4>Service Area</h4>
-              <p>Serving Southern California</p>
-              <p>San Bernardino County</p>
-              <p>Riverside County</p>
-              <p>Los Angeles County</p>
-              <p>Orange County</p>
-            </div>
-          </div>
+        <a href="mailto:Taylor@paint-pals.com" className="transition hover:text-white">
+          Taylor@paint-pals.com
+        </a>
 
-          <div className="footer-bottom">
-            <span>© 2025 Paint Pals Reno Company Inc. All rights reserved.</span>
-            <span>License #1024092</span>
-          </div>
-        </footer>
+        <a
+          href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition hover:text-white"
+        >
+          Client Portal
+        </a>
+
+        <p>Serving Riverside, San Bernardino, and Orange County</p>
+
+        <a
+          href="/#quote"
+          className="inline-flex w-fit rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] transition hover:bg-white/15"
+        >
+          Get Free Quote
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div className="border-t border-white/10">
+    <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-5 text-xs text-white/60 md:flex-row md:items-center md:justify-between">
+      <p>© {new Date().getFullYear()} Paint Pals. All rights reserved.</p>
+      <div className="flex flex-wrap gap-3">
+        <span>Licensed &amp; Insured</span>
+        <span>•</span>
+        <span>Serving Southern California</span>
+      </div>
+    </div>
+  </div>
+</footer>
       </main>
 
       <style jsx>{`
@@ -191,87 +249,6 @@ export default function CarpentryPage() {
           font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
           color: #0f172a;
           background: #fff;
-        }
-
-        .top-nav {
-          height: 86px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 7%;
-          background: white;
-          box-shadow: 0 2px 18px rgba(15, 23, 42, 0.08);
-          position: sticky;
-          top: 0;
-          z-index: 20;
-        }
-
-        .brand {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          text-decoration: none;
-          color: #0b55b5;
-        }
-
-        .brand-mark {
-          font-size: 28px;
-          transform: rotate(-25deg);
-          display: inline-block;
-        }
-
-        .brand strong {
-          display: block;
-          font-size: 28px;
-          line-height: 1;
-        }
-
-        .brand small {
-          display: block;
-          font-size: 11px;
-          letter-spacing: 2px;
-          color: #325b94;
-          margin-top: 4px;
-        }
-
-        nav {
-          display: flex;
-          gap: 46px;
-          align-items: center;
-        }
-
-        nav a {
-          color: #111827;
-          text-decoration: none;
-          font-weight: 700;
-          font-size: 15px;
-          padding: 34px 0;
-          position: relative;
-        }
-
-        nav a.active {
-          color: #0057b8;
-        }
-
-        nav a.active::after {
-          content: "";
-          position: absolute;
-          left: 50%;
-          bottom: -1px;
-          transform: translateX(-50%);
-          border-left: 7px solid transparent;
-          border-right: 7px solid transparent;
-          border-bottom: 7px solid #0057b8;
-        }
-
-        .nav-cta {
-          background: #0057b8;
-          color: white;
-          text-decoration: none;
-          padding: 16px 31px;
-          border-radius: 6px;
-          font-weight: 800;
-          box-shadow: 0 8px 18px rgba(0, 87, 184, 0.22);
         }
 
         .hero {
@@ -485,48 +462,6 @@ export default function CarpentryPage() {
           color: #eef6ff;
         }
 
-        .footer {
-          background: linear-gradient(135deg, #002d4f, #003b66);
-          color: white;
-          padding: 36px 7% 20px;
-        }
-
-        .footer-grid {
-          display: grid;
-          grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-          gap: 52px;
-        }
-
-        .footer-brand {
-          font-size: 30px;
-          font-weight: 950;
-          margin-bottom: 20px;
-        }
-
-        .footer h4 {
-          text-transform: uppercase;
-          font-size: 12px;
-          margin: 0 0 18px;
-        }
-
-        .footer a,
-        .footer p {
-          display: block;
-          color: white;
-          text-decoration: none;
-          font-size: 15px;
-          margin: 0 0 10px;
-          line-height: 1.4;
-        }
-
-        .footer-bottom {
-          display: flex;
-          justify-content: space-between;
-          border-top: 1px solid rgba(255,255,255,0.2);
-          margin-top: 35px;
-          padding-top: 18px;
-          font-size: 13px;
-        }
 
         :global(.icon-line) {
   display: block !important;
