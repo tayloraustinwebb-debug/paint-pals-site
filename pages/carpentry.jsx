@@ -381,19 +381,18 @@ export default function CarpentryPage() {
           gap: 16px;
           margin-top: 28px;
         }
-
-        .service-card {
-          min-height: 135px;
-          border: 1px solid #d9dee7;
-          border-radius: 8px;
-          padding: 28px 26px;
-          display: grid;
-          grid-template-columns: 64px 1fr;
-          align-items: center;
-          gap: 22px;
-          background: white;
-          box-shadow: 0 2px 8px rgba(15, 23, 42, 0.035);
-        }
+.service-card {
+  min-height: 135px;
+  border: 1px solid #d9dee7;
+  border-radius: 8px;
+  padding: 28px 26px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.035);
+  overflow: visible;
+}
 
         .service-card h3 {
           margin: 0 0 9px;
@@ -529,15 +528,31 @@ export default function CarpentryPage() {
           font-size: 13px;
         }
 
-        .icon-line {
-          width: 58px;
-          height: 58px;
-          stroke: #0057b8;
-          stroke-width: 2.4;
-          fill: none;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-        }
+        :global(.icon-line) {
+  display: block !important;
+  width: 58px !important;
+  height: 58px !important;
+  min-width: 58px !important;
+  flex: 0 0 58px !important;
+  fill: none !important;
+  stroke: #0057b8 !important;
+  color: #0057b8 !important;
+  stroke-width: 2.4 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+:global(.icon-line path),
+:global(.icon-line rect),
+:global(.icon-line line),
+:global(.icon-line polyline),
+:global(.icon-line circle) {
+  fill: none !important;
+  stroke: #0057b8 !important;
+  stroke-width: 2.4 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
 
         .button-icon {
           width: 20px;
@@ -618,25 +633,7 @@ export default function CarpentryPage() {
             gap: 10px;
           }
 
-          .service-card svg {
-  width: 58px;
-  height: 58px;
-  fill: none !important;
-  stroke: #0057b8 !important;
-  stroke-width: 2.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  flex-shrink: 0;
-}
-
-.service-card svg path,
-.service-card svg rect,
-.service-card svg line,
-.service-card svg polyline,
-.service-card svg circle {
-  fill: none !important;
-  stroke: #0057b8 !important;
-}
+    
         }
       `}</style>
     </>
