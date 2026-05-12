@@ -167,7 +167,7 @@ export default function CarpentryPage() {
     <div>
       <img src="/logo.png" className="h-16 w-auto md:h-20" alt="Paint Pals" />
       <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
-        Premium cabinet refinishing, cabinet painting, cabinet refacing, and custom carpentry services in Southern California.
+        Premium cabinet refinishing, cabinet painting, cabinet refacing, and custom carpentry services in Southern California. Factory-Style finshes and fast clean transformations.
       </p>
     </div>
 
