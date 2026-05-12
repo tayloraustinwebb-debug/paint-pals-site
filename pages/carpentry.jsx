@@ -8,32 +8,32 @@ const services = [
   {
     title: "Shiplap Fireplaces",
     text: "Custom fireplace surrounds, shiplap walls, trim details, and clean finish work.",
-    icon: "/icons/shiplap-fireplaces.svg",
+    icon: "/shiplap-fireplaces.svg",
   },
   {
     title: "Accent Walls",
     text: "Board and batten, wainscoting, feature walls, paneling, and modern trim designs.",
-    icon: "/icons/accent-walls.svg",
+    icon: "/accent-walls.svg",
   },
   {
     title: "Built-Ins & Storage",
     text: "Custom shelving, storage details, entertainment walls, and functional upgrades.",
-    icon: "/icons/built-ins-storage.svg",
+    icon: "/built-ins-storage.svg",
   },
   {
     title: "Crown & Base Molding",
     text: "Clean molding installs that add a finished, high-end look to your home.",
-    icon: "/icons/crown-base-moulding.svg",
+    icon: "/crown-base-moulding.svg",
   },
   {
     title: "Interior Door Upgrades",
     text: "Door trim, casing, refinishing prep, and detail upgrades for a cleaner interior.",
-    icon: "/icons/interior-door-upgrades.svg",
+    icon: "/interior-door-upgrades.svg",
   },
   {
     title: "Paint-Ready Finish Work",
     text: "Carpentry built with the final finish in mind for a smooth, professional result.",
-    icon: "/icons/paint-ready-finish-work.svg",
+    icon: "/paint-ready-finish-work.svg",
   },
 ];
 
@@ -158,8 +158,11 @@ export default function CarpentryPage() {
       <section className="bottom-cta">
   <div className="cta-icon">
     <div className="cross-tools">
-  <Hammer />
-  <Wrench />
+  <img
+    src="/crossed-tools.svg"
+    alt="Crossed tools icon"
+    className="cross-tools-img"
+  />
 </div>
   </div>
 
