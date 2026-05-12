@@ -514,7 +514,6 @@ container.addEventListener("click", handleClick);
     "and more...",
   ];
 
-  return (
    return (
   <div className="min-h-screen bg-[#f4f8fc] text-black">
 
