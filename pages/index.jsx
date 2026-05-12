@@ -523,51 +523,68 @@ container.addEventListener("click", handleClick);
         <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
             <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
-            <div className="flex items-center gap-3">
-              <a
-                href="#quote"
-                onClick={(e) => {
-  e.preventDefault();
-  trackQuoteClick(e);
+            <div className="flex items-center gap-3 flex-wrap justify-end">
 
-  const isMobile = window.innerWidth < 768;
-  const quoteCard = document.getElementById("quote");
+  <a
+    href="/"
+    className="hidden rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)] md:inline-flex"
+  >
+    Cabinet Refinishing
+  </a>
 
-  if (quoteCard) {
-    const cardTop = quoteCard.getBoundingClientRect().top + window.pageYOffset;
+  <a
+    href="/carpentry"
+    className="hidden rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)] md:inline-flex"
+  >
+    Carpentry
+  </a>
 
-    const y = isMobile
-      ? cardTop + 190
-      : cardTop - 24;
+  <a
+    href="#quote"
+    onClick={(e) => {
+      e.preventDefault();
+      trackQuoteClick(e);
 
-    window.scrollTo({
-      top: y,
-      behavior: "smooth",
-    });
-  }
+      const isMobile = window.innerWidth < 768;
+      const quoteCard = document.getElementById("quote");
 
-  setTimeout(() => {
-    setQuoteFocused(true);
-  }, 350);
+      if (quoteCard) {
+        const cardTop = quoteCard.getBoundingClientRect().top + window.pageYOffset;
 
-  setTimeout(() => {
-    setQuoteFocused(false);
-  }, 1500);
-}}
-                className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
-              >
-                Get Free Quote
-              </a>
-              <a
-  href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
-  target="_blank"
-  onClick={trackPortalClick}
-  rel="noopener noreferrer"
-  className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)]"
->
-  Client Portal
-</a>
-            </div>
+        const y = isMobile
+          ? cardTop + 190
+          : cardTop - 24;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
+      }
+
+      setTimeout(() => {
+        setQuoteFocused(true);
+      }, 350);
+
+      setTimeout(() => {
+        setQuoteFocused(false);
+      }, 1500);
+    }}
+    className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
+  >
+    Get Free Quote
+  </a>
+
+  <a
+    href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+    target="_blank"
+    onClick={trackPortalClick}
+    rel="noopener noreferrer"
+    className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)]"
+  >
+    Client Portal
+  </a>
+
+</div>
           </div>
         </header>
 
