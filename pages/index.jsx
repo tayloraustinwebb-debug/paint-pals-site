@@ -607,7 +607,7 @@ container.addEventListener("click", handleClick);
               <h1 className="mt-5 text-4xl font-bold leading-[1.02] tracking-tight text-[#103985] md:text-6xl">
                 Transform Your Cabinets. Save Thousands.
               </h1>
-             <p className="mt-5 max-w-3xl text-lg leading-8 text-[#103985] font-medium drop-shadow-[0_2px_8px_rgba(255,255,255,0.55)]">
+             <p className="mt-5 max-w-3xl text-lg leading-8 text-white/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]">
                 Cabinet refinishing, cabinet painting, and cabinet refacing in Southern California that gives your kitchen a brand-new look without the high cost of cabinet replacement.
               </p>
 
