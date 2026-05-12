@@ -1,14 +1,6 @@
 import Head from "next/head";
 
 import {
-  Flame,
-  PanelsTopLeft,
-  Rows3,
-  PanelTop,
-  DoorClosed,
-  Paintbrush,
-  Hammer,
-  Wrench,
   CalendarDays,
 } from "lucide-react";
 
@@ -16,32 +8,32 @@ const services = [
   {
     title: "Shiplap Fireplaces",
     text: "Custom fireplace surrounds, shiplap walls, trim details, and clean finish work.",
-    icon: Flame,
+    icon: "/icons/shiplap-fireplaces.svg",
   },
   {
     title: "Accent Walls",
     text: "Board and batten, wainscoting, feature walls, paneling, and modern trim designs.",
-    icon: PanelsTopLeft,
+    icon: "/icons/accent-walls.svg",
   },
   {
     title: "Built-Ins & Storage",
     text: "Custom shelving, storage details, entertainment walls, and functional upgrades.",
-    icon: Rows3,
+    icon: "/icons/built-ins-storage.svg",
   },
   {
     title: "Crown & Base Molding",
     text: "Clean molding installs that add a finished, high-end look to your home.",
-    icon: PanelTop,
+    icon: "/icons/crown-base-moulding.svg",
   },
   {
     title: "Interior Door Upgrades",
     text: "Door trim, casing, refinishing prep, and detail upgrades for a cleaner interior.",
-    icon: DoorClosed,
+    icon: "/icons/interior-door-upgrades.svg",
   },
   {
     title: "Paint-Ready Finish Work",
     text: "Carpentry built with the final finish in mind for a smooth, professional result.",
-    icon: Paintbrush,
+    icon: "/icons/paint-ready-finish-work.svg",
   },
 ];
 
@@ -119,17 +111,20 @@ export default function CarpentryPage() {
 
             <div className="service-grid">
               {services.map((service) => {
-                const Icon = service.icon;
-                return (
-                  <div className="service-card" key={service.title}>
-                    <Icon className="service-icon" strokeWidth={2.2} />
-                    <div>
-                      <h3>{service.title}</h3>
-                      <p>{service.text}</p>
-                    </div>
-                  </div>
-                );
-              })}
+  return (
+    <div className="service-card" key={service.title}>
+      <img
+        src={service.icon}
+        alt={`${service.title} icon`}
+        className="service-icon-img"
+      />
+      <div>
+        <h3>{service.title}</h3>
+        <p>{service.text}</p>
+      </div>
+    </div>
+  );
+})}
             </div>
           </div>
         </section>
@@ -399,6 +394,14 @@ export default function CarpentryPage() {
           color: #111827;
         }
 
+        .service-icon-img {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  object-fit: contain;
+  display: block;
+}
+
         .why-section {
           display: grid;
           grid-template-columns: 1fr 1.25fr;
@@ -532,21 +535,17 @@ export default function CarpentryPage() {
   height: 96px;
 }
 
-.cross-tools :global(svg) {
-  position: absolute;
-  inset: 0;
-  width: 96px;
-  height: 96px;
-  color: white;
-  stroke-width: 2.4;
+.cross-tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cross-tools :global(svg:first-child) {
-  transform: rotate(-45deg);
-}
-
-.cross-tools :global(svg:last-child) {
-  transform: rotate(45deg);
+.cross-tools-img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
 }
 
         @media (max-width: 900px) {
