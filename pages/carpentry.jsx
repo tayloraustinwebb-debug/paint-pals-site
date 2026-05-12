@@ -148,19 +148,19 @@ export default function CarpentryPage() {
           </div>
         </section>
 
-        <section className="bottom-cta">
-          <div className="cta-icon">
-            <ToolsIcon />
-          </div>
+      <section className="bottom-cta">
+  <div className="cta-icon">
+    <ToolsIcon />
+  </div>
 
-          <div>
-            <h2>Ready to Upgrade Your Home?</h2>
-            <p>Get a free quote for custom carpentry, trim, shiplap, or built-in work.</p>
-            <a className="white-button small" href="/#quote">
-              <CalendarIcon /> Get Free Quote
-            </a>
-          </div>
-        </section>
+  <div>
+    <h2>Ready to Upgrade Your Home?</h2>
+    <p>Get a free quote for custom carpentry, trim, shiplap, or built-in work.</p>
+    <a className="white-button small" href="/#quote">
+      <CalendarIcon /> Get Free Quote
+    </a>
+  </div>
+</section>
 
        <footer className="border-t border-[#98BEDC]/25 bg-[#0f2747] text-white">
   <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[1.2fr_0.8fr_0.9fr]">
@@ -497,15 +497,35 @@ export default function CarpentryPage() {
           fill: none;
         }
 
-        .tools-icon {
-          width: 78px;
-          height: 78px;
-          stroke: white;
-          stroke-width: 2.2;
-          fill: none;
-          stroke-linecap: round;
-          stroke-linejoin: round;
-        }
+      :global(.tools-icon) {
+  width: 82px !important;
+  height: 82px !important;
+  stroke: white !important;
+  fill: none !important;
+  stroke-width: 2.4 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+:global(.tools-icon path) {
+  stroke: white !important;
+  fill: none !important;
+}
+
+:global(.icon-line) {
+  width: 58px !important;
+  height: 58px !important;
+  stroke: #0057b8 !important;
+  fill: none !important;
+  stroke-width: 2.4 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+:global(.icon-line path) {
+  stroke: #0057b8 !important;
+  fill: none !important;
+}
 
         @media (max-width: 900px) {
           .top-nav {
@@ -587,9 +607,12 @@ function CalendarIcon() {
 function FireplaceIcon() {
   return (
     <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M12 50h40M16 50V26h32v24M10 26h44M18 20h28" />
-      <path d="M27 45c-3-5 2-8 2-12 5 4 8 7 8 12" />
-      <path d="M24 45h16" />
+      <path d="M12 48h40" />
+      <path d="M17 48V25h30v23" />
+      <path d="M14 25h36" />
+      <path d="M20 19h24" />
+      <path d="M27 43c-2-6 3-8 3-13 6 5 9 8 7 13" />
+      <path d="M25 43h15" />
     </svg>
   );
 }
@@ -597,7 +620,10 @@ function FireplaceIcon() {
 function WallIcon() {
   return (
     <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M14 12h36v40H14zM23 12v40M32 12v40M41 12v40" />
+      <path d="M15 12h34v40H15z" />
+      <path d="M24 12v40" />
+      <path d="M32 12v40" />
+      <path d="M40 12v40" />
     </svg>
   );
 }
@@ -605,7 +631,10 @@ function WallIcon() {
 function ShelfIcon() {
   return (
     <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M18 10h28v44H18zM18 23h28M18 36h28M18 49h28" />
+      <path d="M20 10h24v44H20z" />
+      <path d="M20 24h24" />
+      <path d="M20 38h24" />
+      <path d="M20 52h24" />
     </svg>
   );
 }
@@ -613,8 +642,11 @@ function ShelfIcon() {
 function CrownIcon() {
   return (
     <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M12 18h40M16 23h32M20 28h24M24 28v22M20 50h24" />
-      <path d="M24 34h16" />
+      <path d="M13 19h38" />
+      <path d="M17 25h30" />
+      <path d="M21 31h22" />
+      <path d="M25 31v20" />
+      <path d="M21 51h24" />
     </svg>
   );
 }
@@ -622,7 +654,9 @@ function CrownIcon() {
 function DoorIcon() {
   return (
     <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M20 10h28v44H20zM27 17h14v30H27zM39 32h2" />
+      <path d="M20 10h26v44H20z" />
+      <path d="M28 18h11v28H28z" />
+      <path d="M38 32h2" />
     </svg>
   );
 }
@@ -630,19 +664,20 @@ function DoorIcon() {
 function BrushIcon() {
   return (
     <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M40 12l12 12-24 24-12-12z" />
-      <path d="M16 36l-5 5c-2 2-2 5 0 7s5 2 7 0l5-5" />
-      <path d="M36 16l12 12" />
+      <path d="M39 12l13 13-25 25-13-13z" />
+      <path d="M17 39l-5 5c-3 3-3 7 0 10s7 3 10 0l5-5" />
+      <path d="M35 16l13 13" />
     </svg>
   );
 }
 
 function ToolsIcon() {
   return (
-    <svg className="tools-icon" viewBox="0 0 64 64">
-      <path d="M20 12l32 32-8 8-32-32z" />
-      <path d="M44 12l8 8-32 32-8-8z" />
-      <path d="M16 16l-6-6M48 16l6-6" />
+    <svg className="tools-icon" viewBox="0 0 64 64" fill="none">
+      <path d="M23 10l31 31-8 8-31-31z" />
+      <path d="M44 10l10 10-32 32-10-10z" />
+      <path d="M17 14l-7-7" />
+      <path d="M50 14l7-7" />
     </svg>
   );
 }
