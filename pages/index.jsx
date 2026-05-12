@@ -81,18 +81,12 @@ function SliderCard({ item, onOpen }) {
 function ServiceCard({ service }) {
   return (
     <div className="group hover-lift rounded-[1.5rem] border border-[#98BEDC]/40 bg-white p-6 shadow-[0_12px_30px_rgba(50,91,148,0.10)] transition hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(50,91,148,0.12)]">
-      <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#98BEDC,#325B94)] shadow-[0_0_18px_rgba(152,190,220,0.55)] transition group-hover:shadow-[0_0_28px_rgba(152,190,220,0.85)]">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="3"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-      </div>
+      <img
+        src={service.icon}
+        alt={`${service.title} icon`}
+        className="mb-5 h-28 w-28 object-contain"
+      />
+
       <h3 className="text-lg font-black tracking-tight text-[#103985] md:text-xl">{service.title}</h3>
       <p className="mt-3 text-sm leading-7 text-[#496487]">{service.desc}</p>
     </div>
@@ -468,19 +462,22 @@ container.addEventListener("click", handleClick);
   );
 
   const services = [
-    {
-      title: "Cabinet Refinishing",
-      desc: "Transform existing cabinets with a factory-style finish that saves thousands versus replacing them.",
-    },
-    {
-      title: "Cabinet Refacing",
-      desc: "Update doors and drawer fronts while keeping your existing layout for a fresh, modern look.",
-    },
-    {
-      title: "Cabinet Upgrades",
-      desc: "Improve your kitchen with new hardware, soft-close options, and upgraded details that change the feel of the space.",
-    },
-  ];
+  {
+    title: "Cabinet Refinishing",
+    desc: "Transform existing cabinets with a factory-style finish that saves thousands versus replacing them.",
+    icon: "/cabinet-refinishing.svg",
+  },
+  {
+    title: "Cabinet Refacing",
+    desc: "Update doors and drawer fronts while keeping your existing layout for a fresh, modern look.",
+    icon: "/cabinet-refacing.svg",
+  },
+  {
+    title: "Cabinet Upgrades",
+    desc: "Improve your kitchen with new hardware, soft-close options, and upgraded details that change the feel of the space.",
+    icon: "/cabinet-upgrades.svg",
+  },
+];
 
   const reviews = [
   {
