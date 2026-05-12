@@ -242,7 +242,7 @@ export default function CarpentryPage() {
     </div>
   </div>
 </footer>
-      </main>
+    
 
       <style jsx>{`
         .carpentry-page {
