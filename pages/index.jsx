@@ -525,7 +525,7 @@ container.addEventListener("click", handleClick);
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.12] blur-[1px] scale-105"
         style={{
-          backgroundImage: "url('/masked-kitchen.jpg')",
+          backgroundImage: "url('/masked-kitchen.png')",
         }}
       />
 
