@@ -159,7 +159,7 @@ export default function CarpentryPage() {
   <div className="cta-icon">
     <div className="cross-tools">
   <img
-    src="/crossed-tools.svg"
+    src="/crossed-tools.png"
     alt="Crossed tools icon"
     className="cross-tools-img"
   />
