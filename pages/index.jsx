@@ -514,13 +514,9 @@ container.addEventListener("click", handleClick);
     "and more...",
   ];
 
-   return (
+  return (
   <div className="min-h-screen bg-[#f4f8fc] text-black">
-
-    {/* Hero Background Wrapper */}
     <div className="relative overflow-hidden">
-
-      {/* Background Kitchen Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.12] blur-[1px] scale-105"
         style={{
@@ -528,84 +524,69 @@ container.addEventListener("click", handleClick);
         }}
       />
 
-      {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(152,190,220,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(50,91,148,0.12),transparent_24%)]" />
 
-      {/* Main Content */}
       <div className="relative z-10">
-
         <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
             <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
+
             <div className="flex items-center gap-3 flex-wrap justify-end">
-        <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-            <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
-            <div className="flex items-center gap-3 flex-wrap justify-end">
-<a
-  href="/"
-  className="inline-flex rounded-xl bg-[#325B94] px-3 py-2 text-xs font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:px-5 md:py-3 md:text-sm"
->
-  Cabinet Refinishing
-</a>
+              <a
+                href="/"
+                className="inline-flex rounded-xl bg-[#325B94] px-3 py-2 text-xs font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:px-5 md:py-3 md:text-sm"
+              >
+                Cabinet Refinishing
+              </a>
 
-<a
-  href="/carpentry"
-  className="inline-flex rounded-xl border border-[#98BEDC]/60 bg-white px-3 py-2 text-xs font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)] md:px-5 md:py-3 md:text-sm"
->
-  Carpentry
-</a>
+              <a
+                href="/carpentry"
+                className="inline-flex rounded-xl border border-[#98BEDC]/60 bg-white px-3 py-2 text-xs font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)] md:px-5 md:py-3 md:text-sm"
+              >
+                Carpentry
+              </a>
 
-  <a
-    href="#quote"
-    onClick={(e) => {
-      e.preventDefault();
-      trackQuoteClick(e);
+              <a
+                href="#quote"
+                onClick={(e) => {
+                  e.preventDefault();
+                  trackQuoteClick(e);
 
-      const isMobile = window.innerWidth < 768;
-      const quoteCard = document.getElementById("quote");
+                  const isMobile = window.innerWidth < 768;
+                  const quoteCard = document.getElementById("quote");
 
-      if (quoteCard) {
-        const cardTop = quoteCard.getBoundingClientRect().top + window.pageYOffset;
+                  if (quoteCard) {
+                    const cardTop = quoteCard.getBoundingClientRect().top + window.pageYOffset;
 
-        const y = isMobile
-          ? cardTop + 190
-          : cardTop - 24;
+                    const y = isMobile ? cardTop + 190 : cardTop - 24;
 
-        window.scrollTo({
-          top: y,
-          behavior: "smooth",
-        });
-      }
+                    window.scrollTo({
+                      top: y,
+                      behavior: "smooth",
+                    });
+                  }
 
-      setTimeout(() => {
-        setQuoteFocused(true);
-      }, 350);
+                  setTimeout(() => setQuoteFocused(true), 350);
+                  setTimeout(() => setQuoteFocused(false), 1500);
+                }}
+                className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
+              >
+                Get Free Quote
+              </a>
 
-      setTimeout(() => {
-        setQuoteFocused(false);
-      }, 1500);
-    }}
-    className="hover-lift hidden rounded-xl bg-[#325B94] px-6 py-3.5 text-sm font-bold text-white shadow-[0_10px_30px_rgba(50,91,148,0.25)] transition-all duration-200 hover:scale-[1.03] md:inline-flex"
-  >
-    Get Free Quote
-  </a>
-
-  <a
-    href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
-    target="_blank"
-    onClick={trackPortalClick}
-    rel="noopener noreferrer"
-    className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)]"
-  >
-    Client Portal
-  </a>
-
-</div>
+              <a
+                href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
+                target="_blank"
+                onClick={trackPortalClick}
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-xl border border-[#98BEDC]/60 bg-white px-5 py-3 text-sm font-semibold text-[#325B94] shadow-[0_6px_14px_rgba(50,91,148,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(50,91,148,0.14)]"
+              >
+                Client Portal
+              </a>
+            </div>
           </div>
         </header>
 
-              </div>
 
         <section className="mx-auto max-w-6xl px-4 py-6 md:py-8">
           <div className="flex flex-wrap items-center justify-center gap-4 rounded-[2rem] border border-[#98BEDC]/40 bg-white px-6 py-6 text-sm font-black text-[#103985] shadow-[0_14px_40px_rgba(50,91,148,0.08)]">
