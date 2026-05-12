@@ -515,8 +515,30 @@ container.addEventListener("click", handleClick);
   ];
 
   return (
-    <div className="min-h-screen bg-[#f4f8fc] text-black">
-      <div className="bg-[radial-gradient(circle_at_top_left,rgba(152,190,220,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(50,91,148,0.12),transparent_24%)]">
+   return (
+  <div className="min-h-screen bg-[#f4f8fc] text-black">
+
+    {/* Hero Background Wrapper */}
+    <div className="relative overflow-hidden">
+
+      {/* Background Kitchen Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-[0.12] blur-[1px] scale-105"
+        style={{
+          backgroundImage: "url('/masked-kitchen.jpg')",
+        }}
+      />
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(152,190,220,0.18),transparent_28%),radial-gradient(circle_at_top_right,rgba(50,91,148,0.12),transparent_24%)]" />
+
+      {/* Main Content */}
+      <div className="relative z-10">
+
+        <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
+          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+            <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
+            <div className="flex items-center gap-3 flex-wrap justify-end">
         <header className="sticky top-0 z-40 border-b border-[#98BEDC]/20 bg-white/85 backdrop-blur-xl">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
             <img src="/logo.png" className="h-20 md:h-28 lg:h-32 w-auto" alt="Paint Pals" />
@@ -583,6 +605,8 @@ container.addEventListener("click", handleClick);
 </div>
           </div>
         </header>
+
+              </div>
 
         <section className="mx-auto max-w-6xl px-4 py-6 md:py-8">
           <div className="flex flex-wrap items-center justify-center gap-4 rounded-[2rem] border border-[#98BEDC]/40 bg-white px-6 py-6 text-sm font-black text-[#103985] shadow-[0_14px_40px_rgba(50,91,148,0.08)]">
