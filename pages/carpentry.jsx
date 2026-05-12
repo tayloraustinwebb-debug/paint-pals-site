@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import {
-  Fireplace,
+  Flame,
   PanelsTopLeft,
   Rows3,
   PanelTop,
@@ -16,7 +16,7 @@ const services = [
   {
     title: "Shiplap Fireplaces",
     text: "Custom fireplace surrounds, shiplap walls, trim details, and clean finish work.",
-    icon: Fireplace,
+    icon: Flame,
   },
   {
     title: "Accent Walls",
@@ -107,7 +107,7 @@ export default function CarpentryPage() {
               create clean, high-end spaces with a finished look.
             </p>
             <a className="white-button" href="/#quote">
-              <CalendarIcon /> Get Free Carpentry Quote
+              <CalendarDays className="button-icon" strokeWidth={2.2} /> Get Free Carpentry Quote
             </a>
           </div>
         </section>
