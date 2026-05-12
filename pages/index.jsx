@@ -518,7 +518,7 @@ container.addEventListener("click", handleClick);
   <div className="min-h-screen bg-[#f4f8fc] text-black">
     <div className="relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.22] scale-105"
+        className="absolute inset-0 bg-cover bg-center opacity-[0.08] scale-105"
         style={{
           backgroundImage: "url('/masked-kitchen.png')",
         }}
