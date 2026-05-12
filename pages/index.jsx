@@ -996,7 +996,7 @@ container.addEventListener("click", handleClick);
     <div>
       <img src="/logo.png" className="h-16 w-auto md:h-20" alt="Paint Pals" />
       <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
-        Premium cabinet refinishing, cabinet painting, and cabinet refacing in Southern California with factory-style finishes and fast, clean transformations.
+        Premium cabinet refinishing, cabinet painting, cabinet refacing, and custom carpentry services in Southern California. Factory-Style finshes and fast clean transformations.
       </p>
     </div>
 
@@ -1005,17 +1005,23 @@ container.addEventListener("click", handleClick);
         Services
       </p>
       <div className="mt-4 grid gap-3 text-sm text-white/80">
-        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+        <a href="/" className="transition hover:text-white">
           Cabinet Refinishing
         </a>
-        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+        <a href="/" className="transition hover:text-white">
           Cabinet Painting
         </a>
-        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
+        <a href="/" className="transition hover:text-white">
           Cabinet Refacing
         </a>
-        <a href="#quote" onClick={trackQuoteClick} className="transition hover:text-white">
-          Cabinet Upgrades
+        <a href="/carpentry" className="transition hover:text-white">
+          Carpentry
+        </a>
+        <a href="/carpentry" className="transition hover:text-white">
+          Shiplap Fireplaces
+        </a>
+        <a href="/carpentry" className="transition hover:text-white">
+          Accent Walls
         </a>
       </div>
     </div>
@@ -1029,26 +1035,23 @@ container.addEventListener("click", handleClick);
           (840) 217-5750
         </a>
 
-        <a
-  href="mailto:Taylor@paint-pals.com"
-  className="transition hover:text-white"
->
-  Taylor@paint-pals.com
-</a>
-        
+        <a href="mailto:Taylor@paint-pals.com" className="transition hover:text-white">
+          Taylor@paint-pals.com
+        </a>
+
         <a
           href="https://clienthub.getjobber.com/client_hubs/0ed9bce6-d2ca-4eb6-a2b2-30bc7eee3cea/login/new?source=share_login"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={trackPortalClick}
           className="transition hover:text-white"
         >
           Client Portal
         </a>
+
         <p>Serving Riverside, San Bernardino, and Orange County</p>
+
         <a
-          href="#quote"
-          onClick={trackQuoteClick}
+          href="/#quote"
           className="inline-flex w-fit rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] transition hover:bg-white/15"
         >
           Get Free Quote
