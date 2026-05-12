@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Crown and Base Moulding</title><desc>Blue emblem icon showing crown moulding and baseboard on an interior corner.</desc>
+<circle cx="128" cy="128" r="112" fill="#EEF7FE" stroke="#325B94" stroke-width="10"/>
+<path d="M73 72l55-28 55 28v130H73z" fill="#FFFFFF" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M128 44v158" stroke="#325B94" stroke-width="5" opacity=".7"/>
+<path d="M63 76l65-34 65 34-13 16-52-27-52 27z" fill="#98BEDC" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M75 94l53-27 53 27" fill="none" stroke="#325B94" stroke-width="6" stroke-linejoin="round"/>
+<path d="M83 110l45-22 45 22" fill="none" stroke="#325B94" stroke-width="5" stroke-linejoin="round"/>
+<path d="M70 181h116v25H70z" fill="#D9ECFA" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M64 204h128v18H64z" fill="#98BEDC" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M80 183l48-16 48 16" stroke="#325B94" stroke-width="5" fill="none"/>
+</svg>

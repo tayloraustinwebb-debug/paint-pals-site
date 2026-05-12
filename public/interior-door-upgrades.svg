@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Interior Door Upgrades</title><desc>Blue emblem icon showing a finished interior door with casing trim.</desc>
+<circle cx="128" cy="128" r="112" fill="#EEF7FE" stroke="#325B94" stroke-width="10"/>
+<path d="M76 52h104v164H76z" fill="#FFFFFF" stroke="#325B94" stroke-width="8" stroke-linejoin="round"/>
+<path d="M60 44h136v20H60zM64 216h128v18H64z" fill="#98BEDC" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M91 75h74v132H91z" fill="#D9ECFA" stroke="#325B94" stroke-width="6"/>
+<path d="M105 89h46v42h-46zM105 151h46v42h-46z" fill="#F8FCFF" stroke="#325B94" stroke-width="5"/>
+<circle cx="158" cy="143" r="7" fill="#325B94"/>
+<path d="M76 52l-16-8M180 52l16-8" stroke="#325B94" stroke-width="7" stroke-linecap="round"/>
+</svg>

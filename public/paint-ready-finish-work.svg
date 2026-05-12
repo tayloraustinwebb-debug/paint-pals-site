@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Paint Ready Finish Work</title><desc>Blue emblem icon showing a paint brush over smooth finish panels.</desc>
+<circle cx="128" cy="128" r="112" fill="#EEF7FE" stroke="#325B94" stroke-width="10"/>
+<path d="M49 152h158v49H49z" fill="#FFFFFF" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M65 165h43v24H65zM122 165h43v24h-43z" fill="#D9ECFA" stroke="#325B94" stroke-width="5"/>
+<path d="M48 135h160M59 121h138" stroke="#325B94" stroke-width="7" stroke-linecap="round"/>
+<g transform="rotate(32 135 120)">
+<path d="M130 38c0-13 10-24 23-24s23 11 23 24v85h-46z" fill="#98BEDC" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<circle cx="153" cy="38" r="5" fill="#325B94"/>
+<path d="M127 118h52v17h-52z" fill="#F8FCFF" stroke="#325B94" stroke-width="7"/>
+<path d="M132 135h42l-4 44c-1 13-9 23-17 23s-16-10-17-23z" fill="#325B94" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M138 169c5 8 12 9 18 0 4 9 10 10 16 1l-2 17c-1 10-8 18-17 18s-16-8-17-18z" fill="#FFFFFF"/>
+<path d="M127 128h52" stroke="#325B94" stroke-width="5"/>
+</g>
+</svg>

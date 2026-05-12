@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Shiplap Fireplaces</title><desc>Blue emblem icon showing a shiplap fireplace with mantel and flame.</desc>
+<circle cx="128" cy="128" r="112" fill="#EEF7FE" stroke="#325B94" stroke-width="10"/>
+<path d="M56 54h144v169H56z" fill="#FFFFFF" stroke="#325B94" stroke-width="7"/>
+<path d="M56 82h144M56 111h144M56 140h144M56 169h144" stroke="#325B94" stroke-width="5" opacity=".85"/>
+<path d="M50 122h156v25H50z" fill="#98BEDC" stroke="#325B94" stroke-width="7" stroke-linejoin="round"/>
+<path d="M72 147h112v76H72z" fill="#D9ECFA" stroke="#325B94" stroke-width="7"/>
+<path d="M92 163h72v60H92z" fill="#325B94" stroke="#325B94" stroke-width="7"/>
+<path d="M117 213c-11-11-13-25-2-38 3 12 10 14 13 1 15 16 19 26 11 37z" fill="#98BEDC" stroke="#EEF7FE" stroke-width="4" stroke-linejoin="round"/>
+<path d="M101 217l55-22M101 195l55 22" stroke="#EEF7FE" stroke-width="7" stroke-linecap="round"/>
+<path d="M160 95c10-12 22-12 32 0-13 4-19 4-32 0z" fill="#98BEDC" stroke="#325B94" stroke-width="5"/>
+<path d="M176 94v26" stroke="#325B94" stroke-width="5" stroke-linecap="round"/>
+</svg>

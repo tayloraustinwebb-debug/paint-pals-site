@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Built-Ins and Storage</title><desc>Blue emblem icon showing a built-in shelving unit with cabinets.</desc>
+<circle cx="128" cy="128" r="112" fill="#EEF7FE" stroke="#325B94" stroke-width="10"/>
+<path d="M62 55h132v158H62z" fill="#F8FCFF" stroke="#325B94" stroke-width="8" stroke-linejoin="round"/>
+<path d="M52 55h152M52 213h152" stroke="#325B94" stroke-width="10" stroke-linecap="round"/>
+<path d="M62 107h132M62 154h132" stroke="#325B94" stroke-width="7"/>
+<path d="M66 157h124v56H66z" fill="#D9ECFA"/>
+<path d="M70 165h50v37H70zM136 165h50v37h-50z" fill="#FFFFFF" stroke="#325B94" stroke-width="5"/>
+<path d="M128 158v55" stroke="#325B94" stroke-width="6"/>
+<path d="M119 187h-8M145 187h-8" stroke="#325B94" stroke-width="6" stroke-linecap="round"/>
+<path d="M88 98c-9-13-6-28 6-37 14 8 18 22 10 37z" fill="#98BEDC" stroke="#325B94" stroke-width="5"/>
+<path d="M84 98h27v9H84z" fill="#325B94"/>
+<path d="M126 91h38M134 77h25M142 63h29" stroke="#325B94" stroke-width="7" stroke-linecap="round"/>
+<path d="M82 140h34M132 140h12M153 140h18" stroke="#325B94" stroke-width="8" stroke-linecap="round"/>
+<rect x="158" y="119" width="28" height="24" rx="3" fill="#98BEDC" stroke="#325B94" stroke-width="5"/>
+</svg>

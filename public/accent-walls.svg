@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Accent Walls</title><desc>Blue emblem icon showing a paneled accent wall with spotlights.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#98BEDC"/><stop offset="1" stop-color="#325B94"/></linearGradient></defs>
+<circle cx="128" cy="128" r="112" fill="#EEF7FE" stroke="#325B94" stroke-width="10"/>
+<path d="M54 199V67h148v132" fill="#D9ECFA" stroke="#325B94" stroke-width="8" stroke-linejoin="round"/>
+<path d="M70 75h116v116H70z" fill="#98BEDC" opacity=".55"/>
+<path d="M82 72v122M103 72v122M124 72v122M145 72v122M166 72v122" stroke="#325B94" stroke-width="6" stroke-linecap="round"/>
+<path d="M52 199h152" stroke="#325B94" stroke-width="10" stroke-linecap="round"/>
+<path d="M72 211l-20 20M103 211l-11 25M128 211v27M153 211l11 25M184 211l20 20" stroke="#325B94" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+<ellipse cx="88" cy="57" rx="17" ry="8" fill="#fff" stroke="#325B94" stroke-width="6"/>
+<ellipse cx="128" cy="57" rx="17" ry="8" fill="#fff" stroke="#325B94" stroke-width="6"/>
+<ellipse cx="168" cy="57" rx="17" ry="8" fill="#fff" stroke="#325B94" stroke-width="6"/>
+<path d="M70 70l18 83 18-83M110 70l18 83 18-83M150 70l18 83 18-83" fill="#FFFFFF" opacity=".34"/>
+</svg>
