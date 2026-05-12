@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Cabinet Refacing</title><desc>Blue cabinet with open replacement door panel</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8FBFD"/><stop offset="1" stop-color="#CFE3F1"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D6C3A1"/><stop offset="1" stop-color="#B99C72"/></linearGradient>
+  <linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#98BEDC"/><stop offset="1" stop-color="#5D95CB"/></linearGradient>
+</defs>
+<g fill="none" stroke="#325B94" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M44 67h139v137H44z" fill="url(#blue)"/>
+  <path d="M44 67l17-12h139l-17 12z" fill="#EAF4FB"/>
+  <path d="M183 67l17-12v137l-17 12z" fill="url(#side)"/>
+  <path d="M44 184h139v20H44z" fill="#98BEDC"/>
+  <path d="M44 87h139"/>
+  <path d="M116 87v97"/>
+  <path d="M62 104h34v14H62z" fill="#EAF4FB"/>
+  <path d="M134 104h34v14h-34z" fill="#EAF4FB"/>
+  <path d="M64 132h36v47H64z" fill="#FFFFFF" stroke="#98BEDC" stroke-width="4"/>
+  <path d="M125 126h40v59h-40z" fill="url(#wood)" stroke="#325B94"/>
+  <path d="M144 126v59M125 148h40M125 168h40" stroke="#7C6A50" stroke-width="3"/>
+  <path d="M164 113l54 15v86l-54-12z" fill="#FFFFFF"/>
+  <path d="M177 142h25v43h-25z" fill="#FFFFFF" stroke="#98BEDC" stroke-width="4"/>
+  <path d="M154 143v33M177 159v24"/>
+</g>
+</svg>

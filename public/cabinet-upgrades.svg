@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title>Cabinet Upgrades</title><desc>Blue cabinet with open drawer and upward upgrade arrow</desc>
+<defs>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8FBFD"/><stop offset="1" stop-color="#CFE3F1"/></linearGradient>
+  <linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#98BEDC"/><stop offset="1" stop-color="#5D95CB"/></linearGradient>
+  <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D6C3A1"/><stop offset="1" stop-color="#B99C72"/></linearGradient>
+</defs>
+<g fill="none" stroke="#325B94" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M43 70h163v132H43z" fill="url(#blue)"/>
+  <path d="M43 70l17-12h163l-17 12z" fill="#EAF4FB"/>
+  <path d="M206 70l17-12v132l-17 12z" fill="url(#side)"/>
+  <path d="M43 182h163v20H43z" fill="#98BEDC"/>
+  <path d="M117 87v95"/>
+  <path d="M136 88h55v31h-55z" fill="#FFFFFF"/>
+  <path d="M136 128h55v31h-55z" fill="#FFFFFF"/>
+  <path d="M66 104h38v72H66z" fill="#FFFFFF" stroke="#98BEDC" stroke-width="4"/>
+  <path d="M99 132v30"/>
+  <path d="M155 101h18M155 142h18"/>
+  <path d="M136 164h72v37h-72z" fill="#FFFFFF"/>
+  <path d="M208 164l19-11v37l-19 11z" fill="url(#wood)"/>
+  <path d="M147 183h36"/>
+  <path d="M174 42v-26"/>
+  <path d="M154 35l20-23 20 23h-12v26h-16V35z" fill="#98BEDC"/>
+</g>
+</svg>
