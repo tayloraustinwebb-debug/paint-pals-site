@@ -1,35 +1,47 @@
 import Head from "next/head";
 
+import {
+  Fireplace,
+  PanelsTopLeft,
+  Rows3,
+  PanelTop,
+  DoorClosed,
+  Paintbrush,
+  Hammer,
+  Wrench,
+  CalendarDays,
+} from "lucide-react";
+
 const services = [
   {
     title: "Shiplap Fireplaces",
     text: "Custom fireplace surrounds, shiplap walls, trim details, and clean finish work.",
-    icon: FireplaceIcon,
+    icon: Fireplace,
   },
   {
     title: "Accent Walls",
     text: "Board and batten, wainscoting, feature walls, paneling, and modern trim designs.",
-    icon: WallIcon,
+    icon: PanelsTopLeft,
   },
   {
     title: "Built-Ins & Storage",
     text: "Custom shelving, storage details, entertainment walls, and functional upgrades.",
-    icon: ShelfIcon,
+    icon: Rows3,
   },
   {
     title: "Crown & Base Molding",
     text: "Clean molding installs that add a finished, high-end look to your home.",
-    icon: CrownIcon,
+    icon: PanelTop,
   },
   {
     title: "Interior Door Upgrades",
     text: "Door trim, casing, refinishing prep, and detail upgrades for a cleaner interior.",
-    icon: DoorIcon,
+    icon: DoorClosed,
   },
   {
     title: "Paint-Ready Finish Work",
     text: "Carpentry built with the final finish in mind for a smooth, professional result.",
-    icon: BrushIcon,
+    icon: Paintbrush,
   },
 ];
 
@@ -110,7 +122,7 @@ export default function CarpentryPage() {
                 const Icon = service.icon;
                 return (
                   <div className="service-card" key={service.title}>
-                    <Icon />
+                    <Icon className="service-icon" strokeWidth={2.2} />
                     <div>
                       <h3>{service.title}</h3>
                       <p>{service.text}</p>
@@ -150,14 +162,17 @@ export default function CarpentryPage() {
 
       <section className="bottom-cta">
   <div className="cta-icon">
-    <ToolsIcon />
+    <div className="cross-tools">
+  <Hammer />
+  <Wrench />
+</div>
   </div>
 
   <div>
     <h2>Ready to Upgrade Your Home?</h2>
     <p>Get a free quote for custom carpentry, trim, shiplap, or built-in work.</p>
     <a className="white-button small" href="/#quote">
-      <CalendarIcon /> Get Free Quote
+      <CalendarDays className="button-icon" strokeWidth={2.2} /> Get Free Quote
     </a>
   </div>
 </section>
@@ -497,34 +512,41 @@ export default function CarpentryPage() {
           fill: none;
         }
 
-      :global(.tools-icon) {
-  width: 82px !important;
-  height: 82px !important;
-  stroke: white !important;
-  fill: none !important;
-  stroke-width: 2.4 !important;
-  stroke-linecap: round !important;
-  stroke-linejoin: round !important;
-}
-
-:global(.tools-icon path) {
-  stroke: white !important;
-  fill: none !important;
-}
-
-:global(.icon-line) {
+      :global(.service-icon) {
   width: 58px !important;
   height: 58px !important;
+  color: #0057b8 !important;
   stroke: #0057b8 !important;
   fill: none !important;
-  stroke-width: 2.4 !important;
-  stroke-linecap: round !important;
-  stroke-linejoin: round !important;
+  flex: 0 0 58px !important;
 }
 
-:global(.icon-line path) {
-  stroke: #0057b8 !important;
-  fill: none !important;
+:global(.button-icon) {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.cross-tools {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+
+.cross-tools :global(svg) {
+  position: absolute;
+  inset: 0;
+  width: 96px;
+  height: 96px;
+  color: white;
+  stroke-width: 2.4;
+}
+
+.cross-tools :global(svg:first-child) {
+  transform: rotate(-45deg);
+}
+
+.cross-tools :global(svg:last-child) {
+  transform: rotate(45deg);
 }
 
         @media (max-width: 900px) {
@@ -595,89 +617,4 @@ export default function CarpentryPage() {
   );
 }
 
-function CalendarIcon() {
-  return (
-    <svg className="button-icon" viewBox="0 0 24 24">
-      <rect x="3" y="5" width="18" height="16" rx="2" />
-      <path d="M16 3v4M8 3v4M3 10h18" />
-    </svg>
-  );
-}
 
-function FireplaceIcon() {
-  return (
-    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M12 48h40" />
-      <path d="M17 48V25h30v23" />
-      <path d="M14 25h36" />
-      <path d="M20 19h24" />
-      <path d="M27 43c-2-6 3-8 3-13 6 5 9 8 7 13" />
-      <path d="M25 43h15" />
-    </svg>
-  );
-}
-
-function WallIcon() {
-  return (
-    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M15 12h34v40H15z" />
-      <path d="M24 12v40" />
-      <path d="M32 12v40" />
-      <path d="M40 12v40" />
-    </svg>
-  );
-}
-
-function ShelfIcon() {
-  return (
-    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M20 10h24v44H20z" />
-      <path d="M20 24h24" />
-      <path d="M20 38h24" />
-      <path d="M20 52h24" />
-    </svg>
-  );
-}
-
-function CrownIcon() {
-  return (
-    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M13 19h38" />
-      <path d="M17 25h30" />
-      <path d="M21 31h22" />
-      <path d="M25 31v20" />
-      <path d="M21 51h24" />
-    </svg>
-  );
-}
-
-function DoorIcon() {
-  return (
-    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M20 10h26v44H20z" />
-      <path d="M28 18h11v28H28z" />
-      <path d="M38 32h2" />
-    </svg>
-  );
-}
-
-function BrushIcon() {
-  return (
-    <svg className="icon-line" viewBox="0 0 64 64" fill="none">
-      <path d="M39 12l13 13-25 25-13-13z" />
-      <path d="M17 39l-5 5c-3 3-3 7 0 10s7 3 10 0l5-5" />
-      <path d="M35 16l13 13" />
-    </svg>
-  );
-}
-
-function ToolsIcon() {
-  return (
-    <svg className="tools-icon" viewBox="0 0 64 64" fill="none">
-      <path d="M23 10l31 31-8 8-31-31z" />
-      <path d="M44 10l10 10-32 32-10-10z" />
-      <path d="M17 14l-7-7" />
-      <path d="M50 14l7-7" />
-    </svg>
-  );
-}
