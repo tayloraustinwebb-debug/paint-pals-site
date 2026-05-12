@@ -655,6 +655,7 @@ container.addEventListener("click", handleClick);
           </div>
         </section>
       </div>
+       </div>
           
 
         <section className="mx-auto max-w-6xl px-4 py-14">
